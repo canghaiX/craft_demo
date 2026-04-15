@@ -40,13 +40,16 @@
 
 ## 环境变量
 
-项目默认按 OpenAI 兼容接口调用你的服务端模型。
+项目当前按本地模型推理运行，不再依赖 OpenAI API。
 
 ```env
-OPENAI_API_KEY=EMPTY
-OPENAI_BASE_URL=http://127.0.0.1:8000/v1
+MODEL_BACKEND=local
+OPENAI_API_KEY=
+OPENAI_BASE_URL=
 AGENT_MODEL=qwen2.5-7B
 ROUTER_MODEL=qwen2.5-7B
+AGENT_MODEL_PATH=/data/models/qwen2.5-7B
+ROUTER_MODEL_PATH=/data/models/qwen2.5-7B
 LIGHTRAG_LLM_MODEL=qwen2.5-7B
 LIGHTRAG_LLM_MODEL_PATH=/data/models/qwen2.5-7B
 LIGHTRAG_EMBED_MODEL=bge-m3
@@ -61,7 +64,8 @@ PDF_SOURCE_DIR=./data
 
 - `PDF_SOURCE_DIR` 是批量导入 PDF 的目录
 - `LIGHTRAG_WORKING_DIR` 是 LightRAG 存图谱和索引数据的位置
-- `*_MODEL_PATH` 目前只是记录部署信息，现有代码实际调用的是 `OPENAI_BASE_URL + 模型名`
+- `*_MODEL_PATH` 会被本地推理代码实际使用
+- 请确保本机环境已安装与硬件匹配的 `torch`
 
 ## 安装
 
@@ -70,6 +74,8 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -e .[dev]
 ```
+
+如果你的环境还没有 `torch`，请先按你的 CUDA/CPU 环境安装对应版本，再执行上面的命令。
 
 ## 运行 API
 

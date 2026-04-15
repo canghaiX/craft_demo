@@ -10,6 +10,7 @@ from agentic_rag.schemas import BatchIngestResponse, ChatRequest, ChatResponse, 
 from agentic_rag.services.data_ingest import DataDirectoryIngestor
 from agentic_rag.services.lightrag_service import LightRAGService
 from agentic_rag.services.llm import LLMServices
+from agentic_rag.services.local_inference import get_local_inference_service
 from agentic_rag.services.pdf_parser import PdfParser
 
 
@@ -18,7 +19,7 @@ pdf_parser = PdfParser()
 
 
 def get_lightrag_service() -> LightRAGService:
-    return LightRAGService(settings)
+    return LightRAGService(settings, inference_service=get_local_inference_service())
 
 
 @asynccontextmanager
@@ -48,7 +49,7 @@ def ensure_services(app: FastAPI) -> tuple[LightRAGService, AgenticRAGWorkflow]:
     if getattr(app.state, "lightrag_service", None) is None:
         app.state.lightrag_service = get_lightrag_service()
     if getattr(app.state, "workflow", None) is None:
-        llm_services = LLMServices(settings)
+        llm_services = LLMServices(settings, inference_service=get_local_inference_service())
         app.state.workflow = AgenticRAGWorkflow(
             llm_services=llm_services,
             lightrag_service=app.state.lightrag_service,

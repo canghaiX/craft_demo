@@ -3,20 +3,18 @@ from __future__ import annotations
 from typing import Any
 
 from agentic_rag.config import Settings
+from agentic_rag.services.local_inference import LocalInferenceService
 
 
 class LightRAGService:
-    def __init__(self, settings: Settings) -> None:
-        if not settings.openai_api_key:
-            raise RuntimeError("OPENAI_API_KEY is required before using LightRAG.")
-
+    def __init__(self, settings: Settings, inference_service: LocalInferenceService) -> None:
         self.settings = settings
+        self.inference_service = inference_service
         self._rag: Any | None = None
 
     async def _build_rag(self) -> Any:
         try:
             from lightrag import LightRAG, QueryParam
-            from lightrag.llm.openai import openai_complete_if_cache, openai_embed
             from lightrag.utils import EmbeddingFunc
         except ImportError as exc:
             raise RuntimeError(
@@ -29,24 +27,27 @@ class LightRAGService:
             history_messages: list[dict[str, Any]] | None = None,
             **kwargs: Any,
         ) -> Any:
-            return await openai_complete_if_cache(
-                self.settings.lightrag_llm_model,
-                prompt,
-                system_prompt=system_prompt,
-                history_messages=history_messages or [],
-                api_key=self.settings.openai_api_key,
-                base_url=self.settings.openai_base_url,
-                **kwargs,
+            history_text = ""
+            if history_messages:
+                history_lines = [
+                    f"{message.get('role', 'user')}: {message.get('content', '')}"
+                    for message in history_messages
+                ]
+                history_text = "\n\nConversation history:\n" + "\n".join(history_lines)
+            user_prompt = f"{history_text}\n\n{prompt}".strip()
+            return await self.inference_service.generate(
+                system_prompt or "You are a helpful assistant.",
+                user_prompt,
+                max_new_tokens=int(kwargs.get("max_tokens", 512)),
+                temperature=float(kwargs.get("temperature", 0.1)),
             )
+
+        async def embedding_func_impl(texts: list[str]) -> list[list[float]]:
+            return await self.inference_service.embed(texts)
 
         embedding_func = EmbeddingFunc(
             embedding_dim=self.settings.lightrag_embed_dim,
-            func=lambda texts: openai_embed(
-                texts,
-                model=self.settings.lightrag_embed_model,
-                api_key=self.settings.openai_api_key,
-                base_url=self.settings.openai_base_url,
-            ),
+            func=embedding_func_impl,
         )
 
         rag = LightRAG(
