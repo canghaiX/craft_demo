@@ -15,6 +15,7 @@ dependencies = [
     "pydantic-settings>=2.5.0",
     "langgraph>=0.2.39",
     "lightrag-hku>=1.4.0",
+    "openai>=1.51.0",
     "pypdf>=5.0.0",
     "python-multipart>=0.0.9",
     "transformers>=4.44.0",

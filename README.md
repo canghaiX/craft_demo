@@ -40,12 +40,13 @@
 
 ## 环境变量
 
-项目当前按本地模型推理运行，不再依赖 OpenAI API。
+项目默认按 vLLM 的 OpenAI 兼容接口调用你已经启动好的服务端模型。
 
 ```env
-MODEL_BACKEND=local
-OPENAI_API_KEY=
-OPENAI_BASE_URL=
+MODEL_BACKEND=vllm
+OPENAI_API_KEY=EMPTY
+OPENAI_BASE_URL=http://127.0.0.1:8000/v1
+EMBEDDING_BASE_URL=http://127.0.0.1:8001/v1
 AGENT_MODEL=qwen2.5-7B
 ROUTER_MODEL=qwen2.5-7B
 AGENT_MODEL_PATH=/data/models/qwen2.5-7B
@@ -64,8 +65,9 @@ PDF_SOURCE_DIR=./data
 
 - `PDF_SOURCE_DIR` 是批量导入 PDF 的目录
 - `LIGHTRAG_WORKING_DIR` 是 LightRAG 存图谱和索引数据的位置
-- `*_MODEL_PATH` 会被本地推理代码实际使用
-- 请确保本机环境已安装与硬件匹配的 `torch`
+- `OPENAI_BASE_URL` 指向 Qwen 的 vLLM OpenAI 兼容接口
+- `EMBEDDING_BASE_URL` 指向 bge-m3 的 vLLM embedding 接口
+- `*_MODEL_PATH` 只有在 `MODEL_BACKEND=local` 时才会被本地推理代码使用
 
 ## 安装
 

@@ -5,9 +5,9 @@ import json
 import re
 from functools import lru_cache
 from pathlib import Path
-from typing import Any
 
 import numpy as np
+from openai import AsyncOpenAI
 
 from agentic_rag.config import Settings, get_settings
 from agentic_rag.schemas import RouteDecision
@@ -85,9 +85,58 @@ class LocalEmbedder:
         return np.asarray(vectors, dtype=np.float32)
 
 
-class LocalInferenceService:
+class RemoteInferenceBackend:
     def __init__(self, settings: Settings) -> None:
+        if not settings.openai_base_url:
+            raise RuntimeError("OPENAI_BASE_URL is required when MODEL_BACKEND is set to `vllm`.")
+
         self.settings = settings
+        self.llm_client = AsyncOpenAI(
+            api_key=settings.openai_api_key or "EMPTY",
+            base_url=str(settings.openai_base_url),
+        )
+        self.embedding_client = AsyncOpenAI(
+            api_key=settings.openai_api_key or "EMPTY",
+            base_url=str(settings.embedding_base_url or settings.openai_base_url),
+        )
+
+    async def generate(
+        self,
+        model: str,
+        system_prompt: str,
+        user_prompt: str,
+        *,
+        max_new_tokens: int = 512,
+        temperature: float = 0.1,
+    ) -> str:
+        response = await self.llm_client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            max_tokens=max_new_tokens,
+            temperature=temperature,
+        )
+        content = response.choices[0].message.content
+        if isinstance(content, str):
+            return content.strip()
+        if isinstance(content, list):
+            text_parts = [part.text for part in content if getattr(part, "type", None) == "text"]
+            return "".join(text_parts).strip()
+        return ""
+
+    async def embed(self, texts: list[str]) -> np.ndarray:
+        response = await self.embedding_client.embeddings.create(
+            model=self.settings.lightrag_embed_model,
+            input=texts,
+        )
+        vectors = [item.embedding for item in response.data]
+        return np.asarray(vectors, dtype=np.float32)
+
+
+class LocalInferenceBackend:
+    def __init__(self, settings: Settings) -> None:
         self.generator = LocalGenerator(str(settings.agent_model_path))
         self.router_generator = self.generator
         if settings.router_model_path != settings.agent_model_path:
@@ -96,14 +145,13 @@ class LocalInferenceService:
 
     async def generate(
         self,
+        generator: LocalGenerator,
         system_prompt: str,
         user_prompt: str,
         *,
-        use_router_model: bool = False,
         max_new_tokens: int = 512,
         temperature: float = 0.1,
     ) -> str:
-        generator = self.router_generator if use_router_model else self.generator
         return await asyncio.to_thread(
             generator.generate,
             system_prompt,
@@ -114,6 +162,47 @@ class LocalInferenceService:
 
     async def embed(self, texts: list[str]) -> np.ndarray:
         return await asyncio.to_thread(self.embedder.embed, texts)
+
+
+class LocalInferenceService:
+    def __init__(self, settings: Settings) -> None:
+        self.settings = settings
+        self.backend_type = settings.model_backend.lower()
+        if self.backend_type == "local":
+            self.backend = LocalInferenceBackend(settings)
+        else:
+            self.backend = RemoteInferenceBackend(settings)
+
+    async def generate(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        *,
+        use_router_model: bool = False,
+        max_new_tokens: int = 512,
+        temperature: float = 0.1,
+    ) -> str:
+        if self.backend_type == "local":
+            generator = self.backend.router_generator if use_router_model else self.backend.generator
+            return await self.backend.generate(
+                generator,
+                system_prompt,
+                user_prompt,
+                max_new_tokens=max_new_tokens,
+                temperature=temperature,
+            )
+
+        model = self.settings.router_model if use_router_model else self.settings.agent_model
+        return await self.backend.generate(
+            model,
+            system_prompt,
+            user_prompt,
+            max_new_tokens=max_new_tokens,
+            temperature=temperature,
+        )
+
+    async def embed(self, texts: list[str]) -> np.ndarray:
+        return await self.backend.embed(texts)
 
     async def route_question(self, question: str) -> RouteDecision:
         if any(keyword in question.lower() for keyword in ["pdf", "文档", "资料", "手册", "合同"]):

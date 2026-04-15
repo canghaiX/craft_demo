@@ -8,9 +8,10 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
-    model_backend: str = Field(default="local", alias="MODEL_BACKEND")
-    openai_api_key: str = Field(default="", alias="OPENAI_API_KEY")
+    model_backend: str = Field(default="vllm", alias="MODEL_BACKEND")
+    openai_api_key: str = Field(default="EMPTY", alias="OPENAI_API_KEY")
     openai_base_url: str | None = Field(default=None, alias="OPENAI_BASE_URL")
+    embedding_base_url: str | None = Field(default=None, alias="EMBEDDING_BASE_URL")
 
     agent_model: str = Field(default="gpt-4o-mini", alias="AGENT_MODEL")
     router_model: str = Field(default="gpt-4o-mini", alias="ROUTER_MODEL")
