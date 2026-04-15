@@ -7,6 +7,8 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
+import numpy as np
+
 from agentic_rag.config import Settings, get_settings
 from agentic_rag.schemas import RouteDecision
 
@@ -74,13 +76,13 @@ class LocalEmbedder:
 
         self.model = SentenceTransformer(model_path, trust_remote_code=True)
 
-    def embed(self, texts: list[str]) -> list[list[float]]:
+    def embed(self, texts: list[str]) -> np.ndarray:
         vectors = self.model.encode(
             texts,
             normalize_embeddings=True,
             show_progress_bar=False,
         )
-        return vectors.tolist()
+        return np.asarray(vectors, dtype=np.float32)
 
 
 class LocalInferenceService:
@@ -110,7 +112,7 @@ class LocalInferenceService:
             temperature,
         )
 
-    async def embed(self, texts: list[str]) -> list[list[float]]:
+    async def embed(self, texts: list[str]) -> np.ndarray:
         return await asyncio.to_thread(self.embedder.embed, texts)
 
     async def route_question(self, question: str) -> RouteDecision:
