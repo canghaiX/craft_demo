@@ -1,0 +1,16 @@
+fastapi>=0.115.0
+uvicorn>=0.30.0
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+langgraph>=0.2.39
+langchain-openai>=0.2.0
+langchain-core>=0.3.0
+openai>=1.51.0
+lightrag-hku>=1.4.0
+pypdf>=5.0.0
+python-multipart>=0.0.9
+
+[dev]
+pytest>=8.3.0
+httpx>=0.27.0
+ruff>=0.6.9
