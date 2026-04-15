@@ -9,12 +9,13 @@ Requires-Dist: uvicorn>=0.30.0
 Requires-Dist: pydantic>=2.9.0
 Requires-Dist: pydantic-settings>=2.5.0
 Requires-Dist: langgraph>=0.2.39
-Requires-Dist: langchain-openai>=0.2.0
-Requires-Dist: langchain-core>=0.3.0
-Requires-Dist: openai>=1.51.0
 Requires-Dist: lightrag-hku>=1.4.0
+Requires-Dist: openai>=1.51.0
 Requires-Dist: pypdf>=5.0.0
 Requires-Dist: python-multipart>=0.0.9
+Requires-Dist: transformers>=4.44.0
+Requires-Dist: sentence-transformers>=3.0.1
+Requires-Dist: accelerate>=0.34.0
 Provides-Extra: dev
 Requires-Dist: pytest>=8.3.0; extra == "dev"
 Requires-Dist: httpx>=0.27.0; extra == "dev"
@@ -62,13 +63,17 @@ Requires-Dist: ruff>=0.6.9; extra == "dev"
 
 ## 环境变量
 
-项目默认按 OpenAI 兼容接口调用你的服务端模型。
+项目默认按 vLLM 的 OpenAI 兼容接口调用你已经启动好的服务端模型。
 
 ```env
+MODEL_BACKEND=vllm
 OPENAI_API_KEY=EMPTY
 OPENAI_BASE_URL=http://127.0.0.1:8000/v1
+EMBEDDING_BASE_URL=http://127.0.0.1:8001/v1
 AGENT_MODEL=qwen2.5-7B
 ROUTER_MODEL=qwen2.5-7B
+AGENT_MODEL_PATH=/data/models/qwen2.5-7B
+ROUTER_MODEL_PATH=/data/models/qwen2.5-7B
 LIGHTRAG_LLM_MODEL=qwen2.5-7B
 LIGHTRAG_LLM_MODEL_PATH=/data/models/qwen2.5-7B
 LIGHTRAG_EMBED_MODEL=bge-m3
@@ -83,7 +88,9 @@ PDF_SOURCE_DIR=./data
 
 - `PDF_SOURCE_DIR` 是批量导入 PDF 的目录
 - `LIGHTRAG_WORKING_DIR` 是 LightRAG 存图谱和索引数据的位置
-- `*_MODEL_PATH` 目前只是记录部署信息，现有代码实际调用的是 `OPENAI_BASE_URL + 模型名`
+- `OPENAI_BASE_URL` 指向 Qwen 的 vLLM OpenAI 兼容接口
+- `EMBEDDING_BASE_URL` 指向 bge-m3 的 vLLM embedding 接口
+- `*_MODEL_PATH` 只有在 `MODEL_BACKEND=local` 时才会被本地推理代码使用
 
 ## 安装
 
@@ -92,6 +99,8 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -e .[dev]
 ```
+
+如果你的环境还没有 `torch`，请先按你的 CUDA/CPU 环境安装对应版本，再执行上面的命令。
 
 ## 运行 API
 

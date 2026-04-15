@@ -16,5 +16,6 @@ src/agentic_rag/services/__init__.py
 src/agentic_rag/services/data_ingest.py
 src/agentic_rag/services/lightrag_service.py
 src/agentic_rag/services/llm.py
+src/agentic_rag/services/local_inference.py
 src/agentic_rag/services/pdf_parser.py
 tests/test_health.py
