@@ -1,22 +1,27 @@
-<<<<<<< HEAD
 # Agentic RAG with LangGraph + LightRAG
 
-这是一个从零搭好的 Agentic RAG 项目骨架，目标是满足这条链路：
+这是一个基于 LangGraph 搭建的 Agentic RAG 项目，支持两种能力：
 
-1. 上传 PDF
-2. 解析文本
-3. 写入 LightRAG
-4. 由 LightRAG 抽取知识图谱并建立检索索引
-5. 基于 LangGraph 让 Agent 自动路由：
-   - 直接走模型自由问答
-   - 或走 LightRAG 做基于文档知识图谱的回答
+- 上传单个 PDF，解析后写入 LightRAG
+- 批量扫描 `data` 目录下的 PDF，导入 LightRAG 并抽取知识图谱
+
+## 核心流程
+
+1. 读取 PDF
+2. 用 `pypdf` 提取逐页文本
+3. 把文本送入 LightRAG
+4. LightRAG 在入库过程中完成实体关系抽取和图谱索引构建
+5. LangGraph 根据问题自动路由到：
+   - 直接模型问答
+   - LightRAG 图谱检索问答
 
 ## 项目结构
 
 ```text
 .
-├─ pyproject.toml
+├─ .env
 ├─ .env.example
+├─ data/
 ├─ src/
 │  └─ agentic_rag/
 │     ├─ app.py
@@ -26,181 +31,129 @@
 │     ├─ graph/
 │     │  └─ workflow.py
 │     └─ services/
+│        ├─ data_ingest.py
 │        ├─ lightrag_service.py
 │        ├─ llm.py
 │        └─ pdf_parser.py
 └─ tests/
-   └─ test_health.py
 ```
 
-## 技术选型
+## 环境变量
 
-- `LangGraph`
-  - 负责任务编排和 Agent 路由
-- `LightRAG`
-  - 负责文档索引、实体关系抽取、知识图谱检索
-- `FastAPI`
-  - 提供上传 PDF 与问答 API
-- `PyPDF`
-  - 负责 PDF 文本解析
-- `OpenAI / OpenAI-compatible API`
-  - 负责路由判定、直接问答，以及供 LightRAG 调用 LLM/Embedding
+项目默认按 OpenAI 兼容接口调用你的服务端模型。
 
-## 先决条件
+```env
+OPENAI_API_KEY=EMPTY
+OPENAI_BASE_URL=http://127.0.0.1:8000/v1
+AGENT_MODEL=qwen2.5-7B
+ROUTER_MODEL=qwen2.5-7B
+LIGHTRAG_LLM_MODEL=qwen2.5-7B
+LIGHTRAG_LLM_MODEL_PATH=/data/models/qwen2.5-7B
+LIGHTRAG_EMBED_MODEL=bge-m3
+LIGHTRAG_EMBED_MODEL_PATH=/data/models/bge-m3
+LIGHTRAG_EMBED_DIM=1024
+LIGHTRAG_WORKING_DIR=./data/lightrag
+LIGHTRAG_QUERY_MODE=hybrid
+PDF_SOURCE_DIR=./data
+```
 
-- Python `3.11+`
-- 可用的 OpenAI API Key，或兼容 OpenAI 接口的模型服务
+注意：
+
+- `PDF_SOURCE_DIR` 是批量导入 PDF 的目录
+- `LIGHTRAG_WORKING_DIR` 是 LightRAG 存图谱和索引数据的位置
+- `*_MODEL_PATH` 目前只是记录部署信息，现有代码实际调用的是 `OPENAI_BASE_URL + 模型名`
 
 ## 安装
-
-### 1. 创建虚拟环境
-
-Windows PowerShell:
 
 ```powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
-```
-
-### 2. 安装依赖
-
-```powershell
 pip install -e .[dev]
 ```
 
-### 3. 配置环境变量
+## 运行 API
 
 ```powershell
-Copy-Item .env.example .env
+python -m agentic_rag.main serve
 ```
 
-然后编辑 `.env`：
+默认地址：
 
-```env
-OPENAI_API_KEY=your_openai_api_key
-OPENAI_BASE_URL=
-AGENT_MODEL=gpt-4o-mini
-ROUTER_MODEL=gpt-4o-mini
-LIGHTRAG_LLM_MODEL=gpt-4o-mini
-LIGHTRAG_EMBED_MODEL=text-embedding-3-large
-LIGHTRAG_EMBED_DIM=3072
-LIGHTRAG_WORKING_DIR=./data/lightrag
-LIGHTRAG_QUERY_MODE=hybrid
+- `http://127.0.0.1:8000`
+- Swagger: `http://127.0.0.1:8000/docs`
+
+## 批量加载 `data` 目录 PDF 并抽取知识图谱
+
+先把 PDF 放进项目根目录下的 `data` 文件夹，例如：
+
+```text
+data/
+├─ report-a.pdf
+├─ report-b.pdf
+└─ contracts/
+   └─ contract-01.pdf
 ```
 
-如果你用的是兼容 OpenAI 的国内模型网关，也可以只改：
-
-```env
-OPENAI_BASE_URL=https://your-compatible-endpoint/v1
-```
-
-## 启动服务
+然后执行：
 
 ```powershell
-python -m agentic_rag.main
+python -m agentic_rag.main ingest-data-pdfs
 ```
 
-服务默认启动在 `http://127.0.0.1:8000`
+这条命令会：
 
-Swagger 文档：
+- 扫描 `PDF_SOURCE_DIR` 下所有 `.pdf`
+- 逐个解析文本
+- 调用 LightRAG `ainsert(...)`
+- 让 LightRAG 建立图谱与索引
 
-- `http://127.0.0.1:8000/docs`
+执行完成后会打印 JSON 结果，包含：
 
-## API 用法
+- 发现了多少个 PDF
+- 成功索引了多少个 PDF
+- 每个 PDF 的页数、字符数、估算 chunk 数
 
-### 1. 上传 PDF 并写入 LightRAG
+## API 方式导入
 
-```bash
-curl -X POST "http://127.0.0.1:8000/ingest/pdf" ^
-  -H "accept: application/json" ^
-  -H "Content-Type: multipart/form-data" ^
+### 上传单个 PDF
+
+```powershell
+curl -X POST "http://127.0.0.1:8000/ingest/pdf" `
+  -H "accept: application/json" `
+  -H "Content-Type: multipart/form-data" `
   -F "file=@sample.pdf"
 ```
 
-返回示例：
+### 批量导入 `data` 目录
 
-```json
-{
-  "file_name": "tmpabc.pdf",
-  "pages": 12,
-  "chunks_indexed": 18,
-  "characters": 21654,
-  "storage_dir": "data/lightrag"
-}
+```powershell
+curl -X POST "http://127.0.0.1:8000/ingest/data-pdfs"
 ```
 
-### 2. 发起问答
+## 问答
 
-```bash
-curl -X POST "http://127.0.0.1:8000/chat" ^
-  -H "Content-Type: application/json" ^
-  -d "{\"question\":\"这份PDF里提到的核心系统模块有哪些？\",\"force_route\":\"auto\"}"
+```powershell
+curl -X POST "http://127.0.0.1:8000/chat" `
+  -H "Content-Type: application/json" `
+  -d "{\"question\":\"这些PDF中有哪些核心实体及其关系？\",\"force_route\":\"lightrag\"}"
 ```
 
-返回示例：
+建议你在验证图谱效果时先把 `force_route` 设成 `lightrag`，这样能确保命中 LightRAG，而不是直接模型问答。
 
-```json
-{
-  "answer": "...",
-  "route": "lightrag",
-  "reason": "Question explicitly refers to document corpus."
-}
-```
+## PDF 解析位置
 
-## 路由逻辑
+PDF 解析逻辑在：
 
-当前 LangGraph 工作流很清晰：
+- [src/agentic_rag/services/pdf_parser.py](src/agentic_rag/services/pdf_parser.py)
 
-- `router`
-  - 用 LLM 判断问题该走 `direct` 还是 `lightrag`
-  - 如果请求里显式指定 `force_route`，则优先按用户指定执行
-- `direct_answer`
-  - 直接走聊天模型回答
-- `lightrag_answer`
-  - 走 LightRAG `aquery(...)`
+批量扫描 `data` 目录逻辑在：
 
-适合后续继续扩展成更完整的 Agent：
+- [src/agentic_rag/services/data_ingest.py](src/agentic_rag/services/data_ingest.py)
 
-- 增加 Web Search 节点
-- 增加 SQL / Tool 调用节点
-- 增加 Citation 后处理节点
-- 增加 会话记忆 与 多 Agent 协作
+API 入口在：
 
-## LightRAG 说明
+- [src/agentic_rag/app.py](src/agentic_rag/app.py)
 
-项目里已经对 LightRAG 做了两点兼容处理：
+命令行入口在：
 
-1. 初始化时执行 `initialize_storages()`
-2. 如果当前版本存在 `initialize_pipeline_status()`，则一并调用
-
-这是因为 LightRAG 的部分版本在文档入库前如果没有初始化 pipeline 状态，可能触发 `history_messages` 相关错误。
-
-## 建议的下一步增强
-
-- 接入 `Neo4jStorage`
-  - 便于图谱可视化与生产级图数据库管理
-- 加入文档切分策略
-  - 例如按标题、章节、页码做更细粒度 chunking
-- 增加引用与出处返回
-  - 让回答带来源页码/文件名
-- 支持批量目录导入 PDF
-- 增加前端上传与问答页面
-
-## 参考
-
-- LangGraph 官方文档: https://langchain-ai.github.io/langgraph/
-- LightRAG 官方仓库: https://github.com/HKUDS/LightRAG
-
-## 已知说明
-
-当前工作区里没有可直接执行的 Python 运行时，因此这次我完成的是：
-
-- 项目结构搭建
-- 核心代码实现
-- 环境变量与说明文档补齐
-
-你在本机装好 Python 后，就可以按上面的步骤直接安装运行。
-=======
-# craft_demo
-基于LangGraph搭建的MultiAgent+Agentic RAG项目
->>>>>>> f2d9fbbb28c630a02c4463182233461ba24fe199
+- [src/agentic_rag/main.py](src/agentic_rag/main.py)

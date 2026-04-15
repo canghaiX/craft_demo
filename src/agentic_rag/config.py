@@ -22,6 +22,7 @@ class Settings(BaseSettings):
     lightrag_embed_dim: int = Field(default=3072, alias="LIGHTRAG_EMBED_DIM")
     lightrag_working_dir: Path = Field(default=Path("./data/lightrag"), alias="LIGHTRAG_WORKING_DIR")
     lightrag_query_mode: str = Field(default="hybrid", alias="LIGHTRAG_QUERY_MODE")
+    pdf_source_dir: Path = Field(default=Path("./data"), alias="PDF_SOURCE_DIR")
 
     direct_qa_system_prompt: str = Field(
         default=(
@@ -44,4 +45,5 @@ class Settings(BaseSettings):
 def get_settings() -> Settings:
     settings = Settings()
     settings.lightrag_working_dir.mkdir(parents=True, exist_ok=True)
+    settings.pdf_source_dir.mkdir(parents=True, exist_ok=True)
     return settings

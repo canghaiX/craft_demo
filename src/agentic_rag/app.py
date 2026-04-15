@@ -6,7 +6,8 @@ from fastapi import FastAPI, File, HTTPException, Request, UploadFile
 
 from agentic_rag.config import get_settings
 from agentic_rag.graph.workflow import AgenticRAGWorkflow
-from agentic_rag.schemas import ChatRequest, ChatResponse, IngestResponse
+from agentic_rag.schemas import BatchIngestResponse, ChatRequest, ChatResponse, IngestResponse
+from agentic_rag.services.data_ingest import DataDirectoryIngestor
 from agentic_rag.services.lightrag_service import LightRAGService
 from agentic_rag.services.llm import LLMServices
 from agentic_rag.services.pdf_parser import PdfParser
@@ -55,6 +56,14 @@ def ensure_services(app: FastAPI) -> tuple[LightRAGService, AgenticRAGWorkflow]:
     return app.state.lightrag_service, app.state.workflow
 
 
+def build_data_ingestor(lightrag_service: LightRAGService) -> DataDirectoryIngestor:
+    return DataDirectoryIngestor(
+        settings=settings,
+        pdf_parser=pdf_parser,
+        lightrag_service=lightrag_service,
+    )
+
+
 @app.post("/ingest/pdf", response_model=IngestResponse)
 async def ingest_pdf(request: Request, file: UploadFile = File(...)) -> IngestResponse:
     if not file.filename or not file.filename.lower().endswith(".pdf"):
@@ -80,6 +89,16 @@ async def ingest_pdf(request: Request, file: UploadFile = File(...)) -> IngestRe
         raise HTTPException(status_code=400, detail=str(exc)) from exc
     finally:
         temp_path.unlink(missing_ok=True)
+
+
+@app.post("/ingest/data-pdfs", response_model=BatchIngestResponse)
+async def ingest_data_pdfs(request: Request) -> BatchIngestResponse:
+    try:
+        lightrag_service, _ = ensure_services(request.app)
+        ingestor = build_data_ingestor(lightrag_service)
+        return await ingestor.ingest_directory()
+    except (RuntimeError, ValueError) as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
 
 
 @app.post("/chat", response_model=ChatResponse)
