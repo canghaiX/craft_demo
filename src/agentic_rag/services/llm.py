@@ -7,6 +7,9 @@ from agentic_rag.schemas import RouteDecision
 
 class LLMServices:
     def __init__(self, settings: Settings) -> None:
+        if not settings.openai_api_key:
+            raise RuntimeError("OPENAI_API_KEY is required before calling LLM-based routes.")
+
         common_kwargs = {
             "api_key": settings.openai_api_key,
             "base_url": settings.openai_base_url,

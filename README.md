@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Agentic RAG with LangGraph + LightRAG
 
 这是一个从零搭好的 Agentic RAG 项目骨架，目标是满足这条链路：
@@ -199,3 +200,7 @@ curl -X POST "http://127.0.0.1:8000/chat" ^
 - 环境变量与说明文档补齐
 
 你在本机装好 Python 后，就可以按上面的步骤直接安装运行。
+=======
+# craft_demo
+基于LangGraph搭建的MultiAgent+Agentic RAG项目
+>>>>>>> f2d9fbbb28c630a02c4463182233461ba24fe199

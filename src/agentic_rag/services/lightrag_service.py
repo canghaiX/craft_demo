@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from pathlib import Path
 from typing import Any
 
 from agentic_rag.config import Settings
@@ -8,6 +7,9 @@ from agentic_rag.config import Settings
 
 class LightRAGService:
     def __init__(self, settings: Settings) -> None:
+        if not settings.openai_api_key:
+            raise RuntimeError("OPENAI_API_KEY is required before using LightRAG.")
+
         self.settings = settings
         self._rag: Any | None = None
 
@@ -74,10 +76,8 @@ class LightRAGService:
         if not text.strip():
             raise ValueError("Parsed PDF text is empty, nothing can be indexed.")
 
-        if file_path:
-            await rag.ainsert([text], file_paths=[file_path])
-        else:
-            await rag.ainsert(text)
+        payload = text if not file_path else f"[SOURCE: {file_path}]\n\n{text}"
+        await rag.ainsert(payload)
 
         # We return a simple estimate because LightRAG does not expose chunk count consistently.
         return max(1, len(text) // 1200)
