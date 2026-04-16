@@ -41,7 +41,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="Agentic LightRAG 演示服务",
     version="0.1.0",
-    description="基于 LangGraph 的 Agentic RAG 服务，支持 PDF 导入与 LightRAG 知识图谱抽取。",
+    description="基于 LangGraph 的 Agentic RAG 服务，支持 PDF 导入、标准三元组抽取与基于三元组的问答。",
     lifespan=lifespan,
 )
 
@@ -81,7 +81,7 @@ async def ingest_pdf(request: Request, file: UploadFile = File(...)) -> IngestRe
     # 上传单个 PDF 的接口：
     # 1. 临时保存上传文件
     # 2. 解析文本
-    # 3. 交给 LightRAG 建图和建索引
+    # 3. 直接抽取标准三元组并落盘
     if not file.filename or not file.filename.lower().endswith(".pdf"):
         raise HTTPException(status_code=400, detail="请上传 PDF 文件。")
 
