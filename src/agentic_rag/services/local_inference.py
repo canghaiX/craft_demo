@@ -15,12 +15,12 @@ from agentic_rag.schemas import RouteDecision
 
 class LocalGenerator:
     def __init__(self, model_path: str) -> None:
-        self._ensure_path(model_path, "LLM")
+        self._ensure_path(model_path, "大语言模型")
         try:
             from transformers import AutoModelForCausalLM, AutoTokenizer
         except ImportError as exc:
             raise RuntimeError(
-                "Local LLM inference dependencies are missing. Install `transformers`, `accelerate`, and `torch`."
+                "缺少本地 LLM 推理依赖，请先安装 `transformers`、`accelerate` 和 `torch`。"
             ) from exc
 
         self.tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
@@ -34,7 +34,7 @@ class LocalGenerator:
     @staticmethod
     def _ensure_path(model_path: str, model_type: str) -> None:
         if not Path(model_path).exists():
-            raise RuntimeError(f"{model_type} model path does not exist: {model_path}")
+            raise RuntimeError(f"{model_type} 模型路径不存在：{model_path}")
 
     def generate(
         self,
@@ -66,12 +66,12 @@ class LocalGenerator:
 
 class LocalEmbedder:
     def __init__(self, model_path: str) -> None:
-        LocalGenerator._ensure_path(model_path, "Embedding")
+        LocalGenerator._ensure_path(model_path, "向量模型")
         try:
             from sentence_transformers import SentenceTransformer
         except ImportError as exc:
             raise RuntimeError(
-                "Local embedding dependencies are missing. Install `sentence-transformers` and `torch`."
+                "缺少本地向量模型依赖，请先安装 `sentence-transformers` 和 `torch`。"
             ) from exc
 
         self.model = SentenceTransformer(model_path, trust_remote_code=True)
@@ -88,7 +88,7 @@ class LocalEmbedder:
 class RemoteInferenceBackend:
     def __init__(self, settings: Settings) -> None:
         if not settings.openai_base_url:
-            raise RuntimeError("OPENAI_BASE_URL is required when MODEL_BACKEND is set to `vllm`.")
+            raise RuntimeError("当 MODEL_BACKEND 设置为 `vllm` 时，必须提供 OPENAI_BASE_URL。")
 
         self.settings = settings
         self.llm_client = AsyncOpenAI(
@@ -206,13 +206,13 @@ class LocalInferenceService:
 
     async def route_question(self, question: str) -> RouteDecision:
         if any(keyword in question.lower() for keyword in ["pdf", "文档", "资料", "手册", "合同"]):
-            return RouteDecision(route="lightrag", reason="Question explicitly refers to document corpus.")
+            return RouteDecision(route="lightrag", reason="问题明确提到了文档语料。")
 
         user_prompt = (
-            "Question:\n"
+            "问题：\n"
             f"{question}\n\n"
-            "Return strict JSON with keys `route` and `reason`.\n"
-            "Valid routes are `direct` or `lightrag`."
+            "请严格返回 JSON，并包含 `route` 和 `reason` 两个键。\n"
+            "可选路由值只能是 `direct` 或 `lightrag`。"
         )
         response = await self.generate(
             self.settings.router_system_prompt,
@@ -237,7 +237,7 @@ class LocalInferenceService:
             try:
                 payload = json.loads(match.group(0))
                 route = payload.get("route", "direct")
-                reason = payload.get("reason", "Parsed from local router model.")
+                reason = payload.get("reason", "已从本地路由模型的返回结果中解析。")
                 if route in {"direct", "lightrag"}:
                     return RouteDecision(route=route, reason=str(reason))
             except json.JSONDecodeError:
@@ -245,8 +245,8 @@ class LocalInferenceService:
 
         lowered = response.lower()
         if "lightrag" in lowered:
-            return RouteDecision(route="lightrag", reason=response.strip() or "Router selected lightrag.")
-        return RouteDecision(route="direct", reason=response.strip() or "Router selected direct.")
+            return RouteDecision(route="lightrag", reason=response.strip() or "路由模型选择了 lightrag。")
+        return RouteDecision(route="direct", reason=response.strip() or "路由模型选择了 direct。")
 
 
 @lru_cache(maxsize=1)

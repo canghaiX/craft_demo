@@ -29,13 +29,13 @@ def run() -> None:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Agentic RAG service and ingestion CLI.")
+    parser = argparse.ArgumentParser(description="Agentic RAG 服务与数据导入命令行工具。")
     parser.add_argument(
         "command",
         nargs="?",
         default="serve",
         choices=["serve", "ingest-data-pdfs"],
-        help="`serve` starts the API, `ingest-data-pdfs` loads PDFs from PDF_SOURCE_DIR into LightRAG.",
+        help="`serve` 启动 API 服务，`ingest-data-pdfs` 会把 PDF_SOURCE_DIR 中的 PDF 导入 LightRAG。",
     )
     args = parser.parse_args()
 

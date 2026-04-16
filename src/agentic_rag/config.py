@@ -38,16 +38,15 @@ class Settings(BaseSettings):
 
     direct_qa_system_prompt: str = Field(
         default=(
-            "You are a helpful assistant. Answer directly when the user asks a general question. "
-            "If you are missing document-specific evidence, say that clearly."
+            "你是一名有帮助的智能助手。用户提出通用问题时请直接回答；"
+            "如果缺少文档中的特定证据，也请明确说明。"
         ),
         alias="DIRECT_QA_SYSTEM_PROMPT",
     )
     router_system_prompt: str = Field(
         default=(
-            "Route to `lightrag` when the question depends on uploaded PDFs, internal facts, "
-            "citations, or relationships between entities in the corpus. Route to `direct` for "
-            "general knowledge, brainstorming, writing help, or when no corpus grounding is needed."
+            "如果问题依赖已上传 PDF、文档内部事实、引用依据或语料中的实体关系，请路由到 `lightrag`。"
+            "如果问题属于通用知识、头脑风暴、写作帮助，或不需要语料支撑，请路由到 `direct`。"
         ),
         alias="ROUTER_SYSTEM_PROMPT",
     )

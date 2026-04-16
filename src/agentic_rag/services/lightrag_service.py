@@ -18,7 +18,7 @@ class LightRAGService:
             from lightrag.utils import EmbeddingFunc
         except ImportError as exc:
             raise RuntimeError(
-                "LightRAG dependencies are not installed. Run `pip install -e .` first."
+                "尚未安装 LightRAG 依赖，请先执行 `pip install -e .`。"
             ) from exc
 
         async def llm_model_func(
@@ -33,10 +33,10 @@ class LightRAGService:
                     f"{message.get('role', 'user')}: {message.get('content', '')}"
                     for message in history_messages
                 ]
-                history_text = "\n\nConversation history:\n" + "\n".join(history_lines)
+                history_text = "\n\n对话历史：\n" + "\n".join(history_lines)
             user_prompt = f"{history_text}\n\n{prompt}".strip()
             return await self.inference_service.generate(
-                system_prompt or "You are a helpful assistant.",
+                system_prompt or "你是一名有帮助的智能助手。",
                 user_prompt,
                 max_new_tokens=int(kwargs.get("max_tokens", 512)),
                 temperature=float(kwargs.get("temperature", 0.1)),
@@ -75,7 +75,7 @@ class LightRAGService:
     async def ingest_document(self, text: str, file_path: str | None = None) -> int:
         rag = await self.get_rag()
         if not text.strip():
-            raise ValueError("Parsed PDF text is empty, nothing can be indexed.")
+            raise ValueError("解析后的 PDF 文本为空，无法建立索引。")
 
         payload = text if not file_path else f"[SOURCE: {file_path}]\n\n{text}"
         await rag.ainsert(payload)
@@ -95,8 +95,8 @@ class LightRAGService:
             return answer
 
         return (
-            "LightRAG routed the request correctly, but the query stage did not produce a final answer. "
-            "The knowledge graph appears to exist, but this question returned an empty result."
+            "LightRAG 已正确命中，但查询阶段没有产出最终答案。"
+            "当前知识图谱看起来已经存在，不过这个问题返回了空结果。"
         )
 
     def _normalize_query_result(self, result: Any) -> str | None:

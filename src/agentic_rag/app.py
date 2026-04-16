@@ -33,16 +33,16 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Agentic LightRAG Demo",
+    title="Agentic LightRAG 演示服务",
     version="0.1.0",
-    description="LangGraph-based Agentic RAG service with PDF ingestion and LightRAG knowledge graph extraction.",
+    description="基于 LangGraph 的 Agentic RAG 服务，支持 PDF 导入与 LightRAG 知识图谱抽取。",
     lifespan=lifespan,
 )
 
 
 @app.get("/health")
 async def health() -> dict[str, str]:
-    return {"status": "ok"}
+    return {"status": "正常"}
 
 
 def ensure_services(app: FastAPI) -> tuple[LightRAGService, AgenticRAGWorkflow]:
@@ -68,7 +68,7 @@ def build_data_ingestor(lightrag_service: LightRAGService) -> DataDirectoryInges
 @app.post("/ingest/pdf", response_model=IngestResponse)
 async def ingest_pdf(request: Request, file: UploadFile = File(...)) -> IngestResponse:
     if not file.filename or not file.filename.lower().endswith(".pdf"):
-        raise HTTPException(status_code=400, detail="Please upload a PDF file.")
+        raise HTTPException(status_code=400, detail="请上传 PDF 文件。")
 
     suffix = Path(file.filename).suffix or ".pdf"
     with NamedTemporaryFile(delete=False, suffix=suffix) as tmp:

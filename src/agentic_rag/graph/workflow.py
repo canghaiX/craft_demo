@@ -42,9 +42,9 @@ class AgenticRAGWorkflow:
     async def _router_node(self, state: AgentState) -> AgentState:
         forced = state.get("forced_route", "auto")
         if forced == "direct":
-            decision = RouteDecision(route="direct", reason="Forced by request.")
+            decision = RouteDecision(route="direct", reason="已按请求强制走 direct。")
         elif forced == "lightrag":
-            decision = RouteDecision(route="lightrag", reason="Forced by request.")
+            decision = RouteDecision(route="lightrag", reason="已按请求强制走 lightrag。")
         else:
             decision = await self.llm_services.route_question(state["question"])
 
