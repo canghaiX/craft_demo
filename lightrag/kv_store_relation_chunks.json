@@ -1,0 +1,4181 @@
+{
+  "Class 300 Flanges<SEP>Table II-11": {
+    "chunk_ids": [
+      "chunk-1d1489d3ef80438a8abfd7382cf31328"
+    ],
+    "count": 1,
+    "create_time": 1776255088,
+    "update_time": 1776255088,
+    "_id": "Class 300 Flanges<SEP>Table II-11"
+  },
+  "Class 300 Flanged Fittings<SEP>Table II-12": {
+    "chunk_ids": [
+      "chunk-1d1489d3ef80438a8abfd7382cf31328"
+    ],
+    "count": 1,
+    "create_time": 1776255088,
+    "update_time": 1776255088,
+    "_id": "Class 300 Flanged Fittings<SEP>Table II-12"
+  },
+  "American Society of Mechanical Engineers<SEP>Committee Roster": {
+    "chunk_ids": [
+      "chunk-cbb1b80fd9ff05e7ace84ca48c417682"
+    ],
+    "count": 1,
+    "create_time": 1776255088,
+    "update_time": 1776255088,
+    "_id": "American Society of Mechanical Engineers<SEP>Committee Roster"
+  },
+  "ASME B16.5-2013<SEP>Class 300 Flanges": {
+    "chunk_ids": [
+      "chunk-1d1489d3ef80438a8abfd7382cf31328",
+      "chunk-bf07866fe1fa923d6c76315571aba601"
+    ],
+    "count": 2,
+    "create_time": 1776255088,
+    "update_time": 1776255088,
+    "_id": "ASME B16.5-2013<SEP>Class 300 Flanges"
+  },
+  "Reducing Base Elbows<SEP>base specification": {
+    "chunk_ids": [
+      "chunk-1c16e04b6fef5dddbccafe35258da63d"
+    ],
+    "count": 1,
+    "create_time": 1776255088,
+    "update_time": 1776255088,
+    "_id": "Reducing Base Elbows<SEP>base specification"
+  },
+  "Plain Faced Bases<SEP>base type": {
+    "chunk_ids": [
+      "chunk-1c16e04b6fef5dddbccafe35258da63d"
+    ],
+    "count": 1,
+    "create_time": 1776255088,
+    "update_time": 1776255088,
+    "_id": "Plain Faced Bases<SEP>base type"
+  },
+  "ASME B16.5-2013<SEP>IHS": {
+    "chunk_ids": [
+      "chunk-1d1489d3ef80438a8abfd7382cf31328",
+      "chunk-cbb1b80fd9ff05e7ace84ca48c417682",
+      "chunk-e9b794842bd12c52a5bc301b6368bc29",
+      "chunk-9041215fae61d5ca6576cebcac22159a",
+      "chunk-7ea1b2e76d1f000d5569b9486b9e5ac4",
+      "chunk-0c75777ba975b903730751f407a25e2d",
+      "chunk-55e62fdaeb2f89ecf30d7410c3be1d43",
+      "chunk-1910573fe8bfeb958d0a6de74f9ebc46",
+      "chunk-5d2c522c8854e3aa2e96dab1c0fb5599",
+      "chunk-a560aa3224b393530e878cd8da41ea17",
+      "chunk-10054c6a90c7e34cf9ec3260463671fc",
+      "chunk-dd33d2f4c8c434346d6c47a62b2e5ba9",
+      "chunk-6f227010b6773dd7f5144203f819d843",
+      "chunk-29a21b64670fd3044048fc8ebefbb64a",
+      "chunk-2ed9b2372fef7aff90398748f2f51ee6",
+      "chunk-1b4364e68825dbe4e5d2b1711332b9ba",
+      "chunk-40e3ee6e69fca185c24c6e737dde046e",
+      "chunk-05f0bcb59476ec9c3e973721c57f3c96",
+      "chunk-8586cf183f28b415d1f66f1d4a4a3562",
+      "chunk-7fba984e9e07711203662e99a23bbc3f",
+      "chunk-6b2ad87c358f78ef6fe44833b9f86e79"
+    ],
+    "count": 21,
+    "create_time": 1776255088,
+    "update_time": 1776255088,
+    "_id": "ASME B16.5-2013<SEP>IHS"
+  },
+  "Flange Edge-to-Flange Edge Dimensions for Largest Opening<SEP>dimension calculation": {
+    "chunk_ids": [
+      "chunk-1c16e04b6fef5dddbccafe35258da63d"
+    ],
+    "count": 1,
+    "create_time": 1776255088,
+    "update_time": 1776255088,
+    "_id": "Flange Edge-to-Flange Edge Dimensions for Largest Opening<SEP>dimension calculation"
+  },
+  "Ring Joint Groove Dimensions<SEP>groove specification": {
+    "chunk_ids": [
+      "chunk-1c16e04b6fef5dddbccafe35258da63d"
+    ],
+    "count": 1,
+    "create_time": 1776255088,
+    "update_time": 1776255088,
+    "_id": "Ring Joint Groove Dimensions<SEP>groove specification"
+  },
+  "ASME B16.5-2013<SEP>American Society of Mechanical Engineers": {
+    "chunk_ids": [
+      "chunk-cbb1b80fd9ff05e7ace84ca48c417682"
+    ],
+    "count": 1,
+    "create_time": 1776255091,
+    "update_time": 1776255091,
+    "_id": "ASME B16.5-2013<SEP>American Society of Mechanical Engineers"
+  },
+  "ASME International<SEP>IHS": {
+    "chunk_ids": [
+      "chunk-a9946419182fbf86ef5c2cfb73d02e31",
+      "chunk-9d852b8bef4bf5e1b06d5eca4665efb0",
+      "chunk-656b6734cce47f14e81f0e8c31c77d35",
+      "chunk-8689b4c902ee495b0f8e912c7a0a9582",
+      "chunk-eea5d61c1fb93bf28891cf39070a27e6"
+    ],
+    "count": 5,
+    "create_time": 1776255091,
+    "update_time": 1776255091,
+    "_id": "ASME International<SEP>IHS"
+  },
+  "ASME B16.5-2013<SEP>ASME International": {
+    "chunk_ids": [
+      "chunk-e9b794842bd12c52a5bc301b6368bc29",
+      "chunk-a9946419182fbf86ef5c2cfb73d02e31",
+      "chunk-5a689ccf0ef54967ad245055a931e46c",
+      "chunk-8b377026b72a1e95d5ea6338cb04cf11",
+      "chunk-9041215fae61d5ca6576cebcac22159a",
+      "chunk-7ea1b2e76d1f000d5569b9486b9e5ac4",
+      "chunk-79c2efe0137b0bbc530c88180a7f0d32",
+      "chunk-0c75777ba975b903730751f407a25e2d",
+      "chunk-eba111d15c9ea294f7b9b8b23ba5ca79",
+      "chunk-55e62fdaeb2f89ecf30d7410c3be1d43",
+      "chunk-1910573fe8bfeb958d0a6de74f9ebc46",
+      "chunk-e4ca239f2a2d5f7e2ab87708ca342046",
+      "chunk-bf07866fe1fa923d6c76315571aba601",
+      "chunk-5d2c522c8854e3aa2e96dab1c0fb5599",
+      "chunk-a560aa3224b393530e878cd8da41ea17",
+      "chunk-10054c6a90c7e34cf9ec3260463671fc",
+      "chunk-234a26e45dbbb17894c2e0785638866e",
+      "chunk-dd33d2f4c8c434346d6c47a62b2e5ba9",
+      "chunk-6f227010b6773dd7f5144203f819d843",
+      "chunk-29a21b64670fd3044048fc8ebefbb64a",
+      "chunk-2ed9b2372fef7aff90398748f2f51ee6",
+      "chunk-1b4364e68825dbe4e5d2b1711332b9ba",
+      "chunk-7dfe4f352c161cf1b3a31d868ce8aec3",
+      "chunk-b198cbe23ec845253cfd2861d7fc5756",
+      "chunk-40e3ee6e69fca185c24c6e737dde046e",
+      "chunk-2b58a0b8fcb69d1ec44e63ba6135c5ce",
+      "chunk-05f0bcb59476ec9c3e973721c57f3c96",
+      "chunk-8586cf183f28b415d1f66f1d4a4a3562",
+      "chunk-d659b8d39a7ddb50dd478cba4c619fa3",
+      "chunk-7fba984e9e07711203662e99a23bbc3f",
+      "chunk-eea5d61c1fb93bf28891cf39070a27e6",
+      "chunk-6962408b774fe5ab78bfedcf807dfe29",
+      "chunk-6b2ad87c358f78ef6fe44833b9f86e79"
+    ],
+    "count": 33,
+    "create_time": 1776255091,
+    "update_time": 1776255091,
+    "_id": "ASME B16.5-2013<SEP>ASME International"
+  },
+  "Center- to-Flange Edge<SEP>Flange Edge- to-Flange Edge": {
+    "chunk_ids": [
+      "chunk-4797fefc55d99753aacd5d36c1d642f3"
+    ],
+    "count": 1,
+    "create_time": 1776255091,
+    "update_time": 1776255091,
+    "_id": "Center- to-Flange Edge<SEP>Flange Edge- to-Flange Edge"
+  },
+  "Backing Ring<SEP>Fig. 9": {
+    "chunk_ids": [
+      "chunk-9897cde782cd9c636d94d997a0270bee"
+    ],
+    "count": 1,
+    "create_time": 1776255091,
+    "update_time": 1776255091,
+    "_id": "Backing Ring<SEP>Fig. 9"
+  },
+  "Backing Ring<SEP>Fig. 10": {
+    "chunk_ids": [
+      "chunk-9897cde782cd9c636d94d997a0270bee"
+    ],
+    "count": 1,
+    "create_time": 1776255091,
+    "update_time": 1776255091,
+    "_id": "Backing Ring<SEP>Fig. 10"
+  },
+  "Fig. 11<SEP>Thread Length": {
+    "chunk_ids": [
+      "chunk-9897cde782cd9c636d94d997a0270bee"
+    ],
+    "count": 1,
+    "create_time": 1776255091,
+    "update_time": 1776255091,
+    "_id": "Fig. 11<SEP>Thread Length"
+  },
+  "Fig. 12<SEP>Socket Welding": {
+    "chunk_ids": [
+      "chunk-9897cde782cd9c636d94d997a0270bee"
+    ],
+    "count": 1,
+    "create_time": 1776255091,
+    "update_time": 1776255091,
+    "_id": "Fig. 12<SEP>Socket Welding"
+  },
+  "A182 Gr. F12 Cl. 2<SEP>Group 1.17 Materials": {
+    "chunk_ids": [
+      "chunk-a08593e66ea8a306e72125a335a33901"
+    ],
+    "count": 1,
+    "create_time": 1776255091,
+    "update_time": 1776255091,
+    "_id": "A182 Gr. F12 Cl. 2<SEP>Group 1.17 Materials"
+  },
+  "A182 Gr. F5<SEP>Group 1.17 Materials": {
+    "chunk_ids": [
+      "chunk-a08593e66ea8a306e72125a335a33901"
+    ],
+    "count": 1,
+    "create_time": 1776255092,
+    "update_time": 1776255092,
+    "_id": "A182 Gr. F5<SEP>Group 1.17 Materials"
+  },
+  "A182 Gr. F92<SEP>Group 1.18 Materials": {
+    "chunk_ids": [
+      "chunk-a08593e66ea8a306e72125a335a33901"
+    ],
+    "count": 1,
+    "create_time": 1776255092,
+    "update_time": 1776255092,
+    "_id": "A182 Gr. F92<SEP>Group 1.18 Materials"
+  },
+  "Face Long Radius Elbow<SEP>artifact": {
+    "chunk_ids": [
+      "chunk-f7d58ff493a61d09e2e197daaae3dce3"
+    ],
+    "count": 1,
+    "create_time": 1776255092,
+    "update_time": 1776255092,
+    "_id": "Face Long Radius Elbow<SEP>artifact"
+  },
+  "Face Lateral<SEP>artifact": {
+    "chunk_ids": [
+      "chunk-f7d58ff493a61d09e2e197daaae3dce3"
+    ],
+    "count": 1,
+    "create_time": 1776255092,
+    "update_time": 1776255092,
+    "_id": "Face Lateral<SEP>artifact"
+  },
+  "Face Reducer<SEP>artifact": {
+    "chunk_ids": [
+      "chunk-f7d58ff493a61d09e2e197daaae3dce3"
+    ],
+    "count": 1,
+    "create_time": 1776255092,
+    "update_time": 1776255092,
+    "_id": "Face Reducer<SEP>artifact"
+  },
+  "True Y<SEP>concept": {
+    "chunk_ids": [
+      "chunk-f7d58ff493a61d09e2e197daaae3dce3"
+    ],
+    "count": 1,
+    "create_time": 1776255092,
+    "update_time": 1776255092,
+    "_id": "True Y<SEP>concept"
+  },
+  "Flange<SEP>artifact": {
+    "chunk_ids": [
+      "chunk-f7d58ff493a61d09e2e197daaae3dce3"
+    ],
+    "count": 1,
+    "create_time": 1776255092,
+    "update_time": 1776255092,
+    "_id": "Flange<SEP>artifact"
+  },
+  "45-deg Elbow<SEP>artifact": {
+    "chunk_ids": [
+      "chunk-f7d58ff493a61d09e2e197daaae3dce3"
+    ],
+    "count": 1,
+    "create_time": 1776255092,
+    "update_time": 1776255092,
+    "_id": "45-deg Elbow<SEP>artifact"
+  },
+  "425°C<SEP>Graphite": {
+    "chunk_ids": [
+      "chunk-c01da93e68a62ebd162469f786517eea"
+    ],
+    "count": 1,
+    "create_time": 1776255092,
+    "update_time": 1776255092,
+    "_id": "425°C<SEP>Graphite"
+  },
+  "425°C<SEP>Steel": {
+    "chunk_ids": [
+      "chunk-c01da93e68a62ebd162469f786517eea"
+    ],
+    "count": 1,
+    "create_time": 1776255092,
+    "update_time": 1776255092,
+    "_id": "425°C<SEP>Steel"
+  },
+  "475°C<SEP>Steel": {
+    "chunk_ids": [
+      "chunk-c01da93e68a62ebd162469f786517eea"
+    ],
+    "count": 1,
+    "create_time": 1776255092,
+    "update_time": 1776255092,
+    "_id": "475°C<SEP>Steel"
+  },
+  "500°C<SEP>Steel": {
+    "chunk_ids": [
+      "chunk-c01da93e68a62ebd162469f786517eea"
+    ],
+    "count": 1,
+    "create_time": 1776255092,
+    "update_time": 1776255092,
+    "_id": "500°C<SEP>Steel"
+  },
+  "538°C<SEP>Steel": {
+    "chunk_ids": [
+      "chunk-c01da93e68a62ebd162469f786517eea"
+    ],
+    "count": 1,
+    "create_time": 1776255092,
+    "update_time": 1776255092,
+    "_id": "538°C<SEP>Steel"
+  },
+  "ASME B16.5-2013<SEP>Class 150": {
+    "chunk_ids": [
+      "chunk-e9b794842bd12c52a5bc301b6368bc29",
+      "chunk-037e87f32d950a93e4afb57afbe8ac81"
+    ],
+    "count": 2,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "ASME B16.5-2013<SEP>Class 150"
+  },
+  "1,000°F<SEP>carbon content": {
+    "chunk_ids": [
+      "chunk-4934fb4fb5cf186041d1e2a713f09ddd"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "1,000°F<SEP>carbon content"
+  },
+  "ASME B16.5-2013<SEP>Class 300": {
+    "chunk_ids": [
+      "chunk-e9b794842bd12c52a5bc301b6368bc29"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "ASME B16.5-2013<SEP>Class 300"
+  },
+  "850°F<SEP>carbon content": {
+    "chunk_ids": [
+      "chunk-4934fb4fb5cf186041d1e2a713f09ddd"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "850°F<SEP>carbon content"
+  },
+  "A182 Gr. F9<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-b937bddf82b8870beb3e4bea6dbdce03",
+      "chunk-c8f0d95695be35b4525eefd339a3b500"
+    ],
+    "count": 2,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "A182 Gr. F9<SEP>ASME B16.5-2013"
+  },
+  "800°F<SEP>carbon content": {
+    "chunk_ids": [
+      "chunk-4934fb4fb5cf186041d1e2a713f09ddd"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "800°F<SEP>carbon content"
+  },
+  "A182 Gr. F91<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-b937bddf82b8870beb3e4bea6dbdce03"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "A182 Gr. F91<SEP>ASME B16.5-2013"
+  },
+  "1,050°F<SEP>carbon content": {
+    "chunk_ids": [
+      "chunk-4934fb4fb5cf186041d1e2a713f09ddd"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "1,050°F<SEP>carbon content"
+  },
+  "ASME B16.5-2013<SEP>ASTM A217": {
+    "chunk_ids": [
+      "chunk-b937bddf82b8870beb3e4bea6dbdce03",
+      "chunk-a08593e66ea8a306e72125a335a33901",
+      "chunk-c8f0d95695be35b4525eefd339a3b500"
+    ],
+    "count": 3,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "ASME B16.5-2013<SEP>ASTM A217"
+  },
+  "1,100°F<SEP>carbon content": {
+    "chunk_ids": [
+      "chunk-4934fb4fb5cf186041d1e2a713f09ddd"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "1,100°F<SEP>carbon content"
+  },
+  "Bevel for Outside Thickness<SEP>figure": {
+    "chunk_ids": [
+      "chunk-92cbd143b7fb7a0985b6ba383ca2f7ed"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "Bevel for Outside Thickness<SEP>figure"
+  },
+  "ASME B16.5-2013<SEP>Ring Joint": {
+    "chunk_ids": [
+      "chunk-5a2d9b2e3cbcac399e69cd4ddd026d10",
+      "chunk-76864809d8f49cc522affb8d29d2289a"
+    ],
+    "count": 2,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "ASME B16.5-2013<SEP>Ring Joint"
+  },
+  "1,150°F<SEP>carbon content": {
+    "chunk_ids": [
+      "chunk-4934fb4fb5cf186041d1e2a713f09ddd"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "1,150°F<SEP>carbon content"
+  },
+  "Bevel for Inside Thickness<SEP>figure": {
+    "chunk_ids": [
+      "chunk-92cbd143b7fb7a0985b6ba383ca2f7ed"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "Bevel for Inside Thickness<SEP>figure"
+  },
+  "1,200°F<SEP>carbon content": {
+    "chunk_ids": [
+      "chunk-4934fb4fb5cf186041d1e2a713f09ddd"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "1,200°F<SEP>carbon content"
+  },
+  "ASME B16.5-2013<SEP>Group 1.2 Materials": {
+    "chunk_ids": [
+      "chunk-c01da93e68a62ebd162469f786517eea"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "ASME B16.5-2013<SEP>Group 1.2 Materials"
+  },
+  "Bevel for Combined Thickness<SEP>figure": {
+    "chunk_ids": [
+      "chunk-92cbd143b7fb7a0985b6ba383ca2f7ed"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "Bevel for Combined Thickness<SEP>figure"
+  },
+  "1,250°F<SEP>carbon content": {
+    "chunk_ids": [
+      "chunk-4934fb4fb5cf186041d1e2a713f09ddd"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "1,250°F<SEP>carbon content"
+  },
+  "Class 300 Flanges<SEP>bolt hole template": {
+    "chunk_ids": [
+      "chunk-79c64f1efd29986d7f72185f69bc53da"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "Class 300 Flanges<SEP>bolt hole template"
+  },
+  "Class 400 Flanges<SEP>drilling templates": {
+    "chunk_ids": [
+      "chunk-79c64f1efd29986d7f72185f69bc53da"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "Class 400 Flanges<SEP>drilling templates"
+  },
+  "Round Base<SEP>compression support": {
+    "chunk_ids": [
+      "chunk-79c64f1efd29986d7f72185f69bc53da"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "Round Base<SEP>compression support"
+  },
+  "Straight Hub Welding Flanges<SEP>figure": {
+    "chunk_ids": [
+      "chunk-92cbd143b7fb7a0985b6ba383ca2f7ed"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "Straight Hub Welding Flanges<SEP>figure"
+  },
+  "Class 600 Dimensions<SEP>dimension requirements": {
+    "chunk_ids": [
+      "chunk-79c64f1efd29986d7f72185f69bc53da"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "Class 600 Dimensions<SEP>dimension requirements"
+  },
+  "Bevel<SEP>Wall Thicknesses": {
+    "chunk_ids": [
+      "chunk-6b12c53c23345ed4fe1a5bec6911cbcd"
+    ],
+    "count": 1,
+    "create_time": 1776255093,
+    "update_time": 1776255093,
+    "_id": "Bevel<SEP>Wall Thicknesses"
+  },
+  "Method of Designating Outlets of Reducing Fittings in Specifications<SEP>figure": {
+    "chunk_ids": [
+      "chunk-92cbd143b7fb7a0985b6ba383ca2f7ed"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Method of Designating Outlets of Reducing Fittings in Specifications<SEP>figure"
+  },
+  "Backing Ring<SEP>Inside Contour": {
+    "chunk_ids": [
+      "chunk-6b12c53c23345ed4fe1a5bec6911cbcd"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Backing Ring<SEP>Inside Contour"
+  },
+  "Connection Tapping<SEP>Thread Length": {
+    "chunk_ids": [
+      "chunk-6b12c53c23345ed4fe1a5bec6911cbcd"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Connection Tapping<SEP>Thread Length"
+  },
+  "Connections<SEP>Socket Welding": {
+    "chunk_ids": [
+      "chunk-6b12c53c23345ed4fe1a5bec6911cbcd"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Connections<SEP>Socket Welding"
+  },
+  "End Flange Facings and Their Relationship to Flange Thickness and Center-to-End and End-to-End Dimensions<SEP>figure": {
+    "chunk_ids": [
+      "chunk-92cbd143b7fb7a0985b6ba383ca2f7ed"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "End Flange Facings and Their Relationship to Flange Thickness and Center-to-End and End-to-End Dimensions<SEP>figure"
+  },
+  "ASME B16.5-2013<SEP>Ring-Joint Facings": {
+    "chunk_ids": [
+      "chunk-b74fa9e1989b40d422a2e7a6a04ea958"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "ASME B16.5-2013<SEP>Ring-Joint Facings"
+  },
+  "C–Si<SEP>material": {
+    "chunk_ids": [
+      "chunk-c220ebb09e1eeb84ca774f0d3cd2ccf6"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "C–Si<SEP>material"
+  },
+  "ASME B16.5-2013<SEP>Dimensions": {
+    "chunk_ids": [
+      "chunk-b74fa9e1989b40d422a2e7a6a04ea958"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "ASME B16.5-2013<SEP>Dimensions"
+  },
+  "ASME B16.5-2013<SEP>Pressure Rating Classes": {
+    "chunk_ids": [
+      "chunk-b74fa9e1989b40d422a2e7a6a04ea958"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "ASME B16.5-2013<SEP>Pressure Rating Classes"
+  },
+  "A515 Gr. 60<SEP>material": {
+    "chunk_ids": [
+      "chunk-c220ebb09e1eeb84ca774f0d3cd2ccf6"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A515 Gr. 60<SEP>material"
+  },
+  "C–Mn–Si<SEP>material": {
+    "chunk_ids": [
+      "chunk-c220ebb09e1eeb84ca774f0d3cd2ccf6"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "C–Mn–Si<SEP>material"
+  },
+  "Table 2-1.4<SEP>table": {
+    "chunk_ids": [
+      "chunk-c220ebb09e1eeb84ca774f0d3cd2ccf6"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Table 2-1.4<SEP>table"
+  },
+  "ASME<SEP>IHS": {
+    "chunk_ids": [
+      "chunk-eea4d2a4c70f14b7096c0e2adae1b686"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "ASME<SEP>IHS"
+  },
+  "A350 Gr. LF1<SEP>material": {
+    "chunk_ids": [
+      "chunk-c220ebb09e1eeb84ca774f0d3cd2ccf6"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A350 Gr. LF1<SEP>material"
+  },
+  "A182 Gr. F347 (1)<SEP>A240 Gr. 347 (1)": {
+    "chunk_ids": [
+      "chunk-eea4d2a4c70f14b7096c0e2adae1b686"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A182 Gr. F347 (1)<SEP>A240 Gr. 347 (1)"
+  },
+  "A182 Gr. F347H (2)<SEP>A240 Gr. 347H (2)": {
+    "chunk_ids": [
+      "chunk-eea4d2a4c70f14b7096c0e2adae1b686"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A182 Gr. F347H (2)<SEP>A240 Gr. 347H (2)"
+  },
+  "C–1⁄2Mo<SEP>material": {
+    "chunk_ids": [
+      "chunk-c220ebb09e1eeb84ca774f0d3cd2ccf6"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "C–1⁄2Mo<SEP>material"
+  },
+  "A182 Gr. F348 (1)<SEP>A240 Gr. 348 (1)": {
+    "chunk_ids": [
+      "chunk-eea4d2a4c70f14b7096c0e2adae1b686"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A182 Gr. F348 (1)<SEP>A240 Gr. 348 (1)"
+  },
+  "Blind Flange<SEP>Class 600": {
+    "chunk_ids": [
+      "chunk-2904771c0741938726758dab221ea2fd"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Blind Flange<SEP>Class 600"
+  },
+  "Carbon–Molybdenum Steel<SEP>Graphite": {
+    "chunk_ids": [
+      "chunk-9d852b8bef4bf5e1b06d5eca4665efb0"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Carbon–Molybdenum Steel<SEP>Graphite"
+  },
+  "A217 Gr. WC4<SEP>Ni–1⁄2Cr–1⁄2Mo": {
+    "chunk_ids": [
+      "chunk-9d852b8bef4bf5e1b06d5eca4665efb0"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A217 Gr. WC4<SEP>Ni–1⁄2Cr–1⁄2Mo"
+  },
+  "A182 Gr. F1<SEP>material": {
+    "chunk_ids": [
+      "chunk-c220ebb09e1eeb84ca774f0d3cd2ccf6"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A182 Gr. F1<SEP>material"
+  },
+  "3⁄4Ni–3⁄4Cr–1Mo<SEP>A217 Gr. WC5": {
+    "chunk_ids": [
+      "chunk-9d852b8bef4bf5e1b06d5eca4665efb0"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "3⁄4Ni–3⁄4Cr–1Mo<SEP>A217 Gr. WC5"
+  },
+  "A182 Gr. F310<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-79c2efe0137b0bbc530c88180a7f0d32",
+      "chunk-cc7860e55d358ba95ec0400c2fc4014e"
+    ],
+    "count": 2,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A182 Gr. F310<SEP>ASME B16.5-2013"
+  },
+  "Class 150 Flanges<SEP>Dimensions of Class 150 Flanges": {
+    "chunk_ids": [
+      "chunk-24c021ba97b00541cab44ee6e76173ea"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Class 150 Flanges<SEP>Dimensions of Class 150 Flanges"
+  },
+  "Class 300 Flanges<SEP>Dimensions of Class 300 Flanges": {
+    "chunk_ids": [
+      "chunk-24c021ba97b00541cab44ee6e76173ea"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Class 300 Flanges<SEP>Dimensions of Class 300 Flanges"
+  },
+  "A204 Gr. A<SEP>material": {
+    "chunk_ids": [
+      "chunk-c220ebb09e1eeb84ca774f0d3cd2ccf6"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A204 Gr. A<SEP>material"
+  },
+  "Class 400 Flanges<SEP>Dimensions of Class 400 Flanges": {
+    "chunk_ids": [
+      "chunk-24c021ba97b00541cab44ee6e76173ea"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Class 400 Flanges<SEP>Dimensions of Class 400 Flanges"
+  },
+  "A240 Gr. 310H<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-79c2efe0137b0bbc530c88180a7f0d32"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A240 Gr. 310H<SEP>ASME B16.5-2013"
+  },
+  "Class 600 Flanges<SEP>Dimensions of Class 600 Flanges": {
+    "chunk_ids": [
+      "chunk-24c021ba97b00541cab44ee6e76173ea",
+      "chunk-1991062d5c6aa490277d1b30a0762cee"
+    ],
+    "count": 2,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Class 600 Flanges<SEP>Dimensions of Class 600 Flanges"
+  },
+  "Class 900 Flanges<SEP>Dimensions of Class 900 Flanges": {
+    "chunk_ids": [
+      "chunk-24c021ba97b00541cab44ee6e76173ea"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Class 900 Flanges<SEP>Dimensions of Class 900 Flanges"
+  },
+  "A204 Gr. B<SEP>material": {
+    "chunk_ids": [
+      "chunk-c220ebb09e1eeb84ca774f0d3cd2ccf6"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A204 Gr. B<SEP>material"
+  },
+  "Class 1500 Flanges<SEP>Dimensions of Class 1500 Flanges": {
+    "chunk_ids": [
+      "chunk-24c021ba97b00541cab44ee6e76173ea"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Class 1500 Flanges<SEP>Dimensions of Class 1500 Flanges"
+  },
+  "NPS 2 1⁄2<SEP>NPS 6 x 21⁄2 - Class 300 Reducing Threaded Flange": {
+    "chunk_ids": [
+      "chunk-0c2f5be5ae1269254713641c236d6a28"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "NPS 2 1⁄2<SEP>NPS 6 x 21⁄2 - Class 300 Reducing Threaded Flange"
+  },
+  "NPS 2<SEP>NPS 6 x 2 - Class 300 Reducing Threaded Flange": {
+    "chunk_ids": [
+      "chunk-0c2f5be5ae1269254713641c236d6a28"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "NPS 2<SEP>NPS 6 x 2 - Class 300 Reducing Threaded Flange"
+  },
+  "Class 300<SEP>NPS 6 x 21⁄2 - Class 300 Reducing Threaded Flange": {
+    "chunk_ids": [
+      "chunk-0c2f5be5ae1269254713641c236d6a28"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Class 300<SEP>NPS 6 x 21⁄2 - Class 300 Reducing Threaded Flange"
+  },
+  "538°C<SEP>temperature limit": {
+    "chunk_ids": [
+      "chunk-b5768d17437e1d8c24d2ea2f48a09d7a"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "538°C<SEP>temperature limit"
+  },
+  "550°C<SEP>temperature rating": {
+    "chunk_ids": [
+      "chunk-b5768d17437e1d8c24d2ea2f48a09d7a"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "550°C<SEP>temperature rating"
+  },
+  "ASME B16.5-2013<SEP>Class 600 Flanges": {
+    "chunk_ids": [
+      "chunk-0c75777ba975b903730751f407a25e2d"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "ASME B16.5-2013<SEP>Class 600 Flanges"
+  },
+  "Class 300<SEP>NPS 6 x 2 - Class 300 Reducing Threaded Flange": {
+    "chunk_ids": [
+      "chunk-0c2f5be5ae1269254713641c236d6a28"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Class 300<SEP>NPS 6 x 2 - Class 300 Reducing Threaded Flange"
+  },
+  "American Engineerin g Standards Committee<SEP>B16 Committee": {
+    "chunk_ids": [
+      "chunk-436c5aa33b5d7499910a4e3963b3e004"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "American Engineerin g Standards Committee<SEP>B16 Committee"
+  },
+  "575°C<SEP>temperature rating": {
+    "chunk_ids": [
+      "chunk-b5768d17437e1d8c24d2ea2f48a09d7a"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "575°C<SEP>temperature rating"
+  },
+  "B16 Committee<SEP>Subcommittee 3": {
+    "chunk_ids": [
+      "chunk-436c5aa33b5d7499910a4e3963b3e004"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "B16 Committee<SEP>Subcommittee 3"
+  },
+  "Dimensions of Class 150 Flanges<SEP>Table 7": {
+    "chunk_ids": [
+      "chunk-b120c00906326354cc4b07e8df4a85b3"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Dimensions of Class 150 Flanges<SEP>Table 7"
+  },
+  "Class 150 Flanges<SEP>Table 8": {
+    "chunk_ids": [
+      "chunk-b120c00906326354cc4b07e8df4a85b3"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Class 150 Flanges<SEP>Table 8"
+  },
+  "600°C<SEP>temperature rating": {
+    "chunk_ids": [
+      "chunk-b5768d17437e1d8c24d2ea2f48a09d7a"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "600°C<SEP>temperature rating"
+  },
+  "B16 Committee<SEP>Subcommittee 4": {
+    "chunk_ids": [
+      "chunk-436c5aa33b5d7499910a4e3963b3e004"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "B16 Committee<SEP>Subcommittee 4"
+  },
+  "ASME B16.5-2013<SEP>Class 150 Flanges": {
+    "chunk_ids": [
+      "chunk-b120c00906326354cc4b07e8df4a85b3",
+      "chunk-05f0bcb59476ec9c3e973721c57f3c96"
+    ],
+    "count": 2,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "ASME B16.5-2013<SEP>Class 150 Flanges"
+  },
+  "Dimensions of Class 150 Flanges<SEP>Mandatory Appendix II, Table II-7": {
+    "chunk_ids": [
+      "chunk-b120c00906326354cc4b07e8df4a85b3"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Dimensions of Class 150 Flanges<SEP>Mandatory Appendix II, Table II-7"
+  },
+  "625°C<SEP>temperature rating": {
+    "chunk_ids": [
+      "chunk-b5768d17437e1d8c24d2ea2f48a09d7a"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "625°C<SEP>temperature rating"
+  },
+  "ASME B16.5-2013<SEP>Table II-16 Dimensions of Class 600 Flanges (Contd)": {
+    "chunk_ids": [
+      "chunk-98e6bd64e65f31d06ced3b3e90f47312"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "ASME B16.5-2013<SEP>Table II-16 Dimensions of Class 600 Flanges (Contd)"
+  },
+  "A182 Gr. F22 Cl. 3<SEP>forged materials": {
+    "chunk_ids": [
+      "chunk-fbc7ddba32bbe5c4b27763a8da4efefb"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A182 Gr. F22 Cl. 3<SEP>forged materials"
+  },
+  "WC9<SEP>cast materials": {
+    "chunk_ids": [
+      "chunk-fbc7ddba32bbe5c4b27763a8da4efefb"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "WC9<SEP>cast materials"
+  },
+  "A387 Gr. 22 Cl. 2<SEP>plates": {
+    "chunk_ids": [
+      "chunk-fbc7ddba32bbe5c4b27763a8da4efefb"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A387 Gr. 22 Cl. 2<SEP>plates"
+  },
+  "ASME B16.5-2013<SEP>Facings": {
+    "chunk_ids": [
+      "chunk-98e6bd64e65f31d06ced3b3e90f47312",
+      "chunk-dd9487a2f3662945039d8bc799ee92b9"
+    ],
+    "count": 2,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "ASME B16.5-2013<SEP>Facings"
+  },
+  "A217 Gr. WC9<SEP>cast materials": {
+    "chunk_ids": [
+      "chunk-fbc7ddba32bbe5c4b27763a8da4efefb"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A217 Gr. WC9<SEP>cast materials"
+  },
+  "ASME B16.5-2013<SEP>Tolerances": {
+    "chunk_ids": [
+      "chunk-98e6bd64e65f31d06ced3b3e90f47312"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "ASME B16.5-2013<SEP>Tolerances"
+  },
+  "A217 Gr. C<SEP>cast materials": {
+    "chunk_ids": [
+      "chunk-fbc7ddba32bbe5c4b27763a8da4efefb"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "A217 Gr. C<SEP>cast materials"
+  },
+  "ASME B16.5-2013<SEP>Flange Bolt Holes": {
+    "chunk_ids": [
+      "chunk-98e6bd64e65f31d06ced3b3e90f47312"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "ASME B16.5-2013<SEP>Flange Bolt Holes"
+  },
+  "Qualified Weld Procedure<SEP>Qualified Welder": {
+    "chunk_ids": [
+      "chunk-fa036517d95c30255cdfda4bb900973d"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Qualified Weld Procedure<SEP>Qualified Welder"
+  },
+  "ASME B16.5-2013<SEP>Spot Facing": {
+    "chunk_ids": [
+      "chunk-98e6bd64e65f31d06ced3b3e90f47312"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "ASME B16.5-2013<SEP>Spot Facing"
+  },
+  "ASME Boiler and Pressure Vessel Code<SEP>Qualified Welder": {
+    "chunk_ids": [
+      "chunk-fa036517d95c30255cdfda4bb900973d"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "ASME Boiler and Pressure Vessel Code<SEP>Qualified Welder"
+  },
+  "Fittings<SEP>Pipe Thread Tapping": {
+    "chunk_ids": [
+      "chunk-fa036517d95c30255cdfda4bb900973d"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Fittings<SEP>Pipe Thread Tapping"
+  },
+  "ASME B16.5-2013<SEP>Group 2.10 Materials": {
+    "chunk_ids": [
+      "chunk-eba111d15c9ea294f7b9b8b23ba5ca79"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "ASME B16.5-2013<SEP>Group 2.10 Materials"
+  },
+  "Fittings<SEP>Socket": {
+    "chunk_ids": [
+      "chunk-fa036517d95c30255cdfda4bb900973d"
+    ],
+    "count": 1,
+    "create_time": 1776255094,
+    "update_time": 1776255094,
+    "_id": "Fittings<SEP>Socket"
+  },
+  "ASME B16.5-2013<SEP>carbon content": {
+    "chunk_ids": [
+      "chunk-eba111d15c9ea294f7b9b8b23ba5ca79"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>carbon content"
+  },
+  "Mandatory Appendix II<SEP>Socket": {
+    "chunk_ids": [
+      "chunk-fa036517d95c30255cdfda4bb900973d"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "Mandatory Appendix II<SEP>Socket"
+  },
+  "Boss<SEP>Fittings": {
+    "chunk_ids": [
+      "chunk-fa036517d95c30255cdfda4bb900973d"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "Boss<SEP>Fittings"
+  },
+  "Butt Welding<SEP>Fittings": {
+    "chunk_ids": [
+      "chunk-fa036517d95c30255cdfda4bb900973d"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "Butt Welding<SEP>Fittings"
+  },
+  "ASME B16.5-2013<SEP>solution heat treatment": {
+    "chunk_ids": [
+      "chunk-eba111d15c9ea294f7b9b8b23ba5ca79"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>solution heat treatment"
+  },
+  "ASME B16.5-2013<SEP>grain size": {
+    "chunk_ids": [
+      "chunk-eba111d15c9ea294f7b9b8b23ba5ca79"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>grain size"
+  },
+  "ASME B16.5-2013<SEP>Dimensions of Class 150 Flanges": {
+    "chunk_ids": [
+      "chunk-55e62fdaeb2f89ecf30d7410c3be1d43"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Dimensions of Class 150 Flanges"
+  },
+  "Class 900 Flanges<SEP>Taper": {
+    "chunk_ids": [
+      "chunk-dd9487a2f3662945039d8bc799ee92b9"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "Class 900 Flanges<SEP>Taper"
+  },
+  "ASME B16.5-2013<SEP>Dimensions of Class 150 Flanged Fittings": {
+    "chunk_ids": [
+      "chunk-55e62fdaeb2f89ecf30d7410c3be1d43"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Dimensions of Class 150 Flanged Fittings"
+  },
+  "ASME B16.5-2013<SEP>Inside Diameters": {
+    "chunk_ids": [
+      "chunk-55e62fdaeb2f89ecf30d7410c3be1d43"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Inside Diameters"
+  },
+  "ASME B16.5-2013<SEP>Standard Wall Pipe Dimensions": {
+    "chunk_ids": [
+      "chunk-55e62fdaeb2f89ecf30d7410c3be1d43"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Standard Wall Pipe Dimensions"
+  },
+  "ASME B16.5-2013<SEP>Schedule 40 Thickness": {
+    "chunk_ids": [
+      "chunk-55e62fdaeb2f89ecf30d7410c3be1d43"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Schedule 40 Thickness"
+  },
+  "ASME B16.5-2013<SEP>Class 900 Flanges": {
+    "chunk_ids": [
+      "chunk-dd9487a2f3662945039d8bc799ee92b9"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Class 900 Flanges"
+  },
+  "American War Standard B16e5-1943<SEP>W Ar Committee of B16": {
+    "chunk_ids": [
+      "chunk-9611d112876f0cc6066695b7644520ed"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "American War Standard B16e5-1943<SEP>W Ar Committee of B16"
+  },
+  "ASME B16.5-2013<SEP>Class 900 Dimensions": {
+    "chunk_ids": [
+      "chunk-dd9487a2f3662945039d8bc799ee92b9"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Class 900 Dimensions"
+  },
+  "ASA B16e6-1949<SEP>Subcommittee 3": {
+    "chunk_ids": [
+      "chunk-9611d112876f0cc6066695b7644520ed"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASA B16e6-1949<SEP>Subcommittee 3"
+  },
+  "ASA B16.5-1973<SEP>Subcommittee 4": {
+    "chunk_ids": [
+      "chunk-9611d112876f0cc6066695b7644520ed"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASA B16.5-1973<SEP>Subcommittee 4"
+  },
+  "ASME B16.5-2013<SEP>Purchaser": {
+    "chunk_ids": [
+      "chunk-dd9487a2f3662945039d8bc799ee92b9"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Purchaser"
+  },
+  "ANSI B16.5-1977<SEP>Subcommittee N (formerly 15)": {
+    "chunk_ids": [
+      "chunk-9611d112876f0cc6066695b7644520ed"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ANSI B16.5-1977<SEP>Subcommittee N (formerly 15)"
+  },
+  "ASME B16.5-2013<SEP>Blind Flanges": {
+    "chunk_ids": [
+      "chunk-dd9487a2f3662945039d8bc799ee92b9"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Blind Flanges"
+  },
+  "ANSI B16.5-1984<SEP>Subcommittee C (formerly 3)": {
+    "chunk_ids": [
+      "chunk-9611d112876f0cc6066695b7644520ed"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ANSI B16.5-1984<SEP>Subcommittee C (formerly 3)"
+  },
+  "B16 Standards Committee<SEP>W. B. Bedesem": {
+    "chunk_ids": [
+      "chunk-545818ef44ac301232f6e8003ced593b"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "B16 Standards Committee<SEP>W. B. Bedesem"
+  },
+  "A182 Gr. F9<SEP>ASTM A217 Gr. C12": {
+    "chunk_ids": [
+      "chunk-c8f0d95695be35b4525eefd339a3b500"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "A182 Gr. F9<SEP>ASTM A217 Gr. C12"
+  },
+  "ASME B16.5-2013<SEP>Reducing Threaded and Slip-On Flanges": {
+    "chunk_ids": [
+      "chunk-dd9487a2f3662945039d8bc799ee92b9"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Reducing Threaded and Slip-On Flanges"
+  },
+  "ASME B16.5-2013<SEP>Reducing Welding Neck Flanges": {
+    "chunk_ids": [
+      "chunk-dd9487a2f3662945039d8bc799ee92b9"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Reducing Welding Neck Flanges"
+  },
+  "ASME B16.5-2013<SEP>Welding End Bevel": {
+    "chunk_ids": [
+      "chunk-dd9487a2f3662945039d8bc799ee92b9"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Welding End Bevel"
+  },
+  "A217 Gr. C12<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-c8f0d95695be35b4525eefd339a3b500"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "A217 Gr. C12<SEP>ASME B16.5-2013"
+  },
+  "ASME B16.5-2013<SEP>Group 1.14 Materials": {
+    "chunk_ids": [
+      "chunk-c8f0d95695be35b4525eefd339a3b500",
+      "chunk-47bb2fa75b3e7cd5e145f1d353440450"
+    ],
+    "count": 2,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Group 1.14 Materials"
+  },
+  "ASME B16.5-2013<SEP>Working Pressures by Classes, bar": {
+    "chunk_ids": [
+      "chunk-c8f0d95695be35b4525eefd339a3b500",
+      "chunk-656b6734cce47f14e81f0e8c31c77d35"
+    ],
+    "count": 2,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "ASME B16.5-2013<SEP>Working Pressures by Classes, bar"
+  },
+  "Class 1500<SEP>Socket Welding Flanges": {
+    "chunk_ids": [
+      "chunk-f28c7d4bdd4e434720bb2e0817acb7da"
+    ],
+    "count": 1,
+    "create_time": 1776255095,
+    "update_time": 1776255095,
+    "_id": "Class 1500<SEP>Socket Welding Flanges"
+  },
+  "ASME B16.5-2013<SEP>Class 150 Flanged Fittings": {
+    "chunk_ids": [
+      "chunk-76864809d8f49cc522affb8d29d2289a",
+      "chunk-05f0bcb59476ec9c3e973721c57f3c96"
+    ],
+    "count": 2,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>Class 150 Flanged Fittings"
+  },
+  "ASME B16.5-2013<SEP>Center-to-End": {
+    "chunk_ids": [
+      "chunk-76864809d8f49cc522affb8d29d2289a"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>Center-to-End"
+  },
+  "ASME B16.5-2013<SEP>Diameter": {
+    "chunk_ids": [
+      "chunk-76864809d8f49cc522affb8d29d2289a"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>Diameter"
+  },
+  "ASME<SEP>B16 Standards Committee": {
+    "chunk_ids": [
+      "chunk-da0eb2037f412344871720430fa6cf02"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME<SEP>B16 Standards Committee"
+  },
+  "ASME B16.5-2013<SEP>Base Elbow": {
+    "chunk_ids": [
+      "chunk-76864809d8f49cc522affb8d29d2289a"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>Base Elbow"
+  },
+  "B16 Standards Committee<SEP>Committee Meetings": {
+    "chunk_ids": [
+      "chunk-da0eb2037f412344871720430fa6cf02"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "B16 Standards Committee<SEP>Committee Meetings"
+  },
+  "ASME B16.5-2013<SEP>Base Tee": {
+    "chunk_ids": [
+      "chunk-76864809d8f49cc522affb8d29d2289a",
+      "chunk-f7d66f91fd341a23e68eadbefdb9b7ab"
+    ],
+    "count": 2,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>Base Tee"
+  },
+  "ASME B16.5-2013<SEP>Round Base": {
+    "chunk_ids": [
+      "chunk-76864809d8f49cc522affb8d29d2289a"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>Round Base"
+  },
+  "99.0Ni–Low C<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-1910573fe8bfeb958d0a6de74f9ebc46"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "99.0Ni–Low C<SEP>ASME B16.5-2013"
+  },
+  "1Cr–1⁄2Mo<SEP>A182 Gr. F12 Cl. 2": {
+    "chunk_ids": [
+      "chunk-324dc22909af5555deb08d67b96b3e67"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "1Cr–1⁄2Mo<SEP>A182 Gr. F12 Cl. 2"
+  },
+  "ASME B16.5-2013<SEP>B162 Gr. N02201": {
+    "chunk_ids": [
+      "chunk-1910573fe8bfeb958d0a6de74f9ebc46",
+      "chunk-faa44ee0ab9a603579ea4693825fe3ea"
+    ],
+    "count": 2,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>B162 Gr. N02201"
+  },
+  "5Cr–1⁄2Mo<SEP>A182 Gr. F5": {
+    "chunk_ids": [
+      "chunk-324dc22909af5555deb08d67b96b3e67"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "5Cr–1⁄2Mo<SEP>A182 Gr. F5"
+  },
+  "67Ni–30Cu B564 Gr. N04400<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-1910573fe8bfeb958d0a6de74f9ebc46"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "67Ni–30Cu B564 Gr. N04400<SEP>ASME B16.5-2013"
+  },
+  "ASME B16.5-2013<SEP>American National Standards Institute": {
+    "chunk_ids": [
+      "chunk-da0eb2037f412344871720430fa6cf02"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>American National Standards Institute"
+  },
+  "ASME<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-da0eb2037f412344871720430fa6cf02"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME<SEP>ASME B16.5-2013"
+  },
+  "ASME B16.5-2013<SEP>errata": {
+    "chunk_ids": [
+      "chunk-da0eb2037f412344871720430fa6cf02"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>errata"
+  },
+  "ASME B16.5-2013<SEP>Class 1500 Flanges": {
+    "chunk_ids": [
+      "chunk-30d3946b38e9c389717607b4ed895121",
+      "chunk-0df2a48018c5815fcbc69ee77e5e9629"
+    ],
+    "count": 2,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>Class 1500 Flanges"
+  },
+  "Class 300 Pipe Flanges and Flanged Fittings<SEP>Drilling Class 300 Pipe Flanges and Flanged Fittings": {
+    "chunk_ids": [
+      "chunk-168613df3512c6ad1c5f5bdc4c21ec22"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "Class 300 Pipe Flanges and Flanged Fittings<SEP>Drilling Class 300 Pipe Flanges and Flanged Fittings"
+  },
+  "72Ni–15Cr–8Fe B564 Gr. N06600<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-fee07539be7cc8cee9fec41042ab28c3"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "72Ni–15Cr–8Fe B564 Gr. N06600<SEP>ASME B16.5-2013"
+  },
+  "620°C<SEP>tubing": {
+    "chunk_ids": [
+      "chunk-656b6734cce47f14e81f0e8c31c77d35"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "620°C<SEP>tubing"
+  },
+  "ASME B16.5-2013<SEP>B409 Gr. N08800": {
+    "chunk_ids": [
+      "chunk-fee07539be7cc8cee9fec41042ab28c3"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>B409 Gr. N08800"
+  },
+  "31⁄2 in.<SEP>tubing": {
+    "chunk_ids": [
+      "chunk-656b6734cce47f14e81f0e8c31c77d35"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "31⁄2 in.<SEP>tubing"
+  },
+  "Mandatory Appendix II<SEP>U.S. Customary Units": {
+    "chunk_ids": [
+      "chunk-e4ca239f2a2d5f7e2ab87708ca342046"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "Mandatory Appendix II<SEP>U.S. Customary Units"
+  },
+  "ASME B16.5-2013<SEP>Pipe Flanges and Flanged Fittings": {
+    "chunk_ids": [
+      "chunk-a5a59c9e110a47eb7eef51fb2fb81c5a"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>Pipe Flanges and Flanged Fittings"
+  },
+  "Large End Of Hub<SEP>Taper": {
+    "chunk_ids": [
+      "chunk-5d8ab581faa40c9c1eb52a6a9307019c"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "Large End Of Hub<SEP>Taper"
+  },
+  "ASME B16.5-2013<SEP>Flanged Fittings": {
+    "chunk_ids": [
+      "chunk-a5a59c9e110a47eb7eef51fb2fb81c5a"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>Flanged Fittings"
+  },
+  "Taper<SEP>Threaded Flanges": {
+    "chunk_ids": [
+      "chunk-5d8ab581faa40c9c1eb52a6a9307019c"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "Taper<SEP>Threaded Flanges"
+  },
+  "ASME B16.5-2013<SEP>Gaskets": {
+    "chunk_ids": [
+      "chunk-a5a59c9e110a47eb7eef51fb2fb81c5a"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>Gaskets"
+  },
+  "Slip-On Flanges<SEP>Taper": {
+    "chunk_ids": [
+      "chunk-5d8ab581faa40c9c1eb52a6a9307019c"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "Slip-On Flanges<SEP>Taper"
+  },
+  "Flange Type<SEP>Tongue And Groove Flanges": {
+    "chunk_ids": [
+      "chunk-5d8ab581faa40c9c1eb52a6a9307019c"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "Flange Type<SEP>Tongue And Groove Flanges"
+  },
+  "Socket-Welding Flanges<SEP>Taper": {
+    "chunk_ids": [
+      "chunk-5d8ab581faa40c9c1eb52a6a9307019c"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "Socket-Welding Flanges<SEP>Taper"
+  },
+  "ASME B16.5-2013<SEP>Joints": {
+    "chunk_ids": [
+      "chunk-a5a59c9e110a47eb7eef51fb2fb81c5a"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>Joints"
+  },
+  "538°C<SEP>temperature threshold": {
+    "chunk_ids": [
+      "chunk-a319dec7b0b61a0bc319c91c99c9a587"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "538°C<SEP>temperature threshold"
+  },
+  "Flange Type<SEP>Ring Joint Flanges": {
+    "chunk_ids": [
+      "chunk-5d8ab581faa40c9c1eb52a6a9307019c"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "Flange Type<SEP>Ring Joint Flanges"
+  },
+  "ASME B16.5-2013<SEP>Group 2.1 Materials": {
+    "chunk_ids": [
+      "chunk-656b6734cce47f14e81f0e8c31c77d35"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>Group 2.1 Materials"
+  },
+  "B435 Gr. N06002<SEP>Working Pressures by Classes, psig": {
+    "chunk_ids": [
+      "chunk-503d8a63fb788455f42315bb7625264d"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "B435 Gr. N06002<SEP>Working Pressures by Classes, psig"
+  },
+  "425°C<SEP>temperature threshold": {
+    "chunk_ids": [
+      "chunk-a319dec7b0b61a0bc319c91c99c9a587"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "425°C<SEP>temperature threshold"
+  },
+  "ASME B16.5-2013<SEP>ASTM E29": {
+    "chunk_ids": [
+      "chunk-e4ca239f2a2d5f7e2ab87708ca342046"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "ASME B16.5-2013<SEP>ASTM E29"
+  },
+  "21Ni–30Fe–22Cr–18Co–3Mo–3W B572 Gr. R30556<SEP>Working Pressures by Classes, psig": {
+    "chunk_ids": [
+      "chunk-503d8a63fb788455f42315bb7625264d"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "21Ni–30Fe–22Cr–18Co–3Mo–3W B572 Gr. R30556<SEP>Working Pressures by Classes, psig"
+  },
+  "High Temperature<SEP>Joint Leakage": {
+    "chunk_ids": [
+      "chunk-15d13d8a9cf127681d0ef72c7289a815"
+    ],
+    "count": 1,
+    "create_time": 1776255096,
+    "update_time": 1776255096,
+    "_id": "High Temperature<SEP>Joint Leakage"
+  },
+  "ASME B36.10M<SEP>Class 300 Flanges": {
+    "chunk_ids": [
+      "chunk-bf07866fe1fa923d6c76315571aba601"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME B36.10M<SEP>Class 300 Flanges"
+  },
+  "B435 Gr. R30556<SEP>Working Pressures by Classes, psig": {
+    "chunk_ids": [
+      "chunk-503d8a63fb788455f42315bb7625264d"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "B435 Gr. R30556<SEP>Working Pressures by Classes, psig"
+  },
+  "ASME B16.5-2013<SEP>psi": {
+    "chunk_ids": [
+      "chunk-e4ca239f2a2d5f7e2ab87708ca342046"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME B16.5-2013<SEP>psi"
+  },
+  "Joint Leakage<SEP>Thermal Gradients": {
+    "chunk_ids": [
+      "chunk-15d13d8a9cf127681d0ef72c7289a815"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Joint Leakage<SEP>Thermal Gradients"
+  },
+  "Bolt Loads<SEP>High Temperature": {
+    "chunk_ids": [
+      "chunk-15d13d8a9cf127681d0ef72c7289a815"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Bolt Loads<SEP>High Temperature"
+  },
+  "Dimensions<SEP>Hub Diameter": {
+    "chunk_ids": [
+      "chunk-65bb92edfd06205fa901097f136f3ce0"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Dimensions<SEP>Hub Diameter"
+  },
+  "ASME B36.10M<SEP>ASME International": {
+    "chunk_ids": [
+      "chunk-bf07866fe1fa923d6c76315571aba601"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME B36.10M<SEP>ASME International"
+  },
+  "ASME B16.5-2013<SEP>B599 Gr. N08700": {
+    "chunk_ids": [
+      "chunk-79e9ff111d6140c38d2beb37c60938ae"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME B16.5-2013<SEP>B599 Gr. N08700"
+  },
+  "Dimensions<SEP>Minimum Corner Bore": {
+    "chunk_ids": [
+      "chunk-65bb92edfd06205fa901097f136f3ce0"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Dimensions<SEP>Minimum Corner Bore"
+  },
+  "B599 Gr. N08700<SEP>solution annealed material": {
+    "chunk_ids": [
+      "chunk-79e9ff111d6140c38d2beb37c60938ae"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "B599 Gr. N08700<SEP>solution annealed material"
+  },
+  "A479 Gr. N08904<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-79e9ff111d6140c38d2beb37c60938ae"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "A479 Gr. N08904<SEP>ASME B16.5-2013"
+  },
+  "Beginning of Thread Length<SEP>Dimensions": {
+    "chunk_ids": [
+      "chunk-65bb92edfd06205fa901097f136f3ce0"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Beginning of Thread Length<SEP>Dimensions"
+  },
+  "MSS SP-44<SEP>flange": {
+    "chunk_ids": [
+      "chunk-e5bd9113edf820112d3129b64eaf2d88"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "MSS SP-44<SEP>flange"
+  },
+  "Dimensions<SEP>Radius of Minimum": {
+    "chunk_ids": [
+      "chunk-65bb92edfd06205fa901097f136f3ce0"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Dimensions<SEP>Radius of Minimum"
+  },
+  "A240 Gr. N08904<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-79e9ff111d6140c38d2beb37c60938ae"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "A240 Gr. N08904<SEP>ASME B16.5-2013"
+  },
+  "A479 Gr. N08904<SEP>solution annealed material": {
+    "chunk_ids": [
+      "chunk-79e9ff111d6140c38d2beb37c60938ae"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "A479 Gr. N08904<SEP>solution annealed material"
+  },
+  "Table 1A<SEP>material specifications": {
+    "chunk_ids": [
+      "chunk-e5bd9113edf820112d3129b64eaf2d88"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Table 1A<SEP>material specifications"
+  },
+  "MSS SP-25<SEP>flange": {
+    "chunk_ids": [
+      "chunk-e5bd9113edf820112d3129b64eaf2d88"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "MSS SP-25<SEP>flange"
+  },
+  "ASME International<SEP>publisher": {
+    "chunk_ids": [
+      "chunk-e5bd9113edf820112d3129b64eaf2d88"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME International<SEP>publisher"
+  },
+  "ASME B16.5-2013<SEP>standard": {
+    "chunk_ids": [
+      "chunk-e5bd9113edf820112d3129b64eaf2d88"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME B16.5-2013<SEP>standard"
+  },
+  "A240 Gr. N08904<SEP>solution annealed material": {
+    "chunk_ids": [
+      "chunk-79e9ff111d6140c38d2beb37c60938ae"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "A240 Gr. N08904<SEP>solution annealed material"
+  },
+  "IHS<SEP>license provider": {
+    "chunk_ids": [
+      "chunk-e5bd9113edf820112d3129b64eaf2d88"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "IHS<SEP>license provider"
+  },
+  "Center-to-Contact Surface<SEP>Long Raised Face": {
+    "chunk_ids": [
+      "chunk-7cf8cbd7624104560bfb71708f6cc010"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Center-to-Contact Surface<SEP>Long Raised Face"
+  },
+  "Contact Surface-to-Contact Surface<SEP>Raised Face": {
+    "chunk_ids": [
+      "chunk-7cf8cbd7624104560bfb71708f6cc010"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Contact Surface-to-Contact Surface<SEP>Raised Face"
+  },
+  "ASME B16.5-2013<SEP>Wall Diameter Elbow": {
+    "chunk_ids": [
+      "chunk-7cf8cbd7624104560bfb71708f6cc010"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME B16.5-2013<SEP>Wall Diameter Elbow"
+  },
+  "18Cr–10Ni–Cb A182 Gr. F347 (1)<SEP>A182 Gr. F347H (2)": {
+    "chunk_ids": [
+      "chunk-bf336e9994ced99fe215bd678411af07"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "18Cr–10Ni–Cb A182 Gr. F347 (1)<SEP>A182 Gr. F347H (2)"
+  },
+  "ASME B16.5-2013<SEP>Tee": {
+    "chunk_ids": [
+      "chunk-7cf8cbd7624104560bfb71708f6cc010"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME B16.5-2013<SEP>Tee"
+  },
+  "18Cr–10Ni–Cb A182 Gr. F348 (1)<SEP>A240 Gr. 348 (1)": {
+    "chunk_ids": [
+      "chunk-bf336e9994ced99fe215bd678411af07"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "18Cr–10Ni–Cb A182 Gr. F348 (1)<SEP>A240 Gr. 348 (1)"
+  },
+  "End-to-End Center-to-Base<SEP>concept": {
+    "chunk_ids": [
+      "chunk-00bcbf709205575d1058a0d877e0be98"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "End-to-End Center-to-Base<SEP>concept"
+  },
+  "Base<SEP>artifact": {
+    "chunk_ids": [
+      "chunk-00bcbf709205575d1058a0d877e0be98"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Base<SEP>artifact"
+  },
+  "425°C<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-5d2c522c8854e3aa2e96dab1c0fb5599"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "425°C<SEP>ASME B16.5-2013"
+  },
+  "538°C<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-5d2c522c8854e3aa2e96dab1c0fb5599"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "538°C<SEP>ASME B16.5-2013"
+  },
+  "Spacing<SEP>concept": {
+    "chunk_ids": [
+      "chunk-00bcbf709205575d1058a0d877e0be98"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Spacing<SEP>concept"
+  },
+  "Rib<SEP>artifact": {
+    "chunk_ids": [
+      "chunk-00bcbf709205575d1058a0d877e0be98"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Rib<SEP>artifact"
+  },
+  "Drilled Size<SEP>concept": {
+    "chunk_ids": [
+      "chunk-00bcbf709205575d1058a0d877e0be98"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Drilled Size<SEP>concept"
+  },
+  "1 095°C<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-5d2c522c8854e3aa2e96dab1c0fb5599"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "1 095°C<SEP>ASME B16.5-2013"
+  },
+  "Bolt of Pipe<SEP>artifact": {
+    "chunk_ids": [
+      "chunk-00bcbf709205575d1058a0d877e0be98"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Bolt of Pipe<SEP>artifact"
+  },
+  "NPS<SEP>concept": {
+    "chunk_ids": [
+      "chunk-00bcbf709205575d1058a0d877e0be98"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "NPS<SEP>concept"
+  },
+  "1095°C<SEP>538°C": {
+    "chunk_ids": [
+      "chunk-cc7860e55d358ba95ec0400c2fc4014e"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "1095°C<SEP>538°C"
+  },
+  "ASME B16.5-2013<SEP>Group 2.6 Materials": {
+    "chunk_ids": [
+      "chunk-cc7860e55d358ba95ec0400c2fc4014e"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME B16.5-2013<SEP>Group 2.6 Materials"
+  },
+  "Reducer<SEP>artifact": {
+    "chunk_ids": [
+      "chunk-00bcbf709205575d1058a0d877e0be98"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Reducer<SEP>artifact"
+  },
+  "Tolerance<SEP>concept": {
+    "chunk_ids": [
+      "chunk-00bcbf709205575d1058a0d877e0be98"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Tolerance<SEP>concept"
+  },
+  "23Cr–12Ni<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-cc7860e55d358ba95ec0400c2fc4014e"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "23Cr–12Ni<SEP>ASME B16.5-2013"
+  },
+  "Class 400 Flanges<SEP>Table 14": {
+    "chunk_ids": [
+      "chunk-31bc32875a6306edfc4741462637a4e5"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Class 400 Flanges<SEP>Table 14"
+  },
+  "25Cr–20Ni<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-cc7860e55d358ba95ec0400c2fc4014e"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "25Cr–20Ni<SEP>ASME B16.5-2013"
+  },
+  "Mandatory Appendix II, Table II-12<SEP>artifact": {
+    "chunk_ids": [
+      "chunk-00bcbf709205575d1058a0d877e0be98"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Mandatory Appendix II, Table II-12<SEP>artifact"
+  },
+  "Class 400 Flanges<SEP>Hub Diameter": {
+    "chunk_ids": [
+      "chunk-31bc32875a6306edfc4741462637a4e5"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Class 400 Flanges<SEP>Hub Diameter"
+  },
+  "ASME B16.5-2013<SEP>MSS SP-6-2001": {
+    "chunk_ids": [
+      "chunk-3f82fe818683431fc651ca1a24e5c579"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME B16.5-2013<SEP>MSS SP-6-2001"
+  },
+  "Class 400 Flanges<SEP>Minimum Thickness of Flange": {
+    "chunk_ids": [
+      "chunk-31bc32875a6306edfc4741462637a4e5"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Class 400 Flanges<SEP>Minimum Thickness of Flange"
+  },
+  "ASME Boiler and Pressure Vessel Code<SEP>Class 150": {
+    "chunk_ids": [
+      "chunk-f7d037c7aa1de140eef228e3b5f72b1a"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME Boiler and Pressure Vessel Code<SEP>Class 150"
+  },
+  "ASME B16.5-2013<SEP>Table II-2-3.17": {
+    "chunk_ids": [
+      "chunk-ee85cff4593c3c218909bf4dc772b65e"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME B16.5-2013<SEP>Table II-2-3.17"
+  },
+  "ASME Boiler and Pressure Vessel Code<SEP>Section III": {
+    "chunk_ids": [
+      "chunk-f7d037c7aa1de140eef228e3b5f72b1a"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME Boiler and Pressure Vessel Code<SEP>Section III"
+  },
+  "NPS Serrations<SEP>Outside Diameter": {
+    "chunk_ids": [
+      "chunk-10054c6a90c7e34cf9ec3260463671fc"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "NPS Serrations<SEP>Outside Diameter"
+  },
+  "ASME B16.5-2013<SEP>Table II-2-3.19": {
+    "chunk_ids": [
+      "chunk-ee85cff4593c3c218909bf4dc772b65e"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME B16.5-2013<SEP>Table II-2-3.19"
+  },
+  "Inside Diameter<SEP>NPS Serrations": {
+    "chunk_ids": [
+      "chunk-10054c6a90c7e34cf9ec3260463671fc"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Inside Diameter<SEP>NPS Serrations"
+  },
+  "ASME Boiler and Pressure Vessel Code<SEP>Section VIII, Division 2": {
+    "chunk_ids": [
+      "chunk-f7d037c7aa1de140eef228e3b5f72b1a"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME Boiler and Pressure Vessel Code<SEP>Section VIII, Division 2"
+  },
+  "Outside Diameter<SEP>Raised Face": {
+    "chunk_ids": [
+      "chunk-10054c6a90c7e34cf9ec3260463671fc"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Outside Diameter<SEP>Raised Face"
+  },
+  "ASME B16.5-2013<SEP>Table II-3": {
+    "chunk_ids": [
+      "chunk-ee85cff4593c3c218909bf4dc772b65e"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME B16.5-2013<SEP>Table II-3"
+  },
+  "Depth of Groove<SEP>NPS Serrations": {
+    "chunk_ids": [
+      "chunk-10054c6a90c7e34cf9ec3260463671fc"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Depth of Groove<SEP>NPS Serrations"
+  },
+  "Inside Diameter<SEP>Raised Face": {
+    "chunk_ids": [
+      "chunk-10054c6a90c7e34cf9ec3260463671fc"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Inside Diameter<SEP>Raised Face"
+  },
+  "Table II-10<SEP>Table II-7": {
+    "chunk_ids": [
+      "chunk-163392eb949c4d866fc3a6cbdb8233ab"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Table II-10<SEP>Table II-7"
+  },
+  "Table II-13<SEP>Table II-15": {
+    "chunk_ids": [
+      "chunk-163392eb949c4d866fc3a6cbdb8233ab"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Table II-13<SEP>Table II-15"
+  },
+  "ASME B16.5-2013<SEP>ASME Boiler and Pressure Vessel Code, Section II, Part D, Appendix 7": {
+    "chunk_ids": [
+      "chunk-7040bbb99f12a42660ed8b6b948c1e9b"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME B16.5-2013<SEP>ASME Boiler and Pressure Vessel Code, Section II, Part D, Appendix 7"
+  },
+  "Table II-17<SEP>Table II-19": {
+    "chunk_ids": [
+      "chunk-163392eb949c4d866fc3a6cbdb8233ab"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Table II-17<SEP>Table II-19"
+  },
+  "Depth of Groove<SEP>Raised Face": {
+    "chunk_ids": [
+      "chunk-10054c6a90c7e34cf9ec3260463671fc"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Depth of Groove<SEP>Raised Face"
+  },
+  "Mandatory Appendix II<SEP>Table II-7": {
+    "chunk_ids": [
+      "chunk-163392eb949c4d866fc3a6cbdb8233ab"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "Mandatory Appendix II<SEP>Table II-7"
+  },
+  "ASME Boiler and Pressure Vessel Code<SEP>Tabulated Yield Strength": {
+    "chunk_ids": [
+      "chunk-dc67612f135316380b75df378379082b"
+    ],
+    "count": 1,
+    "create_time": 1776255097,
+    "update_time": 1776255097,
+    "_id": "ASME Boiler and Pressure Vessel Code<SEP>Tabulated Yield Strength"
+  },
+  "ASME B16.5-2013<SEP>Class 400 Flanges": {
+    "chunk_ids": [
+      "chunk-a560aa3224b393530e878cd8da41ea17"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "ASME B16.5-2013<SEP>Class 400 Flanges"
+  },
+  "538°C<SEP>carbon content": {
+    "chunk_ids": [
+      "chunk-8689b4c902ee495b0f8e912c7a0a9582"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "538°C<SEP>carbon content"
+  },
+  "ASME Boiler and Pressure Vessel Code<SEP>Ceiling Pressure": {
+    "chunk_ids": [
+      "chunk-dc67612f135316380b75df378379082b"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "ASME Boiler and Pressure Vessel Code<SEP>Ceiling Pressure"
+  },
+  "565°C<SEP>grain size": {
+    "chunk_ids": [
+      "chunk-8689b4c902ee495b0f8e912c7a0a9582"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "565°C<SEP>grain size"
+  },
+  "Table II-19<SEP>Table II-21": {
+    "chunk_ids": [
+      "chunk-163392eb949c4d866fc3a6cbdb8233ab"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Table II-19<SEP>Table II-21"
+  },
+  "538°C<SEP>solution heat treated": {
+    "chunk_ids": [
+      "chunk-8689b4c902ee495b0f8e912c7a0a9582"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "538°C<SEP>solution heat treated"
+  },
+  "1,000°F<SEP>pc": {
+    "chunk_ids": [
+      "chunk-4a23bcebd8b470b9a08b539706258ba5"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "1,000°F<SEP>pc"
+  },
+  "ASME Boiler and Pressure Vessel Code<SEP>Creep Range": {
+    "chunk_ids": [
+      "chunk-dc67612f135316380b75df378379082b"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "ASME Boiler and Pressure Vessel Code<SEP>Creep Range"
+  },
+  "A351 Gr. CF8C<SEP>Group 2.11 Materials": {
+    "chunk_ids": [
+      "chunk-234a26e45dbbb17894c2e0785638866e"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "A351 Gr. CF8C<SEP>Group 2.11 Materials"
+  },
+  "Ring-Joint Facings<SEP>Table II-5": {
+    "chunk_ids": [
+      "chunk-4c9e213122af67bab4c41acc3eba18e1"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Ring-Joint Facings<SEP>Table II-5"
+  },
+  "Table 17<SEP>Table II-17": {
+    "chunk_ids": [
+      "chunk-c860be0c3f5ab97837a33d0776f228db"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Table 17<SEP>Table II-17"
+  },
+  "1,000<SEP>pc": {
+    "chunk_ids": [
+      "chunk-4a23bcebd8b470b9a08b539706258ba5"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "1,000<SEP>pc"
+  },
+  "Slip-On, Lapped, Neck<SEP>Socket Welding Flanges": {
+    "chunk_ids": [
+      "chunk-45ef876ea0243f68770603a1cadf892b"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Slip-On, Lapped, Neck<SEP>Socket Welding Flanges"
+  },
+  "Reducing Threaded and Slip-On Flanges<SEP>Threaded, Slip-On": {
+    "chunk_ids": [
+      "chunk-45ef876ea0243f68770603a1cadf892b"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Reducing Threaded and Slip-On Flanges<SEP>Threaded, Slip-On"
+  },
+  "Reducing Welding Neck Flanges<SEP>Welding Neck": {
+    "chunk_ids": [
+      "chunk-45ef876ea0243f68770603a1cadf892b"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Reducing Welding Neck Flanges<SEP>Welding Neck"
+  },
+  "LCMB<SEP>LCSSB": {
+    "chunk_ids": [
+      "chunk-9465f39ee050c9785a9cb1b6547a93ba"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "LCMB<SEP>LCSSB"
+  },
+  "1,050<SEP>pc": {
+    "chunk_ids": [
+      "chunk-4a23bcebd8b470b9a08b539706258ba5"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "1,050<SEP>pc"
+  },
+  "LCSB<SEP>LSMB": {
+    "chunk_ids": [
+      "chunk-9465f39ee050c9785a9cb1b6547a93ba"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "LCSB<SEP>LSMB"
+  },
+  "538°C<SEP>pc": {
+    "chunk_ids": [
+      "chunk-4a23bcebd8b470b9a08b539706258ba5"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "538°C<SEP>pc"
+  },
+  "LSMB<SEP>LSSB": {
+    "chunk_ids": [
+      "chunk-9465f39ee050c9785a9cb1b6547a93ba"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "LSMB<SEP>LSSB"
+  },
+  "LCMB<SEP>LCSB": {
+    "chunk_ids": [
+      "chunk-9465f39ee050c9785a9cb1b6547a93ba"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "LCMB<SEP>LCSB"
+  },
+  "35Ni–35Fe–20Cr–Cb B462 Gr. N08020<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-6f227010b6773dd7f5144203f819d843"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "35Ni–35Fe–20Cr–Cb B462 Gr. N08020<SEP>ASME B16.5-2013"
+  },
+  "Para. 6.7<SEP>welding end bevel": {
+    "chunk_ids": [
+      "chunk-9eaf24d1aafb443002ee97ef5ff435f2"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Para. 6.7<SEP>welding end bevel"
+  },
+  "Para. 6.9<SEP>thread of threaded flanges": {
+    "chunk_ids": [
+      "chunk-9eaf24d1aafb443002ee97ef5ff435f2"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Para. 6.9<SEP>thread of threaded flanges"
+  },
+  "LCSB<SEP>LSSB": {
+    "chunk_ids": [
+      "chunk-9465f39ee050c9785a9cb1b6547a93ba"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "LCSB<SEP>LSSB"
+  },
+  "LCMB<SEP>LSMB": {
+    "chunk_ids": [
+      "chunk-9465f39ee050c9785a9cb1b6547a93ba"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "LCMB<SEP>LSMB"
+  },
+  "ASME B16.5-2013<SEP>B463 Gr. N08020": {
+    "chunk_ids": [
+      "chunk-6f227010b6773dd7f5144203f819d843"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "ASME B16.5-2013<SEP>B463 Gr. N08020"
+  },
+  "NPS 1/2<SEP>socket welding flanges": {
+    "chunk_ids": [
+      "chunk-9eaf24d1aafb443002ee97ef5ff435f2"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "NPS 1/2<SEP>socket welding flanges"
+  },
+  "Para. 6.10.2<SEP>stud bolt height": {
+    "chunk_ids": [
+      "chunk-9eaf24d1aafb443002ee97ef5ff435f2"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Para. 6.10.2<SEP>stud bolt height"
+  },
+  "Mandatory Appendix II<SEP>bolt hole dimensions": {
+    "chunk_ids": [
+      "chunk-9eaf24d1aafb443002ee97ef5ff435f2"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Mandatory Appendix II<SEP>bolt hole dimensions"
+  },
+  "Nonmandatory Appendix C<SEP>bolt length determination": {
+    "chunk_ids": [
+      "chunk-9eaf24d1aafb443002ee97ef5ff435f2"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Nonmandatory Appendix C<SEP>bolt length determination"
+  },
+  "Point height<SEP>stud bolt length": {
+    "chunk_ids": [
+      "chunk-9eaf24d1aafb443002ee97ef5ff435f2"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Point height<SEP>stud bolt length"
+  },
+  "ASME B18.2.1<SEP>Machine Bolt": {
+    "chunk_ids": [
+      "chunk-138e3a0b2ec6167487d8efd84636fa5f"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "ASME B18.2.1<SEP>Machine Bolt"
+  },
+  "ASME B16.5-2013<SEP>quality system program": {
+    "chunk_ids": [
+      "chunk-138e3a0b2ec6167487d8efd84636fa5f"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "ASME B16.5-2013<SEP>quality system program"
+  },
+  "NPS 2 1/2<SEP>socket welding flanges": {
+    "chunk_ids": [
+      "chunk-9eaf24d1aafb443002ee97ef5ff435f2"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "NPS 2 1/2<SEP>socket welding flanges"
+  },
+  "Fitting<SEP>True \"Y\"": {
+    "chunk_ids": [
+      "chunk-138e3a0b2ec6167487d8efd84636fa5f"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Fitting<SEP>True \"Y\""
+  },
+  "Machine Bolt<SEP>Table C-1": {
+    "chunk_ids": [
+      "chunk-138e3a0b2ec6167487d8efd84636fa5f"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Machine Bolt<SEP>Table C-1"
+  },
+  "ISO 9000 series<SEP>quality system program": {
+    "chunk_ids": [
+      "chunk-138e3a0b2ec6167487d8efd84636fa5f"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "ISO 9000 series<SEP>quality system program"
+  },
+  "99.0Ni–Low<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-faa44ee0ab9a603579ea4693825fe3ea"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "99.0Ni–Low<SEP>ASME B16.5-2013"
+  },
+  "Fitting<SEP>Reducer": {
+    "chunk_ids": [
+      "chunk-138e3a0b2ec6167487d8efd84636fa5f"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Fitting<SEP>Reducer"
+  },
+  "American National Standards Institute (ANSI)<SEP>ISO 9000 series": {
+    "chunk_ids": [
+      "chunk-138e3a0b2ec6167487d8efd84636fa5f"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "American National Standards Institute (ANSI)<SEP>ISO 9000 series"
+  },
+  "ASME B16.5-2013<SEP>annealed material": {
+    "chunk_ids": [
+      "chunk-faa44ee0ab9a603579ea4693825fe3ea"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "ASME B16.5-2013<SEP>annealed material"
+  },
+  "Groove Dimensions<SEP>Nominal Pipe Size": {
+    "chunk_ids": [
+      "chunk-29a21b64670fd3044048fc8ebefbb64a"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Groove Dimensions<SEP>Nominal Pipe Size"
+  },
+  "Cross, and 45-deg Lateral<SEP>Fitting": {
+    "chunk_ids": [
+      "chunk-138e3a0b2ec6167487d8efd84636fa5f"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Cross, and 45-deg Lateral<SEP>Fitting"
+  },
+  "American Society for Quality (ASQ)<SEP>ISO 9000 series": {
+    "chunk_ids": [
+      "chunk-138e3a0b2ec6167487d8efd84636fa5f"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "American Society for Quality (ASQ)<SEP>ISO 9000 series"
+  },
+  "Class 150<SEP>Groove Dimensions": {
+    "chunk_ids": [
+      "chunk-29a21b64670fd3044048fc8ebefbb64a"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Class 150<SEP>Groove Dimensions"
+  },
+  "ASME B16.5-2013<SEP>Class 400 Flanged Fittings": {
+    "chunk_ids": [
+      "chunk-b65ae324ab2ff8d1cadd0a5a59de70c8",
+      "chunk-bcc460a90a8e17448e1e385e1599c80d"
+    ],
+    "count": 2,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "ASME B16.5-2013<SEP>Class 400 Flanged Fittings"
+  },
+  "72Ni–15Cr–8Fe<SEP>Gr. N06600": {
+    "chunk_ids": [
+      "chunk-2ed9b2372fef7aff90398748f2f51ee6"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "72Ni–15Cr–8Fe<SEP>Gr. N06600"
+  },
+  "Class 300<SEP>Groove Dimensions": {
+    "chunk_ids": [
+      "chunk-29a21b64670fd3044048fc8ebefbb64a"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Class 300<SEP>Groove Dimensions"
+  },
+  "Nominal Diameter<SEP>Table 21": {
+    "chunk_ids": [
+      "chunk-3e063d28a217c52dd27cce9855642fcf"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Nominal Diameter<SEP>Table 21"
+  },
+  "B564<SEP>Gr. N06600": {
+    "chunk_ids": [
+      "chunk-2ed9b2372fef7aff90398748f2f51ee6"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "B564<SEP>Gr. N06600"
+  },
+  "Class 400<SEP>Groove Dimensions": {
+    "chunk_ids": [
+      "chunk-29a21b64670fd3044048fc8ebefbb64a"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Class 400<SEP>Groove Dimensions"
+  },
+  "B168<SEP>Gr. N06600": {
+    "chunk_ids": [
+      "chunk-2ed9b2372fef7aff90398748f2f51ee6"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "B168<SEP>Gr. N06600"
+  },
+  "Bolt Circle<SEP>Table 21": {
+    "chunk_ids": [
+      "chunk-3e063d28a217c52dd27cce9855642fcf"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Bolt Circle<SEP>Table 21"
+  },
+  "Group 3.6 Materials<SEP>annealed material": {
+    "chunk_ids": [
+      "chunk-1b4364e68825dbe4e5d2b1711332b9ba"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Group 3.6 Materials<SEP>annealed material"
+  },
+  "Bolt Holes<SEP>Table 21": {
+    "chunk_ids": [
+      "chunk-3e063d28a217c52dd27cce9855642fcf"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Bolt Holes<SEP>Table 21"
+  },
+  "-29 to 38<SEP>Working Pressures by Classes, bar": {
+    "chunk_ids": [
+      "chunk-1b4364e68825dbe4e5d2b1711332b9ba"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "-29 to 38<SEP>Working Pressures by Classes, bar"
+  },
+  "Raised Male and Female/Ring Joint<SEP>Table 21": {
+    "chunk_ids": [
+      "chunk-3e063d28a217c52dd27cce9855642fcf"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Raised Male and Female/Ring Joint<SEP>Table 21"
+  },
+  "150<SEP>Working Pressures by Classes, bar": {
+    "chunk_ids": [
+      "chunk-1b4364e68825dbe4e5d2b1711332b9ba"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "150<SEP>Working Pressures by Classes, bar"
+  },
+  "Point Height<SEP>Table 21": {
+    "chunk_ids": [
+      "chunk-3e063d28a217c52dd27cce9855642fcf"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Point Height<SEP>Table 21"
+  },
+  "Tokyo<SEP>World Athletics Championship": {
+    "chunk_ids": [
+      "chunk-60f914a1fa531d854ff492d18961fedf"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Tokyo<SEP>World Athletics Championship"
+  },
+  "Flange Stud Bolt With Nuts<SEP>Table 21": {
+    "chunk_ids": [
+      "chunk-3e063d28a217c52dd27cce9855642fcf"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Flange Stud Bolt With Nuts<SEP>Table 21"
+  },
+  "100m Sprint Record<SEP>Noah Carter": {
+    "chunk_ids": [
+      "chunk-60f914a1fa531d854ff492d18961fedf"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "100m Sprint Record<SEP>Noah Carter"
+  },
+  "300<SEP>Working Pressures by Classes, bar": {
+    "chunk_ids": [
+      "chunk-1b4364e68825dbe4e5d2b1711332b9ba"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "300<SEP>Working Pressures by Classes, bar"
+  },
+  "Carbon-Fiber Spikes<SEP>Noah Carter": {
+    "chunk_ids": [
+      "chunk-60f914a1fa531d854ff492d18961fedf"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Carbon-Fiber Spikes<SEP>Noah Carter"
+  },
+  "Reducing Threaded and Slip-On Flanges<SEP>Standard Flanges": {
+    "chunk_ids": [
+      "chunk-a46bab0c67076b2880139ab335aeabc3"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Reducing Threaded and Slip-On Flanges<SEP>Standard Flanges"
+  },
+  "Blind Flange<SEP>Reducing Threaded and Slip-On Flanges": {
+    "chunk_ids": [
+      "chunk-a46bab0c67076b2880139ab335aeabc3"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Blind Flange<SEP>Reducing Threaded and Slip-On Flanges"
+  },
+  "Noah Carter<SEP>World Athletics Championship": {
+    "chunk_ids": [
+      "chunk-60f914a1fa531d854ff492d18961fedf"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Noah Carter<SEP>World Athletics Championship"
+  },
+  "Class 150 Flanges<SEP>Counterbore": {
+    "chunk_ids": [
+      "chunk-a46bab0c67076b2880139ab335aeabc3"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Class 150 Flanges<SEP>Counterbore"
+  },
+  "ASME B16.5-2013<SEP>Mandatory Appendix I": {
+    "chunk_ids": [
+      "chunk-7dfe4f352c161cf1b3a31d868ce8aec3"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "ASME B16.5-2013<SEP>Mandatory Appendix I"
+  },
+  "400<SEP>Working Pressures by Classes, bar": {
+    "chunk_ids": [
+      "chunk-1b4364e68825dbe4e5d2b1711332b9ba"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "400<SEP>Working Pressures by Classes, bar"
+  },
+  "ASME B1.20.1<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-7dfe4f352c161cf1b3a31d868ce8aec3"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "ASME B1.20.1<SEP>ASME B16.5-2013"
+  },
+  "Class 2500 Flanges<SEP>hub": {
+    "chunk_ids": [
+      "chunk-7dfe4f352c161cf1b3a31d868ce8aec3"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "Class 2500 Flanges<SEP>hub"
+  },
+  "internal taper threads<SEP>threaded flanges": {
+    "chunk_ids": [
+      "chunk-7dfe4f352c161cf1b3a31d868ce8aec3"
+    ],
+    "count": 1,
+    "create_time": 1776255098,
+    "update_time": 1776255098,
+    "_id": "internal taper threads<SEP>threaded flanges"
+  },
+  "600<SEP>Working Pressures by Classes, bar": {
+    "chunk_ids": [
+      "chunk-1b4364e68825dbe4e5d2b1711332b9ba"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "600<SEP>Working Pressures by Classes, bar"
+  },
+  "Class 600 Flanged Fittings<SEP>Raised Face": {
+    "chunk_ids": [
+      "chunk-b198cbe23ec845253cfd2861d7fc5756"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Class 600 Flanged Fittings<SEP>Raised Face"
+  },
+  "external taper threads<SEP>threaded flanges": {
+    "chunk_ids": [
+      "chunk-7dfe4f352c161cf1b3a31d868ce8aec3"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "external taper threads<SEP>threaded flanges"
+  },
+  "ASME B16.5-2013<SEP>Class 600 Flanged Fittings": {
+    "chunk_ids": [
+      "chunk-b198cbe23ec845253cfd2861d7fc5756"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "ASME B16.5-2013<SEP>Class 600 Flanged Fittings"
+  },
+  "900<SEP>Working Pressures by Classes, bar": {
+    "chunk_ids": [
+      "chunk-1b4364e68825dbe4e5d2b1711332b9ba"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "900<SEP>Working Pressures by Classes, bar"
+  },
+  "Class 600 Flanged Fittings<SEP>True \"Y\"": {
+    "chunk_ids": [
+      "chunk-b198cbe23ec845253cfd2861d7fc5756",
+      "chunk-2b58a0b8fcb69d1ec44e63ba6135c5ce"
+    ],
+    "count": 2,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Class 600 Flanged Fittings<SEP>True \"Y\""
+  },
+  "ASME B16.5-2013<SEP>Table II-7": {
+    "chunk_ids": [
+      "chunk-af67ef982f5c05088ecf4609fa6b99a8"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "ASME B16.5-2013<SEP>Table II-7"
+  },
+  "Table II-7<SEP>Table II-8": {
+    "chunk_ids": [
+      "chunk-af67ef982f5c05088ecf4609fa6b99a8"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Table II-7<SEP>Table II-8"
+  },
+  "Class 600 Flanged Fittings<SEP>Lateral": {
+    "chunk_ids": [
+      "chunk-b198cbe23ec845253cfd2861d7fc5756"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Class 600 Flanged Fittings<SEP>Lateral"
+  },
+  "25Ni–47Fe–21Cr–5Mo<SEP>B599 Gr. N08700": {
+    "chunk_ids": [
+      "chunk-26a64c5e6799eb1235fe9125da5cfe01"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "25Ni–47Fe–21Cr–5Mo<SEP>B599 Gr. N08700"
+  },
+  "Class 600 Flanged Fittings<SEP>Cross": {
+    "chunk_ids": [
+      "chunk-b198cbe23ec845253cfd2861d7fc5756"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Class 600 Flanged Fittings<SEP>Cross"
+  },
+  "ASME B16.5-2013<SEP>Table II-8": {
+    "chunk_ids": [
+      "chunk-af67ef982f5c05088ecf4609fa6b99a8"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "ASME B16.5-2013<SEP>Table II-8"
+  },
+  "25Ni–47Fe–21Cr–5Mo<SEP>ASTM B564": {
+    "chunk_ids": [
+      "chunk-26a64c5e6799eb1235fe9125da5cfe01"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "25Ni–47Fe–21Cr–5Mo<SEP>ASTM B564"
+  },
+  "Nominal Flange<SEP>Welding, Lapped Flange": {
+    "chunk_ids": [
+      "chunk-2ee06a2df0130f4a0dc8ec87fdc1d0c4"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Nominal Flange<SEP>Welding, Lapped Flange"
+  },
+  "Class 600 Flanged Fittings<SEP>Reducer": {
+    "chunk_ids": [
+      "chunk-b198cbe23ec845253cfd2861d7fc5756"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Class 600 Flanged Fittings<SEP>Reducer"
+  },
+  "25Ni–47Fe–21Cr–5Mo<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-26a64c5e6799eb1235fe9125da5cfe01"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "25Ni–47Fe–21Cr–5Mo<SEP>ASME B16.5-2013"
+  },
+  "Class 150 Flanges<SEP>Welding, Lapped Flange": {
+    "chunk_ids": [
+      "chunk-2ee06a2df0130f4a0dc8ec87fdc1d0c4"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Class 150 Flanges<SEP>Welding, Lapped Flange"
+  },
+  "Table 8<SEP>Table II-8": {
+    "chunk_ids": [
+      "chunk-2f4bcbe7042f56cd2690dac41f5d727d"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Table 8<SEP>Table II-8"
+  },
+  "Table 2-1.1<SEP>pressure-temperature ratings": {
+    "chunk_ids": [
+      "chunk-fddb3381428920d2982f42a7fcc67168"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Table 2-1.1<SEP>pressure-temperature ratings"
+  },
+  "Chamfer<SEP>Welding, Lapped Flange": {
+    "chunk_ids": [
+      "chunk-2ee06a2df0130f4a0dc8ec87fdc1d0c4"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Chamfer<SEP>Welding, Lapped Flange"
+  },
+  "Class 600 Flanged Fittings<SEP>Ring Joint": {
+    "chunk_ids": [
+      "chunk-2b58a0b8fcb69d1ec44e63ba6135c5ce"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Class 600 Flanged Fittings<SEP>Ring Joint"
+  },
+  "44Fe–25Ni–21Cr–Mo<SEP>A479 Gr. N08904": {
+    "chunk_ids": [
+      "chunk-2b80a9d659f34e9872ec7554628906bb"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "44Fe–25Ni–21Cr–Mo<SEP>A479 Gr. N08904"
+  },
+  "Table II-2-1.1<SEP>pressure-temperature ratings": {
+    "chunk_ids": [
+      "chunk-fddb3381428920d2982f42a7fcc67168"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Table II-2-1.1<SEP>pressure-temperature ratings"
+  },
+  "A240 Gr.<SEP>N08904": {
+    "chunk_ids": [
+      "chunk-2b80a9d659f34e9872ec7554628906bb"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "A240 Gr.<SEP>N08904"
+  },
+  "Threaded Slip-On Socket Welding<SEP>Welding, Lapped Flange": {
+    "chunk_ids": [
+      "chunk-2ee06a2df0130f4a0dc8ec87fdc1d0c4"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Threaded Slip-On Socket Welding<SEP>Welding, Lapped Flange"
+  },
+  "B620 Gr.<SEP>N08320": {
+    "chunk_ids": [
+      "chunk-2b80a9d659f34e9872ec7554628906bb"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "B620 Gr.<SEP>N08320"
+  },
+  "ASME B16.5-2013<SEP>Standard Wall Pipe": {
+    "chunk_ids": [
+      "chunk-05f0bcb59476ec9c3e973721c57f3c96"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "ASME B16.5-2013<SEP>Standard Wall Pipe"
+  },
+  "Class 150 Flanges<SEP>pressure-temperature ratings": {
+    "chunk_ids": [
+      "chunk-fddb3381428920d2982f42a7fcc67168"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Class 150 Flanges<SEP>pressure-temperature ratings"
+  },
+  "Nominal Wall Thickness<SEP>Tongue and Groove": {
+    "chunk_ids": [
+      "chunk-6b3d3983136bf26d485546eb760e1ee8"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Nominal Wall Thickness<SEP>Tongue and Groove"
+  },
+  "Slip-On Socket Welding<SEP>Welding, Lapped Flange": {
+    "chunk_ids": [
+      "chunk-2ee06a2df0130f4a0dc8ec87fdc1d0c4"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Slip-On Socket Welding<SEP>Welding, Lapped Flange"
+  },
+  "ASME B16.5-2013<SEP>Schedule 40": {
+    "chunk_ids": [
+      "chunk-05f0bcb59476ec9c3e973721c57f3c96"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "ASME B16.5-2013<SEP>Schedule 40"
+  },
+  "Blind Flanges<SEP>Inside Diameter": {
+    "chunk_ids": [
+      "chunk-6b3d3983136bf26d485546eb760e1ee8"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Blind Flanges<SEP>Inside Diameter"
+  },
+  "Flange<SEP>Outside Diameter": {
+    "chunk_ids": [
+      "chunk-6b3d3983136bf26d485546eb760e1ee8"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Flange<SEP>Outside Diameter"
+  },
+  "Nominal Wall Thickness<SEP>Ring Joint": {
+    "chunk_ids": [
+      "chunk-6b3d3983136bf26d485546eb760e1ee8"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Nominal Wall Thickness<SEP>Ring Joint"
+  },
+  "ASME B16.5-2013<SEP>Fig. II-7": {
+    "chunk_ids": [
+      "chunk-037e87f32d950a93e4afb57afbe8ac81"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "ASME B16.5-2013<SEP>Fig. II-7"
+  },
+  "Flange<SEP>Ra Standards": {
+    "chunk_ids": [
+      "chunk-6b3d3983136bf26d485546eb760e1ee8"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Flange<SEP>Ra Standards"
+  },
+  "Lap Joint<SEP>Nominal Wall Thickness": {
+    "chunk_ids": [
+      "chunk-6b3d3983136bf26d485546eb760e1ee8"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Lap Joint<SEP>Nominal Wall Thickness"
+  },
+  "Fig. II-10<SEP>Fig. II-9": {
+    "chunk_ids": [
+      "chunk-037e87f32d950a93e4afb57afbe8ac81"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Fig. II-10<SEP>Fig. II-9"
+  },
+  "Para. 6.2.3<SEP>Table II-5": {
+    "chunk_ids": [
+      "chunk-d7c70c0ed0335f782bec1b3df7c995a5"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Para. 6.2.3<SEP>Table II-5"
+  },
+  "Fig. II-7<SEP>Fig. II-8": {
+    "chunk_ids": [
+      "chunk-037e87f32d950a93e4afb57afbe8ac81"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Fig. II-7<SEP>Fig. II-8"
+  },
+  "Para. 6.2.4<SEP>Table E-3": {
+    "chunk_ids": [
+      "chunk-d7c70c0ed0335f782bec1b3df7c995a5"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Para. 6.2.4<SEP>Table E-3"
+  },
+  "Flange<SEP>Serrations": {
+    "chunk_ids": [
+      "chunk-6b3d3983136bf26d485546eb760e1ee8"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Flange<SEP>Serrations"
+  },
+  "Classes 150 and 300<SEP>classification": {
+    "chunk_ids": [
+      "chunk-aa8832e0a5766c21a73e9b2facd41d77"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Classes 150 and 300<SEP>classification"
+  },
+  "ASME B16.5-2013<SEP>Fig. II-8": {
+    "chunk_ids": [
+      "chunk-037e87f32d950a93e4afb57afbe8ac81"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "ASME B16.5-2013<SEP>Fig. II-8"
+  },
+  "Para. 6.2.5<SEP>Table E-3": {
+    "chunk_ids": [
+      "chunk-d7c70c0ed0335f782bec1b3df7c995a5"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Para. 6.2.5<SEP>Table E-3"
+  },
+  "Para. 6.4.2.2<SEP>Table E-3": {
+    "chunk_ids": [
+      "chunk-d7c70c0ed0335f782bec1b3df7c995a5"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Para. 6.4.2.2<SEP>Table E-3"
+  },
+  "ASME B16.5-2013<SEP>Solution Annealed Material": {
+    "chunk_ids": [
+      "chunk-8586cf183f28b415d1f66f1d4a4a3562"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "ASME B16.5-2013<SEP>Solution Annealed Material"
+  },
+  "Flanged Fittings<SEP>Raised Face": {
+    "chunk_ids": [
+      "chunk-254e0b50334d5302f82bd70beda43312"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Flanged Fittings<SEP>Raised Face"
+  },
+  "Classes 150 and 400<SEP>classification": {
+    "chunk_ids": [
+      "chunk-aa8832e0a5766c21a73e9b2facd41d77"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Classes 150 and 400<SEP>classification"
+  },
+  "Para. 6.1<SEP>Table E-3": {
+    "chunk_ids": [
+      "chunk-d7c70c0ed0335f782bec1b3df7c995a5"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Para. 6.1<SEP>Table E-3"
+  },
+  "Flanged Fittings<SEP>Long Center-to-Contact Surface of Raised Face": {
+    "chunk_ids": [
+      "chunk-254e0b50334d5302f82bd70beda43312"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Flanged Fittings<SEP>Long Center-to-Contact Surface of Raised Face"
+  },
+  "Classes 300 and 400<SEP>classification": {
+    "chunk_ids": [
+      "chunk-aa8832e0a5766c21a73e9b2facd41d77"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Classes 300 and 400<SEP>classification"
+  },
+  "Flat Face Flange<SEP>Raised Face Flange": {
+    "chunk_ids": [
+      "chunk-770491ae4c5f3e5340337d3d781061d5"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Flat Face Flange<SEP>Raised Face Flange"
+  },
+  "Classes 400 and higher<SEP>classification": {
+    "chunk_ids": [
+      "chunk-aa8832e0a5766c21a73e9b2facd41d77"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Classes 400 and higher<SEP>classification"
+  },
+  "Flanged Fittings<SEP>Short Center-to-Contact Surface of Raised Face": {
+    "chunk_ids": [
+      "chunk-254e0b50334d5302f82bd70beda43312"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Flanged Fittings<SEP>Short Center-to-Contact Surface of Raised Face"
+  },
+  "Flat Face Flange<SEP>Ring Joint": {
+    "chunk_ids": [
+      "chunk-770491ae4c5f3e5340337d3d781061d5"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Flat Face Flange<SEP>Ring Joint"
+  },
+  "90-deg Elbow<SEP>Special Degree Elbows": {
+    "chunk_ids": [
+      "chunk-770491ae4c5f3e5340337d3d781061d5"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "90-deg Elbow<SEP>Special Degree Elbows"
+  },
+  "Fig. II-11<SEP>thread length": {
+    "chunk_ids": [
+      "chunk-c778385453fdf92adad309927fd92426"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Fig. II-11<SEP>thread length"
+  },
+  "Fig. II-13<SEP>minimum boss size": {
+    "chunk_ids": [
+      "chunk-c778385453fdf92adad309927fd92426"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Fig. II-13<SEP>minimum boss size"
+  },
+  "Contact Surface-to-Contact Surface of Raised Face Reducer<SEP>Flanged Fittings": {
+    "chunk_ids": [
+      "chunk-254e0b50334d5302f82bd70beda43312"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Contact Surface-to-Contact Surface of Raised Face Reducer<SEP>Flanged Fittings"
+  },
+  "Flat Face Flange<SEP>Tongue and Groove": {
+    "chunk_ids": [
+      "chunk-770491ae4c5f3e5340337d3d781061d5"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Flat Face Flange<SEP>Tongue and Groove"
+  },
+  "Fig. II-12<SEP>minimum socket diameter": {
+    "chunk_ids": [
+      "chunk-c778385453fdf92adad309927fd92426"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Fig. II-12<SEP>minimum socket diameter"
+  },
+  "Fig. II-14<SEP>minimum butt weld diameter": {
+    "chunk_ids": [
+      "chunk-c778385453fdf92adad309927fd92426"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Fig. II-14<SEP>minimum butt weld diameter"
+  },
+  "ASME B16.5-2013<SEP>Class 900 Flanged Fittings": {
+    "chunk_ids": [
+      "chunk-d62708c76d7807fe7760eab56bea6043"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "ASME B16.5-2013<SEP>Class 900 Flanged Fittings"
+  },
+  "Flat Face Flange<SEP>Lapped Joint Flange": {
+    "chunk_ids": [
+      "chunk-770491ae4c5f3e5340337d3d781061d5"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Flat Face Flange<SEP>Lapped Joint Flange"
+  },
+  "Class 900 Flanged Fittings<SEP>Raised Face": {
+    "chunk_ids": [
+      "chunk-d62708c76d7807fe7760eab56bea6043"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Class 900 Flanged Fittings<SEP>Raised Face"
+  },
+  "ASME B16.5-2013<SEP>Raised Face Reducer": {
+    "chunk_ids": [
+      "chunk-38e654cf4e95cce3ba3e7cced9c476f4"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "ASME B16.5-2013<SEP>Raised Face Reducer"
+  },
+  "ASME<SEP>HS": {
+    "chunk_ids": [
+      "chunk-516a0d0d88a2b8acdc1bf3b705deb645"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "ASME<SEP>HS"
+  },
+  "Class 300 Steel<SEP>Class 300 Steel Flanges": {
+    "chunk_ids": [
+      "chunk-516a0d0d88a2b8acdc1bf3b705deb645"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Class 300 Steel<SEP>Class 300 Steel Flanges"
+  },
+  "Base Elbow<SEP>Class 900 Flanged Fittings": {
+    "chunk_ids": [
+      "chunk-d62708c76d7807fe7760eab56bea6043"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Base Elbow<SEP>Class 900 Flanged Fittings"
+  },
+  "Class 250 Cast Iron<SEP>Class 250 Cast Iron Flanges": {
+    "chunk_ids": [
+      "chunk-516a0d0d88a2b8acdc1bf3b705deb645"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Class 250 Cast Iron<SEP>Class 250 Cast Iron Flanges"
+  },
+  "Base Tee<SEP>Class 900 Flanged Fittings": {
+    "chunk_ids": [
+      "chunk-d62708c76d7807fe7760eab56bea6043"
+    ],
+    "count": 1,
+    "create_time": 1776255099,
+    "update_time": 1776255099,
+    "_id": "Base Tee<SEP>Class 900 Flanged Fittings"
+  },
+  "Base Tee<SEP>Class 1500": {
+    "chunk_ids": [
+      "chunk-f7d66f91fd341a23e68eadbefdb9b7ab"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Base Tee<SEP>Class 1500"
+  },
+  "Base Tee<SEP>Class 900": {
+    "chunk_ids": [
+      "chunk-f7d66f91fd341a23e68eadbefdb9b7ab"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Base Tee<SEP>Class 900"
+  },
+  "538<SEP>Temp., °C": {
+    "chunk_ids": [
+      "chunk-c21da8c1a6a154a2c6aadf64e368d44b"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "538<SEP>Temp., °C"
+  },
+  "Base Tee<SEP>Raised Face": {
+    "chunk_ids": [
+      "chunk-f7d66f91fd341a23e68eadbefdb9b7ab"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Base Tee<SEP>Raised Face"
+  },
+  "550<SEP>Temp., °C": {
+    "chunk_ids": [
+      "chunk-c21da8c1a6a154a2c6aadf64e368d44b"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "550<SEP>Temp., °C"
+  },
+  "Class 1500 Flanged Fittings<SEP>Dimensions": {
+    "chunk_ids": [
+      "chunk-bfef7ffcc548c36b5c0ed0c4c060dedd",
+      "chunk-d659b8d39a7ddb50dd478cba4c619fa3"
+    ],
+    "count": 2,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Class 1500 Flanged Fittings<SEP>Dimensions"
+  },
+  "Base Tee<SEP>Center-to-End": {
+    "chunk_ids": [
+      "chunk-f7d66f91fd341a23e68eadbefdb9b7ab"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Base Tee<SEP>Center-to-End"
+  },
+  "Reducers<SEP>Straight Sizes": {
+    "chunk_ids": [
+      "chunk-bfef7ffcc548c36b5c0ed0c4c060dedd"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Reducers<SEP>Straight Sizes"
+  },
+  "Dimensions<SEP>Ring Joint Groove": {
+    "chunk_ids": [
+      "chunk-bfef7ffcc548c36b5c0ed0c4c060dedd"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Dimensions<SEP>Ring Joint Groove"
+  },
+  "Base Tee<SEP>Lateral": {
+    "chunk_ids": [
+      "chunk-f7d66f91fd341a23e68eadbefdb9b7ab"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Base Tee<SEP>Lateral"
+  },
+  "Eccentric Reducers<SEP>Reducers": {
+    "chunk_ids": [
+      "chunk-bfef7ffcc548c36b5c0ed0c4c060dedd"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Eccentric Reducers<SEP>Reducers"
+  },
+  "Dimensions<SEP>Flange Edge": {
+    "chunk_ids": [
+      "chunk-bfef7ffcc548c36b5c0ed0c4c060dedd"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Dimensions<SEP>Flange Edge"
+  },
+  "A351 Gr. CN7M<SEP>Solution Annealed Material": {
+    "chunk_ids": [
+      "chunk-d25d0e55126ab35af3084e364bdd64c9"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "A351 Gr. CN7M<SEP>Solution Annealed Material"
+  },
+  "Base Tee<SEP>Square Thickness": {
+    "chunk_ids": [
+      "chunk-f7d66f91fd341a23e68eadbefdb9b7ab"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Base Tee<SEP>Square Thickness"
+  },
+  "Dimensions<SEP>Raised Face": {
+    "chunk_ids": [
+      "chunk-bfef7ffcc548c36b5c0ed0c4c060dedd"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Dimensions<SEP>Raised Face"
+  },
+  "57Ni–22Cr–14W–2Mo–La<SEP>Solution Annealed Material": {
+    "chunk_ids": [
+      "chunk-d25d0e55126ab35af3084e364bdd64c9"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "57Ni–22Cr–14W–2Mo–La<SEP>Solution Annealed Material"
+  },
+  "A351 Gr. CN7M<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-d25d0e55126ab35af3084e364bdd64c9"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "A351 Gr. CN7M<SEP>ASME B16.5-2013"
+  },
+  "Base Tee<SEP>Bolt Circle": {
+    "chunk_ids": [
+      "chunk-f7d66f91fd341a23e68eadbefdb9b7ab"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Base Tee<SEP>Bolt Circle"
+  },
+  "Class 150 Flanged Fittings<SEP>Table II-9": {
+    "chunk_ids": [
+      "chunk-944868763ad488938d4bbbf02d4db395"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Class 150 Flanged Fittings<SEP>Table II-9"
+  },
+  "ASME B16.5-2013<SEP>B435 Gr. N06230": {
+    "chunk_ids": [
+      "chunk-d25d0e55126ab35af3084e364bdd64c9"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "ASME B16.5-2013<SEP>B435 Gr. N06230"
+  },
+  "Dimensions<SEP>Ring Joint": {
+    "chunk_ids": [
+      "chunk-944868763ad488938d4bbbf02d4db395"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Dimensions<SEP>Ring Joint"
+  },
+  "ASME B16.5-2013<SEP>B564 Gr. N06230": {
+    "chunk_ids": [
+      "chunk-d25d0e55126ab35af3084e364bdd64c9"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "ASME B16.5-2013<SEP>B564 Gr. N06230"
+  },
+  "Base Tee<SEP>Nominal": {
+    "chunk_ids": [
+      "chunk-f7d66f91fd341a23e68eadbefdb9b7ab"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Base Tee<SEP>Nominal"
+  },
+  "Class 150 Flanged Fittings<SEP>Table II-10": {
+    "chunk_ids": [
+      "chunk-944868763ad488938d4bbbf02d4db395"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Class 150 Flanged Fittings<SEP>Table II-10"
+  },
+  "Flange<SEP>Plain Faced": {
+    "chunk_ids": [
+      "chunk-944868763ad488938d4bbbf02d4db395"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Flange<SEP>Plain Faced"
+  },
+  "Manufacturer<SEP>User": {
+    "chunk_ids": [
+      "chunk-c8b669ee95ab31b18996dd92e434000a"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Manufacturer<SEP>User"
+  },
+  "Class 150 Flanged Fittings<SEP>Dimensions": {
+    "chunk_ids": [
+      "chunk-944868763ad488938d4bbbf02d4db395"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Class 150 Flanged Fittings<SEP>Dimensions"
+  },
+  "Center-to-Base Dimension R<SEP>Flange": {
+    "chunk_ids": [
+      "chunk-944868763ad488938d4bbbf02d4db395"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Center-to-Base Dimension R<SEP>Flange"
+  },
+  "Metallurgical Requirements<SEP>Tables 2-1.1 through 2-3.19": {
+    "chunk_ids": [
+      "chunk-c8b669ee95ab31b18996dd92e434000a"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Metallurgical Requirements<SEP>Tables 2-1.1 through 2-3.19"
+  },
+  "Group 2 Material<SEP>User": {
+    "chunk_ids": [
+      "chunk-c8b669ee95ab31b18996dd92e434000a"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Group 2 Material<SEP>User"
+  },
+  "A515 Gr. 60<SEP>Working Pressures by Classes, psig": {
+    "chunk_ids": [
+      "chunk-27f045cb711599e1626ae4544de66292"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "A515 Gr. 60<SEP>Working Pressures by Classes, psig"
+  },
+  "MSS SP-55<SEP>User": {
+    "chunk_ids": [
+      "chunk-c8b669ee95ab31b18996dd92e434000a"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "MSS SP-55<SEP>User"
+  },
+  "Flange<SEP>Flange Edge": {
+    "chunk_ids": [
+      "chunk-944868763ad488938d4bbbf02d4db395"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Flange<SEP>Flange Edge"
+  },
+  "C–Mn–Si A350 Gr. LF1, Cl.1<SEP>Working Pressures by Classes, psig": {
+    "chunk_ids": [
+      "chunk-27f045cb711599e1626ae4544de66292"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "C–Mn–Si A350 Gr. LF1, Cl.1<SEP>Working Pressures by Classes, psig"
+  },
+  "Perpendicularity Of The Face With The Bore<SEP>Size Tolerance": {
+    "chunk_ids": [
+      "chunk-9ea77e5de59087d497604a8e25484020"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Perpendicularity Of The Face With The Bore<SEP>Size Tolerance"
+  },
+  "Type I Defects<SEP>User": {
+    "chunk_ids": [
+      "chunk-c8b669ee95ab31b18996dd92e434000a"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Type I Defects<SEP>User"
+  },
+  "A217 Gr. WC6<SEP>Group 1.9 Materials": {
+    "chunk_ids": [
+      "chunk-a3418e404eea4379f09843151bbf0eaf"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "A217 Gr. WC6<SEP>Group 1.9 Materials"
+  },
+  "A516 Gr. 60<SEP>Working Pressures by Classes, psig": {
+    "chunk_ids": [
+      "chunk-27f045cb711599e1626ae4544de66292"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "A516 Gr. 60<SEP>Working Pressures by Classes, psig"
+  },
+  "Plates a and b<SEP>User": {
+    "chunk_ids": [
+      "chunk-c8b669ee95ab31b18996dd92e434000a"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Plates a and b<SEP>User"
+  },
+  "A217 Gr. 11<SEP>Group 1.9 Materials": {
+    "chunk_ids": [
+      "chunk-a3418e404eea4379f09843151bbf0eaf"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "A217 Gr. 11<SEP>Group 1.9 Materials"
+  },
+  "NPS<SEP>Than Ring Joints": {
+    "chunk_ids": [
+      "chunk-a3abc323d58495b8071ec97d17500fa8"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "NPS<SEP>Than Ring Joints"
+  },
+  "Flange<SEP>Lapped": {
+    "chunk_ids": [
+      "chunk-6962408b774fe5ab78bfedcf807dfe29"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Flange<SEP>Lapped"
+  },
+  "A182 Gr. F1<SEP>Working Pressures by Classes, psig": {
+    "chunk_ids": [
+      "chunk-27f045cb711599e1626ae4544de66292"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "A182 Gr. F1<SEP>Working Pressures by Classes, psig"
+  },
+  "A387 Gr. 11<SEP>Group 1.9 Materials": {
+    "chunk_ids": [
+      "chunk-a3418e404eea4379f09843151bbf0eaf"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "A387 Gr. 11<SEP>Group 1.9 Materials"
+  },
+  "Outside Diameter<SEP>Than Ring Joints": {
+    "chunk_ids": [
+      "chunk-a3abc323d58495b8071ec97d17500fa8"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Outside Diameter<SEP>Than Ring Joints"
+  },
+  "Bore Depth<SEP>Flange": {
+    "chunk_ids": [
+      "chunk-6962408b774fe5ab78bfedcf807dfe29"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Bore Depth<SEP>Flange"
+  },
+  "875°F<SEP>Graphite": {
+    "chunk_ids": [
+      "chunk-47bb2fa75b3e7cd5e145f1d353440450"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "875°F<SEP>Graphite"
+  },
+  "ASME B16.5-2013<SEP>Group 1.13 Materials": {
+    "chunk_ids": [
+      "chunk-47bb2fa75b3e7cd5e145f1d353440450"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "ASME B16.5-2013<SEP>Group 1.13 Materials"
+  },
+  "Flange<SEP>Socket Welding": {
+    "chunk_ids": [
+      "chunk-6962408b774fe5ab78bfedcf807dfe29"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Flange<SEP>Socket Welding"
+  },
+  "5Cr–1⁄2Mo A182 Gr. F5a<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-47bb2fa75b3e7cd5e145f1d353440450"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "5Cr–1⁄2Mo A182 Gr. F5a<SEP>ASME B16.5-2013"
+  },
+  "Flange<SEP>Threaded": {
+    "chunk_ids": [
+      "chunk-6962408b774fe5ab78bfedcf807dfe29"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Flange<SEP>Threaded"
+  },
+  "A217 Gr. C5<SEP>ASME B16.5-2013": {
+    "chunk_ids": [
+      "chunk-47bb2fa75b3e7cd5e145f1d353440450"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "A217 Gr. C5<SEP>ASME B16.5-2013"
+  },
+  "Flange<SEP>Minimum Welding": {
+    "chunk_ids": [
+      "chunk-6962408b774fe5ab78bfedcf807dfe29"
+    ],
+    "count": 1,
+    "create_time": 1776255100,
+    "update_time": 1776255100,
+    "_id": "Flange<SEP>Minimum Welding"
+  }
+}
