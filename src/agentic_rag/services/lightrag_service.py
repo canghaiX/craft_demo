@@ -95,18 +95,34 @@ class LightRAGService:
             raise ValueError("问题不能为空。")
 
         rag = await self._get_rag()
-        query_param = QueryParam(
-            mode=mode or self.settings.lightrag_query_mode,
-            response_type=self.settings.lightrag_response_type,
-            top_k=self.settings.lightrag_top_k,
-            chunk_top_k=self.settings.lightrag_chunk_top_k,
-            include_references=self.settings.lightrag_include_references,
+        attempted_modes: list[str] = []
+
+        for query_text in await self._build_query_candidates(question):
+            for candidate_mode in self._build_query_modes(mode):
+                attempted_modes.append(f"{candidate_mode}:{query_text}")
+                query_param = QueryParam(
+                    mode=candidate_mode,
+                    response_type=self.settings.lightrag_response_type,
+                    top_k=self.settings.lightrag_top_k,
+                    chunk_top_k=self.settings.lightrag_chunk_top_k,
+                    include_references=self.settings.lightrag_include_references,
+                )
+                try:
+                    result = await rag.aquery(query_text, param=query_param)
+                except Exception:
+                    continue
+
+                normalized = self._normalize_query_result(result)
+                if normalized is not None and not self._is_insufficient_answer(normalized):
+                    return normalized
+
+        tried = ", ".join(attempted_modes[:8])
+        return (
+            "LightRAG 已执行查询，但没有返回可用答案。"
+            f" 已尝试的问题/模式组合：{tried or '无'}。"
+            f" 请先确认 `LIGHTRAG_WORKING_DIR={self.settings.lightrag_working_dir}` 下确实已生成 LightRAG 图谱与索引文件，"
+            "并优先尝试更短、更贴近文档原文实体名的英文问法。"
         )
-        result = await rag.aquery(question, param=query_param)
-        normalized = self._normalize_query_result(result)
-        if normalized is None:
-            return "LightRAG 已执行查询，但没有返回可用答案。"
-        return normalized
 
     async def close(self) -> None:
         self._closed = True
@@ -155,6 +171,56 @@ class LightRAGService:
             model_name=self.settings.lightrag_embed_model,
             func=partial(_lightrag_embedding_func, self._context_id),
         )
+
+    def _build_query_modes(self, requested_mode: str | None) -> list[str]:
+        candidates = [
+            requested_mode,
+            self.settings.lightrag_query_mode,
+            "mix",
+            "hybrid",
+            "local",
+            "global",
+            "naive",
+        ]
+        normalized: list[str] = []
+        for candidate in candidates:
+            if not candidate:
+                continue
+            mode = str(candidate).strip()
+            if mode and mode not in normalized:
+                normalized.append(mode)
+        return normalized
+
+    async def _build_query_candidates(self, question: str) -> list[str]:
+        candidates: list[str] = []
+
+        def add_candidate(text: str | None) -> None:
+            if text is None:
+                return
+            normalized = re.sub(r"\s+", " ", text).strip()
+            if normalized and normalized not in candidates:
+                candidates.append(normalized)
+
+        add_candidate(question)
+        if self._contains_cjk(question):
+            add_candidate(await self._rewrite_question_for_search(question))
+        return candidates
+
+    async def _rewrite_question_for_search(self, question: str) -> str | None:
+        try:
+            rewritten = await self.inference_service.generate_for_lightrag(
+                "你负责把用户问题改写成更适合技术文档检索的简短英文问题。"
+                "优先保留标准号、组织名、材料名、表格名和专有名词。"
+                "只返回一行英文问题，不要解释。",
+                question,
+                max_new_tokens=96,
+                temperature=0.0,
+            )
+        except Exception:
+            return None
+
+        normalized = rewritten.strip().strip('"').strip("'")
+        return normalized or None
 
     @staticmethod
     def _merge_history_and_prompt(prompt: str, history_messages: list[dict[str, Any]]) -> str:
@@ -221,6 +287,22 @@ class LightRAGService:
         if answer and references:
             return f"{answer}\n\n参考来源：\n{references}"
         return answer
+
+    @staticmethod
+    def _is_insufficient_answer(answer: str) -> bool:
+        lowered = answer.lower()
+        markers = [
+            "没有返回可用答案",
+            "没有足够信息",
+            "未找到",
+            "找不到",
+            "insufficient",
+            "not enough information",
+            "no relevant",
+            "not found",
+            "i don't know",
+        ]
+        return any(marker in lowered for marker in markers)
 
     def _extract_answer_text(self, result: Any) -> str | None:
         if isinstance(result, str):
@@ -308,3 +390,7 @@ class LightRAGService:
         except (TypeError, ValueError):
             return None
         return None
+
+    @staticmethod
+    def _contains_cjk(text: str) -> bool:
+        return any("\u4e00" <= char <= "\u9fff" for char in text)
