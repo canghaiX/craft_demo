@@ -1,6 +1,7 @@
 import argparse
 import asyncio
 import json
+import os
 
 import uvicorn
 
@@ -22,7 +23,9 @@ def ingest_data_pdfs() -> None:
 
 
 def run() -> None:
-    uvicorn.run("agentic_rag.app:app", host="0.0.0.0", port=8000, reload=False)
+    host = os.getenv("APP_HOST", "0.0.0.0")
+    port = int(os.getenv("APP_PORT", "8010"))
+    uvicorn.run("agentic_rag.app:app", host=host, port=port, reload=False)
 
 
 if __name__ == "__main__":
