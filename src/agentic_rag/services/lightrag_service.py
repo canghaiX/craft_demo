@@ -4,8 +4,10 @@ import asyncio
 import hashlib
 import math
 import re
+from functools import partial
 from collections.abc import Iterable
 from typing import Any
+from uuid import uuid4
 
 import numpy as np
 from lightrag import LightRAG, QueryParam
@@ -13,6 +15,47 @@ from lightrag.utils import EmbeddingFunc
 
 from agentic_rag.config import Settings
 from agentic_rag.services.local_inference import LocalInferenceService
+
+_LIGHTRAG_CONTEXTS: dict[str, tuple[Settings, LocalInferenceService]] = {}
+
+
+def _get_registered_context(context_id: str) -> tuple[Settings, LocalInferenceService]:
+    context = _LIGHTRAG_CONTEXTS.get(context_id)
+    if context is None:
+        raise RuntimeError("LightRAG 回调上下文不存在，服务可能已经关闭或尚未正确初始化。")
+    return context
+
+
+async def _lightrag_embedding_func(context_id: str, texts: Iterable[str]) -> np.ndarray:
+    settings, inference_service = _get_registered_context(context_id)
+    payload = [text if isinstance(text, str) and text.strip() else " " for text in texts]
+    if not payload:
+        return np.empty((0, settings.lightrag_embed_dim), dtype=np.float32)
+    return await inference_service.embed(payload)
+
+
+async def _lightrag_llm_func(
+    context_id: str,
+    prompt: str,
+    system_prompt: str | None = None,
+    history_messages: list[dict[str, Any]] | None = None,
+    keyword_extraction: bool = False,
+    **kwargs: Any,
+) -> str:
+    _, inference_service = _get_registered_context(context_id)
+    user_prompt = LightRAGService._merge_history_and_prompt(prompt, history_messages or [])
+    max_new_tokens = int(
+        kwargs.get("max_tokens")
+        or kwargs.get("max_new_tokens")
+        or kwargs.get("max_completion_tokens")
+        or 1024
+    )
+    return await inference_service.generate_for_lightrag(
+        system_prompt or "You are a helpful assistant.",
+        user_prompt,
+        max_new_tokens=max_new_tokens,
+        temperature=0.0 if keyword_extraction else 0.1,
+    )
 
 
 class LightRAGService:
@@ -23,6 +66,8 @@ class LightRAGService:
     def __init__(self, settings: Settings, inference_service: LocalInferenceService) -> None:
         self.settings = settings
         self.inference_service = inference_service
+        self._context_id = f"lightrag-{uuid4().hex}"
+        _LIGHTRAG_CONTEXTS[self._context_id] = (settings, inference_service)
         self._rag: LightRAG | None = None
         self._init_lock = asyncio.Lock()
         self._closed = False
@@ -65,12 +110,15 @@ class LightRAGService:
 
     async def close(self) -> None:
         self._closed = True
-        if self._rag is None:
-            return
-        finalize = getattr(self._rag, "finalize_storages", None)
-        if callable(finalize):
-            await finalize()
-        self._rag = None
+        try:
+            if self._rag is None:
+                return
+            finalize = getattr(self._rag, "finalize_storages", None)
+            if callable(finalize):
+                await finalize()
+            self._rag = None
+        finally:
+            _LIGHTRAG_CONTEXTS.pop(self._context_id, None)
 
     async def _get_rag(self) -> LightRAG:
         if self._closed:
@@ -87,7 +135,7 @@ class LightRAGService:
             rag = LightRAG(
                 working_dir=str(self.settings.lightrag_working_dir),
                 llm_model_name=self.settings.lightrag_llm_model,
-                llm_model_func=self._llm_model_func,
+                llm_model_func=partial(_lightrag_llm_func, self._context_id),
                 llm_model_max_async=self.settings.lightrag_llm_max_async,
                 embedding_func=self._build_embedding_func(),
                 embedding_func_max_async=self.settings.lightrag_embedding_max_async,
@@ -101,39 +149,11 @@ class LightRAGService:
             return rag
 
     def _build_embedding_func(self) -> EmbeddingFunc:
-        async def embedding_func(texts: Iterable[str]) -> np.ndarray:
-            payload = [text if isinstance(text, str) and text.strip() else " " for text in texts]
-            if not payload:
-                return np.empty((0, self.settings.lightrag_embed_dim), dtype=np.float32)
-            return await self.inference_service.embed(payload)
-
         return EmbeddingFunc(
             embedding_dim=self.settings.lightrag_embed_dim,
             max_token_size=self.settings.lightrag_embedding_max_tokens,
             model_name=self.settings.lightrag_embed_model,
-            func=embedding_func,
-        )
-
-    async def _llm_model_func(
-        self,
-        prompt: str,
-        system_prompt: str | None = None,
-        history_messages: list[dict[str, Any]] | None = None,
-        keyword_extraction: bool = False,
-        **kwargs: Any,
-    ) -> str:
-        user_prompt = self._merge_history_and_prompt(prompt, history_messages or [])
-        max_new_tokens = int(
-            kwargs.get("max_tokens")
-            or kwargs.get("max_new_tokens")
-            or kwargs.get("max_completion_tokens")
-            or 1024
-        )
-        return await self.inference_service.generate_for_lightrag(
-            system_prompt or "You are a helpful assistant.",
-            user_prompt,
-            max_new_tokens=max_new_tokens,
-            temperature=0.0 if keyword_extraction else 0.1,
+            func=partial(_lightrag_embedding_func, self._context_id),
         )
 
     @staticmethod
