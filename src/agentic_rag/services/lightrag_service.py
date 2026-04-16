@@ -90,7 +90,43 @@ class LightRAGService:
             question,
             param=query_param_cls(mode=mode or self.settings.lightrag_query_mode),
         )
-        return result if isinstance(result, str) else str(result)
+        answer = self._normalize_query_result(result)
+        if answer is not None:
+            return answer
+
+        return (
+            "LightRAG routed the request correctly, but the query stage did not produce a final answer. "
+            "The knowledge graph appears to exist, but this question returned an empty result."
+        )
+
+    def _normalize_query_result(self, result: Any) -> str | None:
+        if result is None:
+            return None
+
+        if isinstance(result, str):
+            normalized = result.strip()
+            if not normalized or normalized.lower() == "none":
+                return None
+            return normalized
+
+        if isinstance(result, dict):
+            for key in ("response", "answer", "result", "content"):
+                value = result.get(key)
+                normalized = self._normalize_query_result(value)
+                if normalized is not None:
+                    return normalized
+            return None
+
+        for attr in ("response", "answer", "result", "content"):
+            if hasattr(result, attr):
+                normalized = self._normalize_query_result(getattr(result, attr))
+                if normalized is not None:
+                    return normalized
+
+        text = str(result).strip()
+        if not text or text.lower() == "none":
+            return None
+        return text
 
     async def close(self) -> None:
         if self._rag is None:
