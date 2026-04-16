@@ -150,8 +150,11 @@ class LocalInferenceBackend:
     def __init__(self, settings: Settings) -> None:
         self.generator = LocalGenerator(str(settings.agent_model_path))
         self.router_generator = self.generator
+        self.lightrag_generator = self.generator
         if settings.router_model_path != settings.agent_model_path:
             self.router_generator = LocalGenerator(str(settings.router_model_path))
+        if settings.lightrag_llm_model_path != settings.agent_model_path:
+            self.lightrag_generator = LocalGenerator(str(settings.lightrag_llm_model_path))
         self.embedder = LocalEmbedder(str(settings.lightrag_embed_model_path))
 
     async def generate(
@@ -197,8 +200,31 @@ class LocalInferenceService:
         temperature: float = 0.1,
     ) -> str:
         # 根据 backend_type 自动选择本地或远程生成路径。
+        return await self.generate_with_model(
+            system_prompt,
+            user_prompt,
+            model_role="router" if use_router_model else "agent",
+            max_new_tokens=max_new_tokens,
+            temperature=temperature,
+        )
+
+    async def generate_with_model(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        *,
+        model_role: str = "agent",
+        max_new_tokens: int = 512,
+        temperature: float = 0.1,
+    ) -> str:
+        # 统一的按“角色模型”生成入口，便于给 LightRAG 注入专用模型。
         if self.backend_type == "local":
-            generator = self.backend.router_generator if use_router_model else self.backend.generator
+            if model_role == "router":
+                generator = self.backend.router_generator
+            elif model_role == "lightrag":
+                generator = self.backend.lightrag_generator
+            else:
+                generator = self.backend.generator
             return await self.backend.generate(
                 generator,
                 system_prompt,
@@ -207,11 +233,32 @@ class LocalInferenceService:
                 temperature=temperature,
             )
 
-        model = self.settings.router_model if use_router_model else self.settings.agent_model
+        if model_role == "router":
+            model = self.settings.router_model
+        elif model_role == "lightrag":
+            model = self.settings.lightrag_llm_model
+        else:
+            model = self.settings.agent_model
         return await self.backend.generate(
             model,
             system_prompt,
             user_prompt,
+            max_new_tokens=max_new_tokens,
+            temperature=temperature,
+        )
+
+    async def generate_for_lightrag(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        *,
+        max_new_tokens: int = 512,
+        temperature: float = 0.1,
+    ) -> str:
+        return await self.generate_with_model(
+            system_prompt,
+            user_prompt,
+            model_role="lightrag",
             max_new_tokens=max_new_tokens,
             temperature=temperature,
         )

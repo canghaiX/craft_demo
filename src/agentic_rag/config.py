@@ -35,7 +35,24 @@ class Settings(BaseSettings):
     )
     lightrag_embed_dim: int = Field(default=3072, alias="LIGHTRAG_EMBED_DIM")
     lightrag_working_dir: Path = Field(default=Path("./data/lightrag"), alias="LIGHTRAG_WORKING_DIR")
-    lightrag_query_mode: str = Field(default="hybrid", alias="LIGHTRAG_QUERY_MODE")
+    lightrag_query_mode: str = Field(default="mix", alias="LIGHTRAG_QUERY_MODE")
+    lightrag_response_type: str = Field(default="Multiple Paragraphs", alias="LIGHTRAG_RESPONSE_TYPE")
+    lightrag_top_k: int = Field(default=40, alias="LIGHTRAG_TOP_K")
+    lightrag_chunk_top_k: int = Field(default=20, alias="LIGHTRAG_CHUNK_TOP_K")
+    lightrag_include_references: bool = Field(default=True, alias="LIGHTRAG_INCLUDE_REFERENCES")
+    lightrag_enable_llm_cache: bool = Field(default=True, alias="LIGHTRAG_ENABLE_LLM_CACHE")
+    lightrag_chunk_token_size: int = Field(default=1200, alias="LIGHTRAG_CHUNK_TOKEN_SIZE")
+    lightrag_chunk_overlap_token_size: int = Field(
+        default=100,
+        alias="LIGHTRAG_CHUNK_OVERLAP_TOKEN_SIZE",
+    )
+    lightrag_embedding_max_tokens: int = Field(default=8192, alias="LIGHTRAG_EMBEDDING_MAX_TOKENS")
+    lightrag_llm_max_async: int = Field(default=8, alias="LIGHTRAG_LLM_MAX_ASYNC")
+    lightrag_embedding_max_async: int = Field(default=8, alias="LIGHTRAG_EMBEDDING_MAX_ASYNC")
+    lightrag_tiktoken_model_name: str = Field(
+        default="gpt-4o-mini",
+        alias="LIGHTRAG_TIKTOKEN_MODEL_NAME",
+    )
     pdf_source_dir: Path = Field(default=Path("./data"), alias="PDF_SOURCE_DIR")
 
     direct_qa_system_prompt: str = Field(
