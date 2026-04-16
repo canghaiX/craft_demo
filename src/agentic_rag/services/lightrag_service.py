@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from typing import Any
 
 from agentic_rag.config import Settings
@@ -86,18 +87,72 @@ class LightRAGService:
     async def query(self, question: str, mode: str | None = None) -> str:
         rag = await self.get_rag()
         query_param_cls = getattr(rag, "_query_param_cls")
-        result = await rag.aquery(
-            question,
-            param=query_param_cls(mode=mode or self.settings.lightrag_query_mode),
-        )
-        answer = self._normalize_query_result(result)
-        if answer is not None:
-            return answer
+        query_mode = mode or self.settings.lightrag_query_mode
+
+        for candidate in await self._build_query_candidates(question):
+            result = await rag.aquery(
+                candidate,
+                param=query_param_cls(mode=query_mode),
+            )
+            answer = self._normalize_query_result(result)
+            if answer is not None:
+                return answer
 
         return (
             "LightRAG 已正确命中，但查询阶段没有产出最终答案。"
             "当前知识图谱看起来已经存在，不过这个问题返回了空结果。"
         )
+
+    async def _build_query_candidates(self, question: str) -> list[str]:
+        candidates: list[str] = []
+
+        def add_candidate(text: str) -> None:
+            normalized = re.sub(r"\s+", " ", text).strip()
+            if normalized and normalized not in candidates:
+                candidates.append(normalized)
+
+        add_candidate(question)
+
+        # 针对图谱中更常见的关系表达，补一些中文同义改写。
+        synonym_variants = [
+            question.replace("作者", "发布者"),
+            question.replace("作者", "发布机构"),
+            question.replace("谁写的", "由谁发布"),
+            question.replace("是谁写的", "由谁发布"),
+        ]
+        for variant in synonym_variants:
+            add_candidate(variant)
+
+        if self._contains_cjk(question):
+            rewritten = await self._rewrite_question_for_graph(question)
+            add_candidate(rewritten)
+
+        return candidates
+
+    async def _rewrite_question_for_graph(self, question: str) -> str | None:
+        system_prompt = (
+            "你负责把用户问题改写成更适合知识图谱检索的简短英文问题。"
+            "优先保留文档名、标准号、材料名、表格名等专有名词。"
+            "如果用户问“作者”，但更合理的图谱关系是“发布者、发布机构、published by、publisher”，"
+            "请改写成对应表达。"
+            "只返回一行英文问题，不要解释。"
+        )
+        try:
+            rewritten = await self.inference_service.generate(
+                system_prompt,
+                question,
+                max_new_tokens=96,
+                temperature=0.0,
+            )
+        except RuntimeError:
+            return None
+
+        normalized = rewritten.strip().strip('"').strip("'")
+        return normalized or None
+
+    @staticmethod
+    def _contains_cjk(text: str) -> bool:
+        return any("\u4e00" <= char <= "\u9fff" for char in text)
 
     def _normalize_query_result(self, result: Any) -> str | None:
         if result is None:
