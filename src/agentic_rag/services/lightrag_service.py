@@ -3,6 +3,7 @@ from __future__ import annotations
 import asyncio
 import hashlib
 import math
+import json
 import re
 from functools import partial
 from collections.abc import Iterable
@@ -15,6 +16,7 @@ from lightrag.utils import EmbeddingFunc
 
 from agentic_rag.config import Settings
 from agentic_rag.services.local_inference import LocalInferenceService
+from agentic_rag.services.triple_extractor import StandardTripleExtractor
 
 _LIGHTRAG_CONTEXTS: dict[str, tuple[Settings, LocalInferenceService]] = {}
 
@@ -66,6 +68,7 @@ class LightRAGService:
     def __init__(self, settings: Settings, inference_service: LocalInferenceService) -> None:
         self.settings = settings
         self.inference_service = inference_service
+        self.triple_extractor = StandardTripleExtractor(settings, inference_service)
         self._context_id = f"lightrag-{uuid4().hex}"
         _LIGHTRAG_CONTEXTS[self._context_id] = (settings, inference_service)
         self._rag: LightRAG | None = None
@@ -86,6 +89,7 @@ class LightRAGService:
             await rag.adelete_by_doc_id(doc_id, delete_llm_cache=False)
 
         await rag.ainsert(text, ids=[doc_id], file_paths=[source_file])
+        await self.triple_extractor.extract_and_store(text, file_path=source_file)
 
         doc_status = await rag.aget_docs_by_ids([doc_id])
         return self._extract_chunks_count(doc_status, doc_id, text)
@@ -103,10 +107,21 @@ class LightRAGService:
             include_references=self.settings.lightrag_include_references,
         )
         result = await rag.aquery(question, param=query_param)
-        normalized = self._normalize_query_result(result)
-        if normalized is None:
+        triples = self.triple_extractor.search_triples(question)
+        chunks = self.triple_extractor.search_chunks(question)
+        lightrag_answer = self._normalize_query_result(result)
+
+        if triples or chunks:
+            return await self._answer_with_evidence(
+                question=question,
+                triples=triples,
+                chunks=chunks,
+                lightrag_answer=lightrag_answer,
+            )
+
+        if lightrag_answer is None:
             return "LightRAG 已执行查询，但没有返回可用答案。"
-        return normalized
+        return lightrag_answer
 
     async def close(self) -> None:
         self._closed = True
@@ -221,6 +236,38 @@ class LightRAGService:
         if answer and references:
             return f"{answer}\n\n参考来源：\n{references}"
         return answer
+
+    async def _answer_with_evidence(
+        self,
+        *,
+        question: str,
+        triples: list[dict[str, Any]],
+        chunks: list[dict[str, Any]],
+        lightrag_answer: str | None,
+    ) -> str:
+        triple_block = json.dumps(triples, ensure_ascii=False, indent=2)
+        chunk_block = json.dumps(chunks, ensure_ascii=False, indent=2)
+        fallback_answer = lightrag_answer or "LightRAG 未返回可用答案。"
+
+        prompt = (
+            f"用户问题：{question}\n\n"
+            "请优先基于标准三元组证据回答；如有需要，再结合原文 chunk 和 LightRAG 返回内容补充。\n"
+            "如果证据不足，请明确说明“现有证据不足”，不要自由发挥。\n\n"
+            "【标准三元组证据】\n"
+            f"{triple_block}\n\n"
+            "【原文 chunk 证据】\n"
+            f"{chunk_block}\n\n"
+            "【LightRAG 原始回答】\n"
+            f"{fallback_answer}"
+        )
+        answer = await self.inference_service.generate_for_lightrag(
+            "你是一名严谨的知识问答助手，请严格依据证据生成答案。",
+            prompt,
+            max_new_tokens=700,
+            temperature=0.1,
+        )
+        normalized = answer.strip()
+        return normalized or fallback_answer
 
     def _extract_answer_text(self, result: Any) -> str | None:
         if isinstance(result, str):

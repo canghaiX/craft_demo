@@ -98,7 +98,7 @@ async def ingest_pdf(request: Request, file: UploadFile = File(...)) -> IngestRe
             file_name=parsed.file_name,
             pages=parsed.pages,
             chunks_indexed=chunk_count,
-            characters=len(parsed.text),
+            characters=parsed.cleaned_characters,
             storage_dir=str(settings.lightrag_working_dir),
         )
     except (RuntimeError, ValueError) as exc:

@@ -3,6 +3,8 @@ from pathlib import Path
 
 from pypdf import PdfReader
 
+from agentic_rag.services.pdf_cleaner import PdfTextCleaner
+
 
 @dataclass(slots=True)
 class ParsedPdf:
@@ -10,9 +12,15 @@ class ParsedPdf:
     file_name: str
     pages: int
     text: str
+    cleaned_characters: int
+    removed_lines: int
+    removed_pages: int
 
 
 class PdfParser:
+    def __init__(self) -> None:
+        self.cleaner = PdfTextCleaner()
+
     def parse(self, pdf_path: Path) -> ParsedPdf:
         # PDF 解析逻辑比较直接：
         # 逐页提取文本，并保留页码信息，方便后续问答时回溯来源。
@@ -24,8 +32,12 @@ class PdfParser:
             if text:
                 page_texts.append(f"[Page {index}]\n{text}")
 
+        cleaned = self.cleaner.clean("\n\n".join(page_texts).strip())
         return ParsedPdf(
             file_name=pdf_path.name,
             pages=len(reader.pages),
-            text="\n\n".join(page_texts).strip(),
+            text=cleaned.text,
+            cleaned_characters=len(cleaned.text),
+            removed_lines=cleaned.removed_lines,
+            removed_pages=cleaned.removed_pages,
         )

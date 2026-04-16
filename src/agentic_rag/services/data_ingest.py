@@ -43,7 +43,7 @@ class DataDirectoryIngestor:
                     file_name=str(pdf_file.relative_to(root)),
                     pages=parsed.pages,
                     chunks_indexed=chunks_indexed,
-                    characters=len(parsed.text),
+                    characters=parsed.cleaned_characters,
                 )
             )
 

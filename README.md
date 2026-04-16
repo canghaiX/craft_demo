@@ -11,7 +11,8 @@
 2. 用 `pypdf` 提取逐页文本
 3. 把文本送入官方 `LightRAG` Core
 4. LightRAG 在入库过程中完成实体关系抽取、图谱构建和混合索引
-5. LangGraph 根据问题自动路由到：
+5. 项目会额外基于清洗后的 chunk 抽取标准三元组并落盘
+6. LangGraph 根据问题自动路由到：
    - 直接模型问答
    - LightRAG 图谱检索问答
 
@@ -19,6 +20,7 @@
 
 - `FastAPI + LangGraph` 负责 API、路由和工作流编排
 - `LightRAG Core` 负责文档入库、图谱抽取、混合检索和问答
+- `StandardTripleExtractor` 负责补充标准三元组层，生成 `subject/predicate/object/evidence`
 - `LocalInferenceService` 负责为 LightRAG 注入 LLM 与 embedding 回调
 - `PdfParser` 负责把 PDF 转成可入库文本
 
@@ -134,6 +136,7 @@ python -m agentic_rag.main ingest-data-pdfs
 - 逐个解析文本
 - 调用官方 LightRAG `ainsert(...)`
 - 让 LightRAG 建立图谱、实体关系与混合检索索引
+- 同时额外抽取标准三元组并写入本地 JSON
 
 执行完成后会打印 JSON 结果，包含：
 
@@ -142,6 +145,13 @@ python -m agentic_rag.main ingest-data-pdfs
 - 每个 PDF 的页数、字符数、估算 chunk 数
 
 LightRAG 会把图谱、向量索引、KV 状态等数据写入 `LIGHTRAG_WORKING_DIR`。同一路径文档会使用稳定 `doc_id` 更新导入，而不是无限重复累积。
+
+项目还会额外生成：
+
+- `standard_triples.json`
+- `source_chunks.json`
+
+其中 `standard_triples.json` 保存标准结构的三元组，`source_chunks.json` 保存清洗后的原文 chunk 证据。
 
 ## API 方式导入
 
@@ -173,9 +183,11 @@ curl -X POST "http://127.0.0.1:8000/chat" `
 ## 当前实现重点
 
 - [src/agentic_rag/services/lightrag_service.py](src/agentic_rag/services/lightrag_service.py) 现在是正式的 LightRAG Core 适配层
+- [src/agentic_rag/services/triple_extractor.py](src/agentic_rag/services/triple_extractor.py) 负责标准三元组抽取与落盘
 - 首次使用时会执行 `initialize_storages()`，关闭服务时会执行 `finalize_storages()`
 - 文档导入会按来源路径生成稳定 `doc_id`，重复导入时先删除旧文档再重新写入
 - 查询走官方 `QueryParam`，支持 `mode/top_k/chunk_top_k/response_type/include_references`
+- 问答时会优先检索 `standard_triples.json`，再结合 LightRAG 返回内容做最终回答
 
 ## PDF 解析位置
 
