@@ -11,7 +11,8 @@
 2. 用 `pypdf` 提取逐页文本
 3. 把文本送入 LightRAG
 4. LightRAG 在入库过程中完成实体关系抽取和图谱索引构建
-5. LangGraph 根据问题自动路由到：
+5. 项目会在入库过程中额外生成一份标准谓语三元组文件 `lightrag/standard_triples.json`
+6. LangGraph 根据问题自动路由到：
    - 直接模型问答
    - LightRAG 图谱检索问答
 
@@ -120,6 +121,23 @@ python -m agentic_rag.main ingest-data-pdfs
 - 发现了多少个 PDF
 - 成功索引了多少个 PDF
 - 每个 PDF 的页数、字符数、估算 chunk 数
+
+同时还会在 `LIGHTRAG_WORKING_DIR` 下额外生成：
+
+- `standard_triples.json`
+
+这个文件保存的是标准结构的三元组：
+
+```json
+{
+  "subject": "ASME B16.5-2013",
+  "predicate": "published_by",
+  "object": "ASME International",
+  "evidence": "ASME B16.5-2013 is a standard document published by ASME International."
+}
+```
+
+如果你修改了抽取逻辑，记得重新执行一次入库，这样 `standard_triples.json` 才会按新逻辑刷新。
 
 ## API 方式导入
 

@@ -6,6 +6,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
+    # 统一配置对象：
+    # 所有环境变量最终都会映射到这里，项目其他模块直接依赖 Settings。
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
     model_backend: str = Field(default="vllm", alias="MODEL_BACKEND")
@@ -54,6 +56,8 @@ class Settings(BaseSettings):
 
 @lru_cache(maxsize=1)
 def get_settings() -> Settings:
+    # 配置对象全局缓存，避免重复读取 .env。
+    # 同时在启动时确保核心工作目录存在。
     settings = Settings()
     settings.lightrag_working_dir.mkdir(parents=True, exist_ok=True)
     settings.pdf_source_dir.mkdir(parents=True, exist_ok=True)

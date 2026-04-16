@@ -9,6 +9,7 @@ from agentic_rag.app import build_data_ingestor, get_lightrag_service
 
 
 def ingest_data_pdfs() -> None:
+    # 命令行批量导入入口。
     lightrag_service = get_lightrag_service()
 
     async def _run() -> None:
@@ -23,12 +24,16 @@ def ingest_data_pdfs() -> None:
 
 
 def run() -> None:
+    # 命令行启动 API 服务。
+    # 端口默认设为 8010，避免和常见的 vLLM 8000 端口冲突。
     host = os.getenv("APP_HOST", "0.0.0.0")
     port = int(os.getenv("APP_PORT", "8010"))
     uvicorn.run("agentic_rag.app:app", host=host, port=port, reload=False)
 
 
 if __name__ == "__main__":
+    # 一个简单的双模式 CLI：
+    # serve 启动服务，ingest-data-pdfs 批量导入文档。
     parser = argparse.ArgumentParser(description="Agentic RAG 服务与数据导入命令行工具。")
     parser.add_argument(
         "command",

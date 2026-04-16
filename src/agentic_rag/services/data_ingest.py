@@ -7,6 +7,7 @@ from agentic_rag.services.pdf_parser import PdfParser
 
 
 class DataDirectoryIngestor:
+    # 负责“扫描目录 -> 解析 PDF -> 导入 LightRAG”的批量流程。
     def __init__(
         self,
         settings: Settings,
@@ -18,12 +19,15 @@ class DataDirectoryIngestor:
         self.lightrag_service = lightrag_service
 
     def discover_pdfs(self, source_dir: Path | None = None) -> list[Path]:
+        # 递归扫描 source_dir 下所有 PDF 文件。
         root = (source_dir or self.settings.pdf_source_dir).resolve()
         if not root.exists():
             return []
         return sorted(path for path in root.rglob("*.pdf") if path.is_file())
 
     async def ingest_directory(self, source_dir: Path | None = None) -> BatchIngestResponse:
+        # 批量导入的主流程：
+        # 逐个 PDF 解析并调用 lightrag_service.ingest_document。
         root = (source_dir or self.settings.pdf_source_dir).resolve()
         pdf_files = self.discover_pdfs(root)
         indexed_files: list[BatchIngestFileResult] = []

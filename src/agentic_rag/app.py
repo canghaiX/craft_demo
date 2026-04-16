@@ -14,16 +14,22 @@ from agentic_rag.services.local_inference import get_local_inference_service
 from agentic_rag.services.pdf_parser import PdfParser
 
 
+# 这里在模块加载时就创建全局配置与 PDF 解析器，
+# 这样接口函数里可以直接复用，避免每次请求重复初始化。
 settings = get_settings()
 pdf_parser = PdfParser()
 
 
 def get_lightrag_service() -> LightRAGService:
+    # 统一封装 LightRAGService 的构建逻辑，
+    # 方便 API 与命令行入口共用同一套初始化方式。
     return LightRAGService(settings, inference_service=get_local_inference_service())
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    # FastAPI 生命周期钩子：
+    # 启动时先占位，关闭时统一释放 LightRAG 底层资源。
     app.state.lightrag_service = None
     app.state.workflow = None
     yield
@@ -42,10 +48,14 @@ app = FastAPI(
 
 @app.get("/health")
 async def health() -> dict[str, str]:
+    # 最基础的健康检查接口，常用于 notebook 或部署探针测试。
     return {"status": "正常"}
 
 
 def ensure_services(app: FastAPI) -> tuple[LightRAGService, AgenticRAGWorkflow]:
+    # 这里做的是“按需初始化”：
+    # 第一次请求到来时再创建 LightRAGService 与工作流对象，
+    # 后续请求直接复用，避免重复构建。
     if getattr(app.state, "lightrag_service", None) is None:
         app.state.lightrag_service = get_lightrag_service()
     if getattr(app.state, "workflow", None) is None:
@@ -58,6 +68,7 @@ def ensure_services(app: FastAPI) -> tuple[LightRAGService, AgenticRAGWorkflow]:
 
 
 def build_data_ingestor(lightrag_service: LightRAGService) -> DataDirectoryIngestor:
+    # 把批量导入依赖集中组装起来，保持 API 层代码更简洁。
     return DataDirectoryIngestor(
         settings=settings,
         pdf_parser=pdf_parser,
@@ -67,6 +78,10 @@ def build_data_ingestor(lightrag_service: LightRAGService) -> DataDirectoryInges
 
 @app.post("/ingest/pdf", response_model=IngestResponse)
 async def ingest_pdf(request: Request, file: UploadFile = File(...)) -> IngestResponse:
+    # 上传单个 PDF 的接口：
+    # 1. 临时保存上传文件
+    # 2. 解析文本
+    # 3. 交给 LightRAG 建图和建索引
     if not file.filename or not file.filename.lower().endswith(".pdf"):
         raise HTTPException(status_code=400, detail="请上传 PDF 文件。")
 
@@ -94,6 +109,7 @@ async def ingest_pdf(request: Request, file: UploadFile = File(...)) -> IngestRe
 
 @app.post("/ingest/data-pdfs", response_model=BatchIngestResponse)
 async def ingest_data_pdfs(request: Request) -> BatchIngestResponse:
+    # 从 data 目录批量导入 PDF。
     try:
         lightrag_service, _ = ensure_services(request.app)
         ingestor = build_data_ingestor(lightrag_service)
@@ -104,6 +120,8 @@ async def ingest_data_pdfs(request: Request) -> BatchIngestResponse:
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat(request: Request, payload: ChatRequest) -> ChatResponse:
+    # 统一问答入口：
+    # 由 LangGraph 工作流决定走 direct 还是 lightrag。
     try:
         _, workflow = ensure_services(request.app)
         result = await workflow.ainvoke(payload.question, payload.force_route)

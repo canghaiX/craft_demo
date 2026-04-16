@@ -6,6 +6,7 @@ from pypdf import PdfReader
 
 @dataclass(slots=True)
 class ParsedPdf:
+    # 解析 PDF 后返回的结构化结果。
     file_name: str
     pages: int
     text: str
@@ -13,6 +14,8 @@ class ParsedPdf:
 
 class PdfParser:
     def parse(self, pdf_path: Path) -> ParsedPdf:
+        # PDF 解析逻辑比较直接：
+        # 逐页提取文本，并保留页码信息，方便后续问答时回溯来源。
         reader = PdfReader(str(pdf_path))
         page_texts: list[str] = []
 
