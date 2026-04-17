@@ -24,7 +24,7 @@ class LLMServices:
         async for chunk in self.inference_service.stream_generate(
             self.settings.direct_qa_system_prompt,
             question,
-            max_new_tokens=512,
+            max_new_tokens=1200,
             temperature=0.2,
         ):
             yield chunk

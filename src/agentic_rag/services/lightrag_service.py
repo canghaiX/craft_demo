@@ -297,7 +297,7 @@ class LightRAGService:
         answer = await self.inference_service.generate_for_lightrag(
             "你是一名严谨的知识问答助手，请严格依据证据生成答案。",
             prompt,
-            max_new_tokens=700,
+            max_new_tokens=1800,
             temperature=0.1,
         )
         normalized = answer.strip()
@@ -330,7 +330,7 @@ class LightRAGService:
         async for chunk in self.inference_service.stream_generate_for_lightrag(
             "你是一名严谨的知识问答助手，请严格依据证据生成答案。",
             prompt,
-            max_new_tokens=700,
+            max_new_tokens=1800,
             temperature=0.1,
         ):
             if chunk:
