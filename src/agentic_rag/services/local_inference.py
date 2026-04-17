@@ -3,6 +3,7 @@ from __future__ import annotations
 import asyncio
 import json
 import re
+from collections.abc import AsyncIterator
 from functools import lru_cache
 from pathlib import Path
 
@@ -135,6 +136,36 @@ class RemoteInferenceBackend:
             return "".join(text_parts).strip()
         return ""
 
+    async def stream_generate(
+        self,
+        model: str,
+        system_prompt: str,
+        user_prompt: str,
+        *,
+        max_new_tokens: int = 512,
+        temperature: float = 0.1,
+    ) -> AsyncIterator[str]:
+        stream = await self.llm_client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            max_tokens=max_new_tokens,
+            temperature=temperature,
+            stream=True,
+        )
+        async for chunk in stream:
+            if not chunk.choices:
+                continue
+            delta = chunk.choices[0].delta.content
+            if isinstance(delta, str) and delta:
+                yield delta
+            elif isinstance(delta, list):
+                text_parts = [part.text for part in delta if getattr(part, "type", None) == "text"]
+                if text_parts:
+                    yield "".join(text_parts)
+
     async def embed(self, texts: list[str]) -> np.ndarray:
         # 远程 embedding 接口通常单独部署，因此这里和 llm_client 分开。
         response = await self.embedding_client.embeddings.create(
@@ -177,6 +208,26 @@ class LocalInferenceBackend:
 
     async def embed(self, texts: list[str]) -> np.ndarray:
         return await asyncio.to_thread(self.embedder.embed, texts)
+
+    async def stream_generate(
+        self,
+        generator: LocalGenerator,
+        system_prompt: str,
+        user_prompt: str,
+        *,
+        max_new_tokens: int = 512,
+        temperature: float = 0.1,
+    ) -> AsyncIterator[str]:
+        # 本地模式先兼容为“生成完成后分块返回”，保持上层接口统一。
+        response = await self.generate(
+            generator,
+            system_prompt,
+            user_prompt,
+            max_new_tokens=max_new_tokens,
+            temperature=temperature,
+        )
+        for index in range(0, len(response), 80):
+            yield response[index : index + 80]
 
 
 class LocalInferenceService:
@@ -247,6 +298,66 @@ class LocalInferenceService:
             temperature=temperature,
         )
 
+    async def stream_generate(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        *,
+        use_router_model: bool = False,
+        max_new_tokens: int = 512,
+        temperature: float = 0.1,
+    ) -> AsyncIterator[str]:
+        async for chunk in self.stream_generate_with_model(
+            system_prompt,
+            user_prompt,
+            model_role="router" if use_router_model else "agent",
+            max_new_tokens=max_new_tokens,
+            temperature=temperature,
+        ):
+            yield chunk
+
+    async def stream_generate_with_model(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        *,
+        model_role: str = "agent",
+        max_new_tokens: int = 512,
+        temperature: float = 0.1,
+    ) -> AsyncIterator[str]:
+        if self.backend_type == "local":
+            if model_role == "router":
+                generator = self.backend.router_generator
+            elif model_role == "lightrag":
+                generator = self.backend.lightrag_generator
+            else:
+                generator = self.backend.generator
+            async for chunk in self.backend.stream_generate(
+                generator,
+                system_prompt,
+                user_prompt,
+                max_new_tokens=max_new_tokens,
+                temperature=temperature,
+            ):
+                yield chunk
+            return
+
+        if model_role == "router":
+            model = self.settings.router_model
+        elif model_role == "lightrag":
+            model = self.settings.lightrag_llm_model
+        else:
+            model = self.settings.agent_model
+
+        async for chunk in self.backend.stream_generate(
+            model,
+            system_prompt,
+            user_prompt,
+            max_new_tokens=max_new_tokens,
+            temperature=temperature,
+        ):
+            yield chunk
+
     async def generate_for_lightrag(
         self,
         system_prompt: str,
@@ -262,6 +373,23 @@ class LocalInferenceService:
             max_new_tokens=max_new_tokens,
             temperature=temperature,
         )
+
+    async def stream_generate_for_lightrag(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        *,
+        max_new_tokens: int = 512,
+        temperature: float = 0.1,
+    ) -> AsyncIterator[str]:
+        async for chunk in self.stream_generate_with_model(
+            system_prompt,
+            user_prompt,
+            model_role="lightrag",
+            max_new_tokens=max_new_tokens,
+            temperature=temperature,
+        ):
+            yield chunk
 
     async def embed(self, texts: list[str]) -> np.ndarray:
         return await self.backend.embed(texts)

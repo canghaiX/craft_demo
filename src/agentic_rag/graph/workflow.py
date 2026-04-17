@@ -1,3 +1,4 @@
+from collections.abc import AsyncIterator
 from typing import Annotated, Literal, TypedDict
 
 from langgraph.graph import END, StateGraph
@@ -69,6 +70,41 @@ class AgenticRAGWorkflow:
         # 知识图谱检索问答分支。
         answer = await self.lightrag_service.query(state["question"])
         return {"answer": answer}
+
+    async def aroute(self, question: str, forced_route: Literal["auto", "direct", "lightrag"]) -> AgentState:
+        route_state = await self._router_node({"question": question, "forced_route": forced_route})
+        return {
+            "question": question,
+            "forced_route": forced_route,
+            "route": route_state["route"],
+            "reason": route_state["reason"],
+        }
+
+    async def astream_answer(
+        self,
+        question: str,
+        forced_route: Literal["auto", "direct", "lightrag"],
+    ) -> AsyncIterator[dict[str, str]]:
+        state = await self.aroute(question, forced_route)
+        yield {
+            "type": "meta",
+            "route": state["route"],
+            "reason": state["reason"],
+        }
+
+        if state["route"] == "direct":
+            yield {"type": "status", "message": "正在使用 direct 路由生成答案..."}
+            async for chunk in self.llm_services.stream_answer_directly(question):
+                yield {"type": "delta", "content": chunk}
+        else:
+            async for event in self.lightrag_service.stream_query(question):
+                yield event
+
+        yield {
+            "type": "done",
+            "route": state["route"],
+            "reason": state["reason"],
+        }
 
     async def ainvoke(self, question: str, forced_route: Literal["auto", "direct", "lightrag"]) -> AgentState:
         # 对外暴露的异步调用入口。

@@ -1,8 +1,10 @@
 from contextlib import asynccontextmanager
+import json
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 
 from fastapi import FastAPI, File, HTTPException, Request, UploadFile
+from fastapi.responses import StreamingResponse
 
 from agentic_rag.config import get_settings
 from agentic_rag.graph.workflow import AgenticRAGWorkflow
@@ -44,6 +46,10 @@ app = FastAPI(
     description="基于 LangGraph 与官方 LightRAG Core 的 Agentic RAG 服务，支持 PDF 导入、图谱构建与检索问答。",
     lifespan=lifespan,
 )
+
+
+def _sse_payload(data: dict[str, str]) -> str:
+    return f"data: {json.dumps(data, ensure_ascii=False)}\n\n"
 
 
 @app.get("/health")
@@ -132,3 +138,26 @@ async def chat(request: Request, payload: ChatRequest) -> ChatResponse:
         )
     except RuntimeError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+
+@app.post("/chat/stream")
+async def chat_stream(request: Request, payload: ChatRequest) -> StreamingResponse:
+    # 流式问答接口：
+    # 先返回路由与状态事件，再持续输出答案增量。
+    _, workflow = ensure_services(request.app)
+
+    async def event_generator():
+        try:
+            async for event in workflow.astream_answer(payload.question, payload.force_route):
+                yield _sse_payload(event)
+        except RuntimeError as exc:
+            yield _sse_payload({"type": "error", "message": str(exc)})
+
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+        },
+    )

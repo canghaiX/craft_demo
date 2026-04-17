@@ -5,6 +5,7 @@ import hashlib
 import math
 import json
 import re
+from collections.abc import AsyncIterator
 from functools import partial
 from collections.abc import Iterable
 from typing import Any
@@ -122,6 +123,39 @@ class LightRAGService:
         if lightrag_answer is None:
             return "LightRAG 已执行查询，但没有返回可用答案。"
         return lightrag_answer
+
+    async def stream_query(self, question: str, mode: str | None = None) -> AsyncIterator[dict[str, str]]:
+        if not question.strip():
+            raise ValueError("问题不能为空。")
+
+        yield {"type": "status", "message": "正在检索 LightRAG 知识库..."}
+        rag = await self._get_rag()
+        query_param = QueryParam(
+            mode=mode or self.settings.lightrag_query_mode,
+            response_type=self.settings.lightrag_response_type,
+            top_k=self.settings.lightrag_top_k,
+            chunk_top_k=self.settings.lightrag_chunk_top_k,
+            include_references=self.settings.lightrag_include_references,
+        )
+        result = await rag.aquery(question, param=query_param)
+        triples = self.triple_extractor.search_triples(question)
+        chunks = self.triple_extractor.search_chunks(question)
+        lightrag_answer = self._normalize_query_result(result)
+
+        if triples or chunks:
+            yield {"type": "status", "message": "已检索到证据，正在生成最终答案..."}
+            async for chunk in self._stream_answer_with_evidence(
+                question=question,
+                triples=triples,
+                chunks=chunks,
+                lightrag_answer=lightrag_answer,
+            ):
+                yield {"type": "delta", "content": chunk}
+            return
+
+        answer = lightrag_answer or "LightRAG 已执行查询，但没有返回可用答案。"
+        for chunk in self._chunk_text(answer):
+            yield {"type": "delta", "content": chunk}
 
     async def close(self) -> None:
         self._closed = True
@@ -268,6 +302,49 @@ class LightRAGService:
         )
         normalized = answer.strip()
         return normalized or fallback_answer
+
+    async def _stream_answer_with_evidence(
+        self,
+        *,
+        question: str,
+        triples: list[dict[str, Any]],
+        chunks: list[dict[str, Any]],
+        lightrag_answer: str | None,
+    ) -> AsyncIterator[str]:
+        triple_block = json.dumps(triples, ensure_ascii=False, indent=2)
+        chunk_block = json.dumps(chunks, ensure_ascii=False, indent=2)
+        fallback_answer = lightrag_answer or "LightRAG 未返回可用答案。"
+
+        prompt = (
+            f"用户问题：{question}\n\n"
+            "请优先基于标准三元组证据回答；如有需要，再结合原文 chunk 和 LightRAG 返回内容补充。\n"
+            "如果证据不足，请明确说明“现有证据不足”，不要自由发挥。\n\n"
+            "【标准三元组证据】\n"
+            f"{triple_block}\n\n"
+            "【原文 chunk 证据】\n"
+            f"{chunk_block}\n\n"
+            "【LightRAG 原始回答】\n"
+            f"{fallback_answer}"
+        )
+        has_output = False
+        async for chunk in self.inference_service.stream_generate_for_lightrag(
+            "你是一名严谨的知识问答助手，请严格依据证据生成答案。",
+            prompt,
+            max_new_tokens=700,
+            temperature=0.1,
+        ):
+            if chunk:
+                has_output = True
+                yield chunk
+        if not has_output:
+            yield fallback_answer
+
+    @staticmethod
+    def _chunk_text(text: str, chunk_size: int = 120) -> list[str]:
+        normalized = text.strip()
+        if not normalized:
+            return []
+        return [normalized[index : index + chunk_size] for index in range(0, len(normalized), chunk_size)]
 
     def _extract_answer_text(self, result: Any) -> str | None:
         if isinstance(result, str):
