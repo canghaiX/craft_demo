@@ -148,6 +148,7 @@ async def chat_stream(request: Request, payload: ChatRequest) -> StreamingRespon
 
     async def event_generator():
         try:
+            yield _sse_payload({"type": "ready", "message": "stream_connected"})
             async for event in workflow.astream_answer(payload.question, payload.force_route):
                 yield _sse_payload(event)
         except RuntimeError as exc:
@@ -159,5 +160,6 @@ async def chat_stream(request: Request, payload: ChatRequest) -> StreamingRespon
         headers={
             "Cache-Control": "no-cache",
             "Connection": "keep-alive",
+            "X-Accel-Buffering": "no",
         },
     )
