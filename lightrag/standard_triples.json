@@ -1,0 +1,266 @@
+[
+  {
+    "subject": "correspondence",
+    "predicate": "addressed_to",
+    "object": "secretary, b16 standards committee",
+    "evidence": "Correspondence should be addressed to: Secretary, B16 Standards Committee",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 14
+  },
+  {
+    "subject": "requests for cases",
+    "predicate": "require",
+    "object": "statement of need and background information",
+    "evidence": "Requests for Cases shall provide a Statement of Need and Background Information.",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 14
+  },
+  {
+    "subject": "b16 committee",
+    "predicate": "render_interpretation",
+    "object": "requirement of the standard",
+    "evidence": "Upon request, the B16 Committee will render an interpretation of any requirement of the Standard.",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 14
+  },
+  {
+    "subject": "cases",
+    "predicate": "issued_for",
+    "object": "providing alternative rules",
+    "evidence": "Cases may be issued for the purpose of providing alternative rules when justified",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 14
+  },
+  {
+    "subject": "cases",
+    "predicate": "effective_immediately",
+    "object": "asme approval",
+    "evidence": "Cases are effective immediately upon ASME approval",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 14
+  },
+  {
+    "subject": "thread gaging notch",
+    "predicate": "comes_flush_with",
+    "object": "bottom of the chamfer",
+    "evidence": "The gaging notch of the working gage shall come flush with the bottom of the chamfer in all threaded flanges",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 38
+  },
+  {
+    "subject": "depth of chamfer",
+    "predicate": "approximately_equal_to",
+    "object": "one-half the pitch of the thread",
+    "evidence": "This depth of chamfer is approximately equal to one-half the pitch of the thread",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 38
+  },
+  {
+    "subject": "maximum allowable thread variation",
+    "predicate": "is_one_turn_large_or_small_from",
+    "object": "gaging notch",
+    "evidence": "The maximum allowable thread variation is one turn large or small from the gaging notch",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 38
+  },
+  {
+    "subject": "annex a",
+    "predicate": "specifies",
+    "object": "distance and number of turns for external pipe threads",
+    "evidence": "Annex A specifies the distance and number of turns that external pipe threads may be made longer than regular for use with the higher pressure flanges",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 38
+  },
+  {
+    "subject": "stud bolts",
+    "predicate": "may_be_used_in",
+    "object": "flange joints",
+    "evidence": "Stud bolts, threaded at both ends or threaded full length, or bolts may be used in flange joints",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 38
+  },
+  {
+    "subject": "table 1c",
+    "predicate": "shows",
+    "object": "dimensional recommendations for bolts, stud bolts, and nuts",
+    "evidence": "Dimensional recommendations for bolts, stud bolts, and nuts are shown in Table 1C",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 38
+  },
+  {
+    "subject": "stud bolt length L",
+    "predicate": "does_not_include",
+    "object": "height of two heavy hexagon nuts",
+    "evidence": "The tabulated stud bolt length L does not include the height of end points",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 38
+  },
+  {
+    "subject": "end point",
+    "predicate": "is_defined_as",
+    "object": "unthreaded length extending beyond the thread",
+    "evidence": "An end point is defined as an unthreaded length, such as a chamfer, which extends beyond the thread",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 38
+  },
+  {
+    "subject": "table_2-3.16",
+    "predicate": "defines",
+    "object": "pressure_temperature_ratings_for_group_3.16_materials",
+    "evidence": "Table 2-3.16 Pressure–Temperature Ratings for Group 3.16 Materials",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 74
+  },
+  {
+    "subject": "n08810",
+    "predicate": "part_of",
+    "object": "table_2-3.16",
+    "evidence": "N08810 (1) Working Pressures by Classes, bar",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 74
+  },
+  {
+    "subject": "35ni–19cr–11⁄4si",
+    "predicate": "part_of",
+    "object": "table_2-3.16",
+    "evidence": "35Ni–19Cr–11⁄4Si B536 Gr. N08330 (1) Working Pressures by Classes, bar",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 74
+  },
+  {
+    "subject": "table_ii-2-2-12",
+    "predicate": "defines",
+    "object": "pressure-temperature ratings for group 2.12 materials",
+    "evidence": "Table II-2-2.12 Pressure–Temperature Ratings for Group 2.12 Materials",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 128
+  },
+  {
+    "subject": "table_ii-2-3-1",
+    "predicate": "defines",
+    "object": "pressure-temperature ratings for group 3.1 materials",
+    "evidence": "Table II-2-3.1 Pressure–Temperature Ratings for Group 3.1 Materials",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 128
+  },
+  {
+    "subject": "table_ii-2-3-2",
+    "predicate": "defines",
+    "object": "pressure-temperature ratings for group 3.2 material",
+    "evidence": "Table II-2-3.2 Pressure–Temperature Ratings for Group 3.2 Material",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 128
+  },
+  {
+    "subject": "group_2_12_materials",
+    "predicate": "has_condition",
+    "object": "carbon content is 0.04% or higher",
+    "evidence": "At temperatures over 1,000°F, use only when the carbon content is 0.04% or higher.",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 128
+  },
+  {
+    "subject": "group_3_1_materials",
+    "predicate": "has_condition",
+    "object": "use annealed material only",
+    "evidence": "Use annealed material only.",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 128
+  },
+  {
+    "subject": "B564 Gr. N06600 (1)",
+    "predicate": "part_of",
+    "object": "Group 3.5 Materials",
+    "evidence": "Table II-2-3.5 Pressure–Temperature Ratings for Group 3.5 Materials",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 130
+  },
+  {
+    "subject": "B409 Gr. N08800 (1)",
+    "predicate": "part_of",
+    "object": "Group 3.6 Materials",
+    "evidence": "Table II-2-3.6 Pressure–Temperature Ratings for Group 3.6 Materials",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 130
+  },
+  {
+    "subject": "i–43Fe–22Cr–5Mo",
+    "predicate": "defines",
+    "object": "B620 Gr. N08320",
+    "evidence": "i–43Fe–22Cr–5Mo . . . . . . B620 Gr. N08320 (1)",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 134
+  },
+  {
+    "subject": "47Ni–22Cr–20Fe–7Mo",
+    "predicate": "defines",
+    "object": "B582 Gr. N06985",
+    "evidence": "47Ni–22Cr–20Fe–7Mo . . . . . . B582 Gr. N06985 (1)",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 134
+  },
+  {
+    "subject": "46Fe–24Ni–21Cr–6Mo–Cu–N",
+    "predicate": "defines",
+    "object": "B462 Gr. A351",
+    "evidence": "46Fe–24Ni–21Cr–6Mo–Cu–N B462 Gr. A351",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 134
+  },
+  {
+    "subject": "CN3MN",
+    "predicate": "defines",
+    "object": "N08367",
+    "evidence": "CN3MN (1) N08367 (1)",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 134
+  },
+  {
+    "subject": "ratings",
+    "predicate": "terminate_at",
+    "object": "538°C (1,000°F)",
+    "evidence": "Ratings for flanges and flanged fittings terminate at 538°C (1,000°F).",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 179
+  },
+  {
+    "subject": "ratings of flanges and flanged fittings",
+    "predicate": "terminates_at_temperature",
+    "object": "1000°f (538°c)",
+    "evidence": "Ratings of flanges and flanged fittings terminate at 1,000°F (538°C).",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 180
+  },
+  {
+    "subject": "gasket materials and construction",
+    "predicate": "classified_in_table",
+    "object": "table_b-1",
+    "evidence": "Classification of gasket materials and types is shown in Table B-1.",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 180
+  },
+  {
+    "subject": "gasket materials and construction",
+    "predicate": "references",
+    "object": "asme_b16.21",
+    "evidence": "Reference to a dimensional standard for gaskets (e.g., ASME B16.21) is recommended.",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 180
+  },
+  {
+    "subject": "gasket dimensions",
+    "predicate": "based_on",
+    "object": "type_of_gasket_and_its_characteristics",
+    "evidence": "selected dimensions should be based on the type of gasket and its characteristics.",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 180
+  },
+  {
+    "subject": "gasket characteristics",
+    "predicate": "includes",
+    "object": "density, flexibility, compatibility_with_fluid, gasket_compression",
+    "evidence": "These characteristics include density, flexibility, compatibility with the fluid being contained, and gasket compression needed to maintain sealing.",
+    "source_file": "ASME B16.5-2013.pdf",
+    "chunk_index": 180
+  }
+]
